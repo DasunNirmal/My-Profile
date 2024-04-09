@@ -22,7 +22,7 @@
             background-color: rgba(25, 42, 86, 0.87);
             width: 100%;
             height: 1160px;
-            clip-path: ellipse(92% 56% at 12% 1%);
+            clip-path: ellipse(92% 58% at 12% 1%);
             position: absolute;
             top: 0;
             left: 0;
@@ -84,7 +84,7 @@
 
         #hero-section {
             position: relative;
-            height: 760px;
+            height: 690px;
             width: 88%;
             top: 0;
             bottom: 0;
@@ -108,14 +108,14 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
-            font-size: 22px;
+            font-size: 25px;
         }
 
         #hero-section>#left-side>#socials {
             height: 100px;
             width: 620px;
             position: absolute;
-            bottom: 180px;
+            bottom: 80px;
             display: flex;
             align-items: center;
         }
@@ -124,8 +124,8 @@
             height: 75px;
             aspect-ratio: 1/1;
             background: url("assets/images/gihub.jpeg") center;
-            background-size: cover;
             margin-right: 15px;
+            background-size: cover;
             border-radius: 100%;
         }
 
@@ -161,6 +161,16 @@
             margin-right: 15px;
         }
 
+        #introduction {
+            height: 400px;
+            width: 650px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
     </style>
 
 </head>
@@ -183,17 +193,25 @@
         <section id="hero-section">
             <!--Left side-->
             <div id="left-side">
-                <h2>Hi there !</h2>
-                <h2>I'm Dasun Nirmal</h2>
-                <h2>And i'm a Web Developer</h2>
-                <h3>A passionate software engineering student <br> from Sri Lanka</h3>
+
+                <div id="introduction">
+                    <h2>Hi there !</h2>
+                    <h2>I'm Dasun Nirmal</h2>
+                    <h2>And i'm a Web Developer</h2>
+                    <h3>A passionate software engineering student <br> from Sri Lanka</h3>
+                </div>
 
                 <div id="socials">
-                    <div id="github"></div>
-                    <div id="medium"></div>
-                    <div id="stack"></div>
-                    <div id="linkedin"></div>
-                    <div id="instagram"></div>
+                    <a href="https://github.com/DasunNirmal" title="GitHub" target="_blank" id="github"></a>
+
+                    <a href="https://www.linkedin.com/in/dasun-nirmal-877b15278/" title="Linkedin" target="_blank" id="linkedin"></a>
+
+                    <a href="https://medium.com/@dasun200301" title="Medium" target="_blank" id="medium"></a>
+
+                    <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" title="StackOverFlow" target="_blank" id="stack"></a>
+
+                    <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" title="Instagram" target="_blank" id="instagram"></a>
+
                 </div>
             </div>
 
