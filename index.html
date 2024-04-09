@@ -9,9 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/normalize/normalize.css">
 
+    <style>
+
+        body {
+            background-color: #E0E0E0;
+        }
+
+        #ellipse {
+            background-color: rgba(25, 42, 86, 0.87);
+            width: 1905px;
+            height: 1160px;
+            clip-path: ellipse(92% 53% at 12% 0%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+    </style>
+
 </head>
     <body>
-    <!--Header-->
+        <!--Header-->
+        <div id="ellipse"></div>
         <header  id="home">
             <img src="assets/images/DCODE.png" title="logo" alt="logo" width="171.17" height="57">
             <nav>
@@ -23,7 +44,7 @@
             </nav>
         </header>
 
-    <!--Hero section-->
+        <!--Hero section-->
         <section>
             <!--Left side-->
             <div>
@@ -59,7 +80,7 @@
                 </picture>
             </div>
         </section>
-    
+
         <!--About me-->
         <section id="About Me">
             <h1>About Me</h1>
