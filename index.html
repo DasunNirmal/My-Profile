@@ -298,6 +298,51 @@
             margin-bottom: 80px;
         }
 
+        #backend-development-left-side {
+            height: 400px;
+            width: 821px;
+            position: absolute;
+            font-weight: bold;
+            color: #192A56;
+            font-size: 28px;
+            text-align: center;
+            top: 90px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #tools {
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            bottom: 200px;
+            display: flex;
+            align-items: center;
+            left: 10dvw;
+            margin: auto;
+        }
+
+        #tools>img {
+            margin-right: 135px;
+            transition-duration: 1s;
+        }
+
+        #tools>img:first-child:hover {
+            width: 75px;
+            height:120px;
+        }
+
+        #tools>img:nth-child(2):hover {
+            width: 80px;
+            height:80px;
+        }
+
+        #tools>img:nth-child(3):hover {
+            width: 80px;
+            height:80px;
+        }
+
     </style>
 
 </head>
@@ -380,7 +425,7 @@
             <h1>Backend Development</h1>
 
             <!--Left Side-->
-            <div>
+            <div id="backend-development-left-side">
                 <p>
                     Currently i’m mastering <span>Java</span>, And i’m using <span>MySQL</span> to create <br>
                     databases along side java.With the help of <span>IntelliJ IDEA</span> i’ve <br>
@@ -389,10 +434,10 @@
             </div>
 
             <!--Java,MySql,Intellij-->
-            <div>
-                <img src="assets/images/Java.png" title="java logo" alt="java" width="50" height="91.46">
-                <img src="assets/images/mysql.png" title="java logo" alt="java" width="70" height="70">
-                <img src="assets/images/IntelliJ_IDEA_Icon.svg.png" title="java logo" alt="java" width="70" height="70">
+            <div id="tools">
+                <img src="assets/images/Java.png" alt="java" width="60" height="100">
+                <img src="assets/images/mysql.png" alt="java" width="70" height="70">
+                <img src="assets/images/IntelliJ_IDEA_Icon.svg.png" alt="java" width="70" height="70">
             </div>
 
             <!--Right Side-->
