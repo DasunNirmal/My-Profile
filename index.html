@@ -69,6 +69,7 @@
             height: 29px;
             display: inline-block;
             text-align: center;
+            transition-duration: 1s;
         }
 
         header>nav>a:first-child {
@@ -125,6 +126,7 @@
             margin-right: 15px;
             background-size: cover;
             border-radius: 100%;
+            transition-duration: 0.2s;
         }
 
         #hero-section>#left-side>#socials>#linkedin {
@@ -134,6 +136,7 @@
             background-size: 90px 90px;
             margin-right: 15px;
             border-radius: 100%;
+            transition-duration: 0.2s;
         }
         #hero-section>#left-side>#socials>#medium {
             height: 75px;
@@ -142,6 +145,7 @@
             background-size: 75px 75px;
             margin-right: 15px;
             border-radius: 100%;
+            transition-duration: 0.2s;
         }
         #hero-section>#left-side>#socials>#stack {
             height: 75px;
@@ -150,13 +154,16 @@
             background-size: cover;
             margin-right: 15px;
             border-radius: 100%;
+            transition-duration: 0.2s;
         }
         #hero-section>#left-side>#socials>#instagram {
-            height: 75px;
+            height: 76px;
             aspect-ratio: 1/1;
-            background: url("assets/images/insta-removebg-preview.png") center no-repeat;
-            background-size: 80px 80px;
+            background: url("assets/images/insta-removebg-preview.png") no-repeat -10px -11px;
+            background-size: 98px 98px;
             margin-right: 15px;
+            border-radius: 50%;
+            transition-duration: 0.2s;
         }
 
         #introduction {
@@ -251,10 +258,6 @@
             margin: auto;
         }
 
-        #aboutMe-right-side>p>span {
-            color: #c69e0a;
-        }
-
         .line-right-long>hr {
             height: 3px;
             width: 55dvw;
@@ -274,7 +277,6 @@
             left: 0;
             right: 0;
             margin: auto;
-            border: 2px solid #E1B12C;
         }
 
         #backend-development>h1 {
@@ -312,6 +314,11 @@
             margin: auto;
         }
 
+        #aboutMe-right-side>p>span,
+        #backend-development-left-side>p>span {
+            color: #c69e0a;
+        }
+
         #tools {
             height: 100px;
             width: 350px;
@@ -328,6 +335,14 @@
             transition-duration: 1s;
         }
 
+        /*Transitions*/
+        #hero-section>#left-side>#socials>#github:hover,
+        #hero-section>#left-side>#socials>#linkedin:hover,
+        #hero-section>#left-side>#socials>#medium:hover,
+        #hero-section>#left-side>#socials>#stack:hover,
+        #hero-section>#left-side>#socials>#instagram:hover {
+            border: 3px solid #E0E0E0;
+        }
         #tools>img:first-child:hover {
             width: 75px;
             height:120px;
@@ -374,15 +389,15 @@
                 </div>
 
                 <div id="socials">
-                    <a href="https://github.com/DasunNirmal" title="GitHub" target="_blank" id="github"></a>
+                    <a href="https://github.com/DasunNirmal" target="_blank" id="github"></a>
 
-                    <a href="https://www.linkedin.com/in/dasun-nirmal-877b15278/" title="Linkedin" target="_blank" id="linkedin"></a>
+                    <a href="https://www.linkedin.com/in/dasun-nirmal-877b15278/" target="_blank" id="linkedin"></a>
 
-                    <a href="https://medium.com/@dasun200301" title="Medium" target="_blank" id="medium"></a>
+                    <a href="https://medium.com/@dasun200301" target="_blank" id="medium"></a>
 
-                    <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" title="StackOverFlow" target="_blank" id="stack"></a>
+                    <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" target="_blank" id="stack"></a>
 
-                    <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" title="Instagram" target="_blank" id="instagram"></a>
+                    <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" target="_blank" id="instagram"></a>
 
                 </div>
             </div>
