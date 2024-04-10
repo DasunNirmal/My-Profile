@@ -17,12 +17,15 @@
 
         body {
             background-color: #E0E0E0;
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
         }
 
         #ellipse {
             background-color: rgba(25, 42, 86, 0.87);
             width: 100%;
-            height: 1160px;
+            height: 1290px;
             clip-path: ellipse(92% 58% at 12% 1%);
             position: absolute;
             top: 0;
@@ -50,10 +53,7 @@
         header>nav {
             height: fit-content;
             position: absolute;
-            font-family: "Sen", sans-serif;
-            font-optical-sizing: auto;
             font-weight: 400;
-            font-style: normal;
             font-size: 22px;
             right: 120px;
             top: 0;
@@ -105,10 +105,7 @@
 
         #hero-section>#left-side {
             color: #E0E0E0;
-            font-family: "Sen", sans-serif;
-            font-optical-sizing: auto;
             font-weight: 400;
-            font-style: normal;
             font-size: 25px;
         }
 
@@ -116,7 +113,7 @@
             height: 100px;
             width: 620px;
             position: absolute;
-            bottom: 80px;
+            bottom: 15px;
             display: flex;
             align-items: center;
         }
@@ -188,6 +185,52 @@
             color: #E1B12C;
         }
 
+        #AboutMe {
+            position: relative;
+            height: 790px;
+            width: 88%;
+            top: 200px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #AboutMe>h1 {
+            width: 230px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #aboutMe-left-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        #aboutMe-right-side {
+            height: 400px;
+            width: 640px;
+            position: absolute;
+            font-weight: bold;
+            color: #192A56;
+            font-size: 24px;
+            top: 30px;
+            bottom: 0;
+            right: 120px;
+            margin: auto;
+        }
+
 
     </style>
 
@@ -244,15 +287,12 @@
             <h1>About Me</h1>
 
             <!--Left side-->
-            <div>
-                <!--need to download other sizes-->
-                <picture>
-                    <img src="assets/gif/Programming%20(1).gif" title="programming gif" alt="programming gif" width="696" height="746">
-                </picture>
+            <div id="aboutMe-left-side">
+                <img src="assets/gif/Programming%20(1).gif" title="programming gif" alt="programming gif" width="696" height="680">
             </div>
 
             <!--Right side-->
-            <div>
+            <div id="aboutMe-right-side">
                 <p>
                     My name is Dasun Nirmal As a passionate software <br>
                     engineering student, I specialize in Java.I believe in <br> pushing myself to grow and improve as a developer <br>
