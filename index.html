@@ -239,11 +239,12 @@
 
         #aboutMe-right-side {
             height: 400px;
-            width: 640px;
+            width: 741px;
             position: absolute;
             font-weight: bold;
             color: #192A56;
-            font-size: 24px;
+            font-size: 28px;
+            text-align: center;
             top: 30px;
             bottom: 0;
             right: 120px;
@@ -254,6 +255,48 @@
             color: #c69e0a;
         }
 
+        .line-right-long>hr {
+            height: 3px;
+            width: 55dvw;
+            border: 0;
+            background: #192A56;
+            position: absolute;
+            right: 0;
+            top: 22px;
+        }
+
+        #backend-development {
+            position: relative;
+            height: 790px;
+            width: 88%;
+            top: 200px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #E1B12C;
+        }
+
+        #backend-development>h1 {
+            width: 520px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #backend-development-right-side {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
 
     </style>
 
@@ -332,14 +375,15 @@
         </section>
 
         <!--Backend Development-->
-        <section>
+        <section id="backend-development">
+            <div class="line-right-long"><hr></div>
             <h1>Backend Development</h1>
 
             <!--Left Side-->
             <div>
                 <p>
-                    Currently i’m mastering Java, And i’m using MySQL to create <br>
-                    databases along side java.With the help of IntelliJ IDEA i’ve <br>
+                    Currently i’m mastering <span>Java</span>, And i’m using <span>MySQL</span> to create <br>
+                    databases along side java.With the help of <span>IntelliJ IDEA</span> i’ve <br>
                     been able to develop use full applications and learn about <br> these technologies.
                 </p>
             </div>
@@ -352,11 +396,9 @@
             </div>
 
             <!--Right Side-->
-            <div>
+            <div id="backend-development-right-side">
                 <!--need to download other sizes-->
-                <picture>
-                    <img src="assets/gif/Programming%20(2).gif" title="programming gif" alt="programming gif" width="800" height="703">
-                </picture>
+                <img src="assets/gif/Programming%20(2).gif" title="programming gif" alt="programming gif" width="800" height="703">
             </div>
         </section>
 
