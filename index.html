@@ -185,6 +185,25 @@
             color: #E1B12C;
         }
 
+        .line-left>hr,.line-right>hr {
+            height: 3px;
+            width: 33dvw;
+            border: 0;
+            background: #192A56;
+        }
+
+        .line-left {
+            position: absolute;
+            left: 0;
+            top: 22px;
+        }
+
+        .line-right {
+            position: absolute;
+            right: 0;
+            top: 22px;
+        }
+
         #AboutMe {
             position: relative;
             height: 790px;
@@ -229,6 +248,10 @@
             bottom: 0;
             right: 120px;
             margin: auto;
+        }
+
+        #aboutMe-right-side>p>span {
+            color: #c69e0a;
         }
 
 
@@ -284,6 +307,8 @@
 
         <!--About me-->
         <section id="AboutMe">
+            <div class="line-left"><hr></div>
+            <div class="line-right"><hr></div>
             <h1>About Me</h1>
 
             <!--Left side-->
@@ -294,9 +319,9 @@
             <!--Right side-->
             <div id="aboutMe-right-side">
                 <p>
-                    My name is Dasun Nirmal As a passionate software <br>
-                    engineering student, I specialize in Java.I believe in <br> pushing myself to grow and improve as a developer <br>
-                    and to be a well experienced  software engineer. <br>
+                    My name is <span>Dasun Nirmal</span> As a passionate software <br>
+                    engineering student, I specialize in <span>Java</span>.I believe in <br> pushing myself to grow and improve as a developer <br>
+                    and to be a well experienced <span>software engineer.</span> <br>
                     Whether you're interested in collaborating on a <br>
                     project or discussing the latest trends in software <br>
                     engineering, I'm always up for a challenge <br>
