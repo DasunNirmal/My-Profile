@@ -416,6 +416,7 @@
             left: 0;
             right: 0;
             margin: auto;
+            color: #E0E0E0;
             border: 2px solid #E1B12C;
         }
 
@@ -433,8 +434,47 @@
 
         #logo-footer {
             position: absolute;
-            top: 20px;
+            top: 0;
             right: 80px;
+            margin: auto;
+        }
+
+        footer>#contact {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            top: 100px;
+            right: 75px;
+            margin: auto;
+        }
+
+        #contact>div {
+            font-size: 22px;
+        }
+
+        #contact>div>span {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        #contact>div:first-child {
+            position: absolute;
+            top: 10px;
+        }
+
+        #contact>div:nth-child(2) {
+            position: absolute;
+            top: 125px;
+        }
+
+        #line-vertical {
+            height: 225px;
+            border-left: 3px solid #E0E0E0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 350px;
+            margin: auto;
         }
 
         /*Transitions*/
@@ -624,9 +664,11 @@
                 <img src="assets/images/DCODE.png" title="Logo" alt="Logo" width="215" height="70">
             </div>
 
-            <div>
-                <div>Call me : <br> 0715744202</div>
-                <div>WhatsApp : <br> +94715744202</div>
+            <div id="line-vertical"></div>
+
+            <div id="contact">
+                <div>Call me : <br> <span>0715744202</span></div>
+                <div>WhatsApp : <br> <span>+94715744202</span></div>
             </div>
 
             <!--Left Side-->
@@ -639,20 +681,15 @@
             <!--Footer Icons-->
             <div>
                 <img src="assets/images/gihub.jpeg" title="github" alt="github logo" width="71"
-                     height="68"
-                >
+                     height="68">
                 <img src="assets/images/Linkedin-logo-on-transparent-Background-PNG-%20(1).png" title="linkedin" alt="linkedin logo" width="68"
-                     height="68"
-                >
+                     height="68">
                 <img src="assets/images/Mediumlogo.jpeg" title="medium" alt="medium logo" width="67"
-                     height="68"
-                >
+                     height="68">
                 <img src="assets/images/StackoverflowLogo.jpeg" title="stackoverflow" alt="stackoverflow logo" width="69"
-                     height="68"
-                >
+                     height="68">
                 <img src="assets/images/insta-removebg-preview.png" title="instagram" alt="instagram logo" width="76"
-                     height="73"
-                >
+                     height="73">
             </div>
 
             <div>© 2023 Dasun Nirmal. All rights reserved</div>
