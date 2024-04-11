@@ -258,7 +258,7 @@
             margin: auto;
         }
 
-        .line-right-long>hr {
+        #line-long_01>hr {
             height: 3px;
             width: 55dvw;
             border: 0;
@@ -315,7 +315,8 @@
         }
 
         #aboutMe-right-side>p>span,
-        #backend-development-left-side>p>span {
+        #backend-development-left-side>p>span,
+        #frontend-development-right-side>p>span {
             color: #c69e0a;
         }
 
@@ -332,6 +333,79 @@
 
         #tools>img {
             margin-right: 135px;
+            transition-duration: 1s;
+        }
+
+        #frontend-development {
+            position: relative;
+            height: 790px;
+            width: 88%;
+            top: 200px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #E1B12C;
+        }
+
+        #frontend-development>h1 {
+            width: 540px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #line-long_02>hr {
+            height: 3px;
+            width: 55dvw;
+            border: 0;
+            background: #192A56;
+            position: absolute;
+            left: 0;
+            top: 22px;
+        }
+
+        #frontend-development-left-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        #frontend-development-right-side {
+            height: 400px;
+            width: 821px;
+            position: absolute;
+            font-weight: bold;
+            color: #192A56;
+            font-size: 28px;
+            text-align: center;
+            top: 90px;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #tools-frontend {
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            bottom: 200px;
+            display: flex;
+            align-items: center;
+            right: 13dvw;
+            margin: auto;
+        }
+
+        #tools-frontend>img {
+            margin-right: 10px;
             transition-duration: 1s;
         }
 
@@ -356,6 +430,26 @@
         #tools>img:nth-child(3):hover {
             width: 80px;
             height:80px;
+        }
+
+        #tools-frontend>img:first-child:hover {
+            width: 85px;
+            height: 85px;
+        }
+
+        #tools-frontend>img:nth-child(2):hover {
+            width: 155px;
+            height: 95px;
+        }
+
+        #tools-frontend>img:nth-child(3):hover {
+            width: 65px;
+            height: 85px;
+        }
+
+        #tools-frontend>img:nth-child(4):hover {
+            width: 180px;
+            height: 105px;
         }
 
     </style>
@@ -436,7 +530,7 @@
 
         <!--Backend Development-->
         <section id="backend-development">
-            <div class="line-right-long"><hr></div>
+            <div id="line-long_01"><hr></div>
             <h1>Backend Development</h1>
 
             <!--Left Side-->
@@ -463,33 +557,31 @@
         </section>
 
         <!--Frontend Development-->
-        <section>
+        <section id="frontend-development">
+            <div id="line-long_02"><hr></div>
             <h1>Frontend Development</h1>
 
             <!--Left Side-->
-            <div>
-                <!--need to download other sizes-->
-                <picture>
-                    <img src="assets/gif/Programming.gif" title="programming gif" alt="programming gif" width="695" height="576">
-                </picture>
+            <div id="frontend-development-left-side">
+                <img src="assets/gif/Programming.gif" title="programming gif" alt="programming gif" width="750" height="625">
             </div>
 
             <!--Right Side-->
-            <div>
+            <div id="frontend-development-right-side">
                 <p>
                     As a full stack developer, part of my job is to <br>
                     make the user experience seamless and intuitive. <br>
                     To make this happen i’m using latest tech <br>
-                    available in the software development world, Like <br> HTML, JavaScript, CSS, Figma....
+                    available in the software development world, Like <br> <span>HTML, JavaScript, CSS, Figma.</span>
                 </p>
             </div>
 
             <!--HTML,JS,CSS,FIGMA-->
-            <div>
-                <img src="assets/images/Html-removebg-preview.png" title="HTML" alt="html" width="70" height="70">
-                <img src="assets/images/JavaScript-Logo.png" title="JavaScript" alt="js" width="130" height="73.13">
-                <img src="assets/images/CSS3_logo_and_wordmark.svg.png" title="CSS" alt="css" width="50" height="70.52">
-                <img src="assets/images/figma-removebg-preview.png" title="Figma" alt="figma" width="150" height="82">
+            <div id="tools-frontend">
+                <img src="assets/images/Html-removebg-preview.png" alt="html" width="70" height="70">
+                <img src="assets/images/JavaScript-Logo.png" alt="js" width="130" height="73.13">
+                <img src="assets/images/CSS3_logo_and_wordmark.svg.png" alt="css" width="50" height="70.52">
+                <img src="assets/images/figma-removebg-preview.png" alt="figma" width="150" height="82">
             </div>
         </section>
 
