@@ -8,9 +8,91 @@
     <meta name="author" content="Dasun Nirmal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/normalize/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #E0E0E0;
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            overflow-x: hidden;
+        }
+
+        #ellipse {
+            background-color: rgba(25, 42, 86, 0.87);
+            width: 100%;
+            height: 1370px;
+            clip-path: ellipse(68% 45% at 57% 0%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 1000;
+        }
+
+        header>img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 35px;
+            margin: auto;
+        }
+
+        header>nav {
+            height: fit-content;
+            position: absolute;
+            font-weight: 400;
+            font-size: 22px;
+            right: 120px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav>a {
+            color: #E0E0E0;
+            text-decoration: none;
+            margin-right: 35px;
+            width: 122px;
+            height: 29px;
+            display: inline-block;
+            text-align: center;
+            transition-duration: 1s;
+        }
+
+        header>nav>a:nth-child(3) {
+            border: 3px solid #E1B12C;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        header>nav>a:first-child:hover,header>nav>a:nth-child(2):hover,
+        header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
+            color: #E1B12C;
+            font-weight: bold;
+        }
+
+
+    </style>
 
 </head>
     <body>
+
+    <!--Ellipse-->
+        <div id="ellipse"></div>
 
         <!--Header-->
         <header  id="Education">
