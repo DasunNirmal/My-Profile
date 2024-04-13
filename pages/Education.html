@@ -133,18 +133,78 @@
             right: 350px;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         #hero-section>#right-side>.socials>.github {
             height: 75px;
             aspect-ratio: 1/1;
             background: url("../assets/images/gihub.jpeg") center;
-            margin-right: 15px;
             background-size: cover;
             border-radius: 100%;
             transition-duration: 0.2s;
         }
 
+        .line-left>hr,.line-right>hr {
+            height: 3px;
+            width: 25dvw;
+            border: 0;
+            background: #192A56;
+        }
+
+        .line-left {
+            position: absolute;
+            left: 0;
+            top: 22px;
+        }
+
+        .line-right {
+            position: absolute;
+            right: 0;
+            top: 22px;
+        }
+
+        #courses-and-certificates {
+            position: relative;
+            height: 690px;
+            width: 88%;
+            top: 120px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #E1B12C;
+        }
+
+        #courses-and-certificates>h1 {
+            width: 565px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        .grid{
+            display: grid;
+            margin: 140px;
+            justify-items: center;
+            grid-row-gap: 80px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid>div{
+            width: 350px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 20px;
+            border: 3px solid #192A56;
+            align-content: center;
+        }
 
         /*Transitions*/
         #hero-section>#right-side>.socials>.github:hover {
@@ -194,46 +254,38 @@
                 </div>
             </div>
         </section>
-    
+
         <!--Courses and Certificates-->
-        <section>
+        <section id="courses-and-certificates">
+            <div class="line-left"><hr></div>
+            <div class="line-right"><hr></div>
 
             <h1>Courses and Certificates</h1>
 
-            <div id="CC-1">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
+            <div class="grid" id="courses-and-certificates-cards">
+                <div id="CC-1">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
 
-            <div id="CC-2">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
+                <div id="CC-2">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
 
-            <div id="CC-3">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
+                <div id="CC-3">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
 
-            <div id="CC-4">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
+                <div id="CC-4">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
 
-            <div id="CC-5">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
+                <div id="CC-5">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
 
-            <div id="CC-6">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
-
-            <div id="CC-7">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
-
-            <div id="CC-8">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
-            </div>
-
-            <div id="CC-9">
-                <img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">
+                <div id="CC-6">
+                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                </div>
             </div>
         </section>
     
@@ -277,9 +329,6 @@
                 <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
             </div>
 
-            <div id="A-10">
-                <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
-            </div>
         </section>
 
         <!--Page Footer-->
