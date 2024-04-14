@@ -222,7 +222,7 @@
         }
 
         #github-button {
-            width: 250px;
+            width: 280px;
             height: 50px;
             position: absolute;
             left: 0;
@@ -243,6 +243,68 @@
             font-size: 22px;
             text-decoration: none;
         }
+
+        #skills-and-tools {
+            position: relative;
+            height: 540px;
+            width: 88%;
+            top: 70px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #eab520;
+        }
+
+        #skills-and-tools>h1 {
+            width: 360px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #skills-and-tools-middle {
+            width: 1230px;
+            height: 130px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #skills-and-tools-middle>p {
+            font-weight: bold;
+            color: #192A56;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        #tools {
+            height: 150px;
+            width: 920px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        #tools>img {
+            margin-right: 10px;
+            transition-duration: 1s;
+        }
+
 
         /*Transitions*/
         #hero-section-right-side>.socials>.github:hover,
@@ -344,11 +406,6 @@
                 </div>
             </div>
 
-            <!--Navigate to Git Hub
-            <button id="github-button">
-                <a href="https://github.com/DasunNirmal" target="_blank">More Projects</a>
-            </button>-->
-
             <!--Navigate to Git Hub-->
             <a href="https://github.com/DasunNirmal" target="_blank" id="github-button-tag">
                 <button id="github-button">More Projects</button>
@@ -358,47 +415,37 @@
         </section>
 
         <!--Skills and Tools-->
-        <section>
+        <section id="skills-and-tools">
+
+            <div class="line-left-01"><hr></div>
+            <div class="line-right-02"><hr></div>
+
             <h1>Skills and Tools</h1>
 
             <!--Middle-->
-            <div>
+            <div id="skills-and-tools-middle">
                 <p>
                     Java Programming,Software Engineering Principles,Version Control <br>
                     Systems,Problem-Solving Skills,Continuous Learning are some of my skills. <br>
                     These are the tools i’m using to develop softwares.
                 </p>
             </div>
-            
-            <div>
-                <img src="../assets/images/Java.png" title="Java" alt="java" width="73" height="138">
-            </div>
 
-            <div>
-                <img src="../assets/images/mysql.png" title="MySql" alt="MySql" width="89" height="95">
-            </div>
+            <div id="tools">
+                <img src="../assets/images/Java.png" title="Java" alt="java" width="60" height="110">
 
-            <div>
-                <img src="../assets/images/JavaScript-Logo.png" title="JavaScript" alt="JavaScript" width="153" height="98">
-            </div>
+                <img src="../assets/images/mysql.png" title="MySql" alt="MySql" width="80" height="80">
 
-            <div>
-                <img src="../assets/images/Html-removebg-preview.png" title="HTML" alt="HTML" width="85" height="95">
-            </div>
+                <img src="../assets/images/JavaScript-Logo.png" title="JavaScript" alt="JavaScript" width="135" height="80">
 
-            <div>
-                <img src="../assets/images/CSS3_logo_and_wordmark.svg.png" title="CSS" alt="CSS" width="66" height="91">
-            </div>
+                <img src="../assets/images/Html-removebg-preview.png" title="HTML" alt="HTML" width="80" height="80">
 
-            <div>
-                <img src="../assets/images/IntelliJ_IDEA_Icon.svg.png" title="Intellij" alt="Intellij" width="78" height="80">
-            </div>
+                <img src="../assets/images/CSS3_logo_and_wordmark.svg.png" title="CSS" alt="CSS" width="60" height="80">
 
-            <div>
-                <img src="../assets/images/figma-removebg-preview.png" title="Figma" alt="Figma" width="170" height="102">
-            </div>
+                <img src="../assets/images/IntelliJ_IDEA_Icon.svg.png" title="Intellij" alt="Intellij" width="70" height="70">
 
-            <div>
+                <img src="../assets/images/figma-removebg-preview.png" title="Figma" alt="Figma" width="155" height="102">
+
                 <img src="../assets/images/590px-Node.js_logo.svg.png" title="NodeJs" alt="NodeJs" width="124" height="76">
             </div>
 
