@@ -94,7 +94,6 @@
             left: 0;
             right: 0;
             margin: auto;
-            border: 2px solid #E1B12C;
         }
 
         #hero-section-left-side {
@@ -149,6 +148,81 @@
             transition-duration: 0.2s;
         }
 
+        .line-left>hr,.line-right>hr {
+            height: 3px;
+            width: 35dvw;
+            border: 0;
+            background: #192A56;
+        }
+
+        .line-left-01>hr,.line-right-02>hr {
+            height: 3px;
+            width: 32dvw;
+            border: 0;
+            background: #192A56;
+        }
+
+        .line-left,.line-left-01 {
+            position: absolute;
+            left: 0;
+            top: 22px;
+        }
+
+        .line-right,.line-right-02 {
+            position: absolute;
+            right: 0;
+            top: 22px;
+        }
+
+        #projects-section {
+            position: relative;
+            height: 930px;
+            width: 88%;
+            top: 70px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #E1B12C;
+
+        }
+
+
+        #projects-section>h1 {
+            width: 190px;
+            height: 60px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 48px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        .grid{
+            display: grid;
+            margin: 140px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            justify-items: center;
+            grid-row-gap: 80px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid>div{
+            width: 350px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 20px;
+            border: 3px solid #192A56;
+            align-content: center;
+        }
+
         /*Transitions*/
         #hero-section-right-side>.socials>.github:hover,
         footer>.socials>.github:hover,
@@ -199,36 +273,40 @@
                     <a href="https://github.com/DasunNirmal" target="_blank" class="github"></a>
                 </div>
             </div>
-
-
         </section>
 
         <!--Projects-->
-        <section>
+        <section id="projects-section">
+
+            <div class="line-left"><hr></div>
+            <div class="line-right"><hr></div>
+
             <h1>Projects</h1>
 
-            <div id="P-1">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
-            </div>
+            <div class="grid">
+                <div id="P-1">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
 
-            <div id="P-2">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
-            </div>
+                <div id="P-2">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
 
-            <div id="P-3">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
-            </div>
+                <div id="P-3">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
 
-            <div id="P-4">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
-            </div>
+                <div id="P-4">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
 
-            <div id="P-5">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
-            </div>
+                <div id="P-5">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
 
-            <div id="P-6">
-                <img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">
+                <div id="P-6">
+                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                </div>
             </div>
 
             <!--Navigate to Git Hub-->
