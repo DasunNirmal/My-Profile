@@ -223,6 +223,29 @@
             align-content: center;
         }
 
+        #github-button {
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100px;
+            margin: auto;
+
+            border: 0 solid #E0E0E0;
+            background-color: #E0E0E0;
+            border-left: 3px solid #192A56;
+            border-right: 3px solid #192A56;
+            border-radius: 5px 5px 5px 5px;
+            transition-duration: 1s;
+        }
+
+        #github-button>a {
+            color: #192A56;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
         /*Transitions*/
         #hero-section-right-side>.socials>.github:hover,
         footer>.socials>.github:hover,
@@ -232,6 +255,20 @@
         footer>.socials>.instagram:hover {
             border: 3px solid #E0E0E0;
         }
+
+        #github-button:hover {
+            cursor: pointer;
+            background-color: rgba(242, 193, 118, 0.45);
+            border-top: 3px solid #eab520;
+            border-bottom: 4px solid #eab520;
+            border-radius: 5px 5px 5px 5px;
+
+            color: #192A56;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
 
     </style>
 
@@ -310,9 +347,9 @@
             </div>
 
             <!--Navigate to Git Hub-->
-            <div>
+            <button id="github-button">
                 <a href="https://github.com/DasunNirmal" target="_blank">More Projects</a>
-            </div>
+            </button>
 
         </section>
 
