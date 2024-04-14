@@ -27,7 +27,7 @@
             background-color: rgba(25, 42, 86, 0.87);
             width: 100%;
             height: 1370px;
-            clip-path: ellipse(100% 40% at 20% 0%);
+            clip-path: ellipse(100% 50% at 20% 0%);
             position: absolute;
             top: 0;
             left: 0;
@@ -85,6 +85,80 @@
             font-weight: bold;
         }
 
+        #hero-section {
+            position: relative;
+            height: 690px;
+            width: 88%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #E1B12C;
+        }
+
+        #hero-section-left-side {
+            height: 620px;
+            width: 830px;
+            position: absolute;
+            background: url("../assets/images/Cross-platform software-pana.png") center no-repeat;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+
+        #hero-section-right-side {
+            height: 500px;
+            width: 790px;
+            color: #E0E0E0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            right: 40px;
+            bottom: 0;
+            margin-top: 130px;
+            margin-bottom: 60px;
+        }
+
+        #hero-section-right-side>p>span {
+            color: #E1B12C;
+        }
+
+        #hero-section-right-side>.socials {
+            height: 100px;
+            width: 90px;
+            position: absolute;
+            bottom: 155px;
+            right: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #hero-section-right-side>.socials>.github {
+            height: 75px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/gihub.jpeg") center;
+            background-size: cover;
+            border-radius: 100%;
+            transition-duration: 0.2s;
+        }
+
+        /*Transitions*/
+        #hero-section-right-side>.socials>.github:hover,
+        footer>.socials>.github:hover,
+        footer>.socials>.linkedin:hover,
+        footer>.socials>.medium:hover,
+        footer>.socials>.stack:hover,
+        footer>.socials>.instagram:hover {
+            border: 3px solid #E0E0E0;
+        }
+
     </style>
 
 </head>
@@ -106,30 +180,26 @@
         </header>
 
         <!--Hero Section-->
-        <section>
+        <section id="hero-section">
+
             <!--Left Side-->
-            <div>
-                <!--need to download other sizes-->
-                <picture>
-                    <img src="../assets/images/Cross-platform%20software-pana.png" title="Cross Platform software"
-                         alt="Cross Platform software" width="756" height="771">
-                </picture>
-            </div>
+            <div id="hero-section-left-side"></div>
 
             <!--Right Side-->
-            <div>
+            <div id="hero-section-right-side">
                 <p>
                     When it’s comes to developing my target is to made <br>
                     use full applications as well as reduce code <br> complexity as possible and following the standards
-                    <br> to make the application run smoothly. <br> make sure to follow me on GitHub where you can <br>
+                    <br> to make the application run smoothly. <br> make sure to follow me on <span>GitHub</span> where you can <br>
                     find all the projects of mine.You can find all <br>
                     the tools i’m currently using to develop softwares down below...
                 </p>
+
+                <div class="socials">
+                    <a href="https://github.com/DasunNirmal" target="_blank" class="github"></a>
+                </div>
             </div>
 
-            <div>
-                <img src="../assets/images/gihub.jpeg" title="GitHub" alt="gitHubLogo" width="104" height="104">
-            </div>
 
         </section>
 
