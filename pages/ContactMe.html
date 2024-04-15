@@ -286,6 +286,161 @@
             margin: auto;
         }
 
+        footer {
+            position: relative;
+            height: 360px;
+            top: 210px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: #E0E0E0;
+        }
+
+        #footer-Ellipse {
+            clip-path: ellipse(96% 20% at 93% 100%);
+            background-color: rgba(25, 42, 86, 0.87);
+            width: 100%;
+            height: 1850px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        #logo-footer {
+            position: absolute;
+            top: 0;
+            right: 80px;
+            margin: auto;
+        }
+
+        footer>#contact {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            top: 100px;
+            right: 75px;
+            margin: auto;
+        }
+
+        #contact>div {
+            font-size: 22px;
+        }
+
+        #contact>div>span {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        #contact>div:first-child {
+            position: absolute;
+            top: 10px;
+        }
+
+        #contact>div:nth-child(2) {
+            position: absolute;
+            top: 125px;
+        }
+
+        #line-vertical {
+            height: 225px;
+            border-left: 3px solid #E0E0E0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 350px;
+            margin: auto;
+        }
+
+        #copy-rights {
+            height: 30px;
+            width: 381px;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #footer-content {
+            width: 320px;
+            height: 220px;
+            font-size: 22px;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        footer>.socials {
+            height: 100px;
+            width: 470px;
+            position: absolute;
+            top: 120px;
+            right: 0;
+            left: 30px;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer>.socials>.github {
+            height: 55px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/gihub.jpeg") center;
+            margin-right: 15px;
+            background-size: cover;
+            border-radius: 100%;
+            transition-duration: 0.2s;
+        }
+
+        footer>.socials>.linkedin {
+            height: 55px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/Linkedin-logo-on-transparent-Background-PNG- (1).png") center;
+            background-size: 65px 65px;
+            margin-right: 15px;
+            border-radius: 100%;
+            transition-duration: 0.2s;
+        }
+
+        footer>.socials>.medium {
+            height: 55px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/Mediumlogo.jpeg") center no-repeat;
+            background-size: 75px 75px;
+            margin-right: 15px;
+            border-radius: 100%;
+            transition-duration: 0.2s;
+        }
+
+        footer>.socials>.stack {
+            height: 55px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/StackoverflowLogo.jpeg") center no-repeat;
+            background-size: cover;
+            margin-right: 15px;
+            border-radius: 100%;
+            transition-duration: 0.2s;
+        }
+
+        footer>.socials>.instagram {
+            height: 56px;
+            aspect-ratio: 1/1;
+            background: url("../assets/images/insta-removebg-preview.png") no-repeat -8px -8px;
+            background-size: 74px 74px;
+            margin-right: 15px;
+            border-radius: 50%;
+            transition-duration: 0.2s;
+        }
+
         /*Transitions*/
         #hero-section-right-side>.socials>.github:hover,
         footer>.socials>.github:hover,
@@ -394,40 +549,43 @@
 
         <!--Page Footer-->
         <footer>
-          <!--Right Side-->
-          <div>
-            <img src="../assets/images/DCODE.png" title="Logo" alt="Logo" width="215" height="70">
-            <div>Call me : <br> 0715744202</div>
-            <div>WhatsApp : <br> +94715744202</div>
-          </div>
+            <!--Footer Ellipse-->
+            <div id="footer-Ellipse"></div>
 
-          <!--Left Side-->
-          <div>
-            <p>
-              You can always find me here <br> and don’t forget to follow... <br> see you again....
-            </p>
-          </div>
+            <!--Right Side-->
+            <div id="logo-footer">
+                <img src="../assets/images/DCODE.png" title="Logo" alt="Logo" width="215" height="70">
+            </div>
 
-          <!--Footer Icons-->
-          <div>
-            <img src="../assets/images/gihub.jpeg" title="github" alt="github logo" width="71"
-                 height="68"
-            >
-            <img src="../assets/images/Linkedin-logo-on-transparent-Background-PNG-%20(1).png" title="linkedin" alt="linkedin logo" width="68"
-                 height="68"
-            >
-            <img src="../assets/images/Mediumlogo.jpeg" title="medium" alt="medium logo" width="67"
-                 height="68"
-            >
-            <img src="../assets/images/StackoverflowLogo.jpeg" title="stackoverflow" alt="stackoverflow logo" width="69"
-                 height="68"
-            >
-            <img src="../assets/images/insta-removebg-preview.png" title="instagram" alt="instagram logo" width="76"
-                 height="73"
-            >
-          </div>
+            <div id="line-vertical"></div>
 
-          <div>© 2023 Dasun Nirmal. All rights reserved</div>
+            <div id="contact">
+                <div>Call me : <br> <span>0715744202</span></div>
+                <div>WhatsApp : <br> <span>+94715744202</span></div>
+            </div>
+
+            <!--Left Side-->
+            <div id="footer-content">
+                <p>
+                    You can always find me here <br> and don’t forget to follow... <br> see you again....
+                </p>
+            </div>
+
+            <!--Footer Icons-->
+            <div class="socials">
+                <a href="https://github.com/DasunNirmal" target="_blank" class="github"></a>
+
+                <a href="https://www.linkedin.com/in/dasun-nirmal-877b15278/" target="_blank" class="linkedin"></a>
+
+                <a href="https://medium.com/@dasun200301" target="_blank" class="medium"></a>
+
+                <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" target="_blank" class="stack"></a>
+
+                <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" target="_blank" class="instagram"></a>
+
+            </div>
+
+            <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
 
     </body>
