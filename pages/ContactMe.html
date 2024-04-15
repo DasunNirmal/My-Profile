@@ -95,7 +95,6 @@
             left: 0;
             right: 0;
             margin: auto;
-            border: 2px solid #eab520;
         }
 
         #hero-section-left-side {
@@ -206,6 +205,63 @@
             transition-duration: 0.2s;
         }
 
+        #contact-details-section {
+            position: relative;
+            height: 560px;
+            width: 88%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid #eab520;
+        }
+
+        #contact-details-left-side {
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 2px solid #eab520;
+
+        }
+
+        #contact-details-middle {
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #contact-details-middle>p {
+            width: 300px;
+            height: 90px;
+            margin-top: 41px;
+            color: #192A56;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #contact-details-right-side {
+            width: 530px;
+            height: 470px;
+            position: absolute;
+            background: url("../assets/gif/Social media.gif") center no-repeat;
+            background-size: cover;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
         /*Transitions*/
         #hero-section-right-side>.socials>.github:hover,
         footer>.socials>.github:hover,
@@ -271,10 +327,10 @@
         </section>
 
         <!--Contact Details-->
-        <section>
+        <section id="contact-details-section">
 
           <!--Left Side-->
-          <form>
+          <form id="contact-details-left-side">
             <h2>Send a Email</h2>
 
             <input type="text" placeholder="Your Name"> <br> <br>
@@ -284,7 +340,7 @@
           </form>
 
           <!--Middle-->
-          <div>
+          <div id="contact-details-middle">
 
             <p>
               My Email <br>
@@ -304,9 +360,7 @@
           </div>
 
           <!--Right Side-->
-          <div>
-            <img src="../assets/gif/Social%20media.gif" title="git" alt="git" width="500" height="500">
-          </div>
+          <div id="contact-details-right-side"></div>
         </section>
 
         <!--Page Footer-->
