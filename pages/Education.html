@@ -206,13 +206,18 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
-        .grid>div{
+        #courses-and-certificates-cards>div{
             width: 350px;
-            height: 180px;
+            height: 210px;
             margin: 10px;
+            position: relative;
+            background: url("../assets/gif/Certification.gif") center no-repeat;
             border-radius: 20px 20px 20px 20px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
             border: 3px solid #192A56;
             align-content: center;
+            overflow: hidden;
+            transition: 1s ease-in-out;
         }
 
         #assignments {
@@ -240,12 +245,18 @@
         }
 
         #assignments-cards>div {
-            width: 200px;
+            width: 195px;
             height: 230px;
             margin: 10px;
-            border-radius: 20px 20px 20px 20px;
+            position: relative;
+            background: url("../assets/images/pdf-removebg-preview.png") center no-repeat;
+            background-size: 225px 210px;
+            border-radius: 20px 90px 30px 30px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
             border: 3px solid #192A56;
             align-content: center;
+            overflow: hidden;
+            transition: 1s ease-in-out;
         }
 
         footer {
@@ -411,6 +422,85 @@
         footer>.socials>.stack:hover,
         footer>.socials>.instagram:hover {
             border: 3px solid #E0E0E0;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            border-radius: 10px 10px 0 0;
+            background: rgba(25, 42, 86, 0.41);
+            backdrop-filter: blur(7px);
+            color: #ffffff;
+            text-align: center;
+            transition: 1s ease-in-out;
+        }
+
+        .card-title {
+            margin: 10px;
+            position: relative;
+            top: 14px;
+        }
+
+        .card-sub {
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        #courses-and-certificates-cards>div:hover .card-content {
+            bottom: 0;
+        }
+
+        #courses-and-certificates-cards>div:hover {
+            border: 4px solid #eab520;
+        }
+
+        .assignment-card-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            left: -100%;
+            right: 0;
+            border-radius: 10px 10px 0 0;
+            background: rgba(25, 42, 86, 0.41);
+            backdrop-filter: blur(7px);
+            color: #ffffff;
+            text-align: center;
+            transition: 1s ease-in-out;
+        }
+
+        .assignment-card-title {
+            margin: 10px;
+            position: relative;
+            top: 14px;
+        }
+
+        .assignment-card-sub {
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        #assignments-cards>div:hover .assignment-card-content {
+            left: 0;
+        }
+
+        #assignments-cards>div:hover {
+            width: 215px;
+            height: 240px;
+            border: 4px solid #eab520;
+            background-size: 150px 150px;
         }
 
         :root {
@@ -588,28 +678,41 @@
             <h1>Courses and Certificates</h1>
 
             <div class="grid" id="courses-and-certificates-cards">
-                <div id="CC-1">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title">Course One</h1>
+                        <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                    </div>
                 </div>
 
-                <div id="CC-2">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title"></h1>
+                        <p class="card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="CC-3">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title"></h1>
+                    </div>
                 </div>
 
-                <div id="CC-4">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title"></h1>
+                    </div>
                 </div>
 
-                <div id="CC-5">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title"></h1></div>
                 </div>
 
-                <div id="CC-6">
-                    <!--<img src="../assets/gif/Certification.gif" title="certificate" alt="certificate" width="298.3" height="240">-->
+                <div>
+                    <div class="card-content">
+                        <h1 class="card-title"></h1>
+                    </div>
                 </div>
             </div>
         </section>
@@ -623,40 +726,68 @@
             <h1>Assignments</h1>
 
             <div class="grid" id="assignments-cards">
-                <div id="A-1">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-2">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-3">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-4">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-5">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-6">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-7">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-8">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
 
-                <div id="A-9">
-                    <img src="../assets/images/pdf-removebg-preview.png" title="pdf" alt="pdf" width="200" height="200">
+                <div class="assignment-card">
+                    <div class="assignment-card-content">
+                        <h1 class="assignment-card-title"></h1>
+                        <p class="assignment-card-sub"></p>
+                    </div>
                 </div>
             </div>
 
