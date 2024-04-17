@@ -220,6 +220,46 @@
             transition: 1s ease-in-out;
         }
 
+        .cc-label {
+            display: inline-block;
+            width: 350px;
+            height: 210px;
+        }
+
+        .cc-label>input {
+            display: none;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            border-radius: 10px 10px 0 0;
+            background: rgba(25, 42, 86, 0.41);
+            backdrop-filter: blur(7px);
+            color: #ffffff;
+            text-align: center;
+            transition: .8s ease-in-out;
+        }
+
+        .card-title {
+            margin: 10px;
+            position: relative;
+            top: 14px;
+        }
+
+        .card-sub {
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
         #assignments {
             position: relative;
             height: 1180px;
@@ -257,6 +297,69 @@
             align-content: center;
             overflow: hidden;
             transition: 1s ease-in-out;
+        }
+
+        .as-label {
+            display: inline-block;
+            width: 195px;
+            height: 230px;
+        }
+
+        .as-label>input {
+            display: none;
+        }
+
+        .assignment-card-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            left: -100%;
+            right: 0;
+            border-radius: 10px 10px 0 0;
+            background: rgba(25, 42, 86, 0.41);
+            backdrop-filter: blur(7px);
+            color: #ffffff;
+            text-align: center;
+            transition: .8s ease-in-out;
+        }
+
+        .assignment-card-title {
+            margin: 10px;
+            position: relative;
+            font-size: 18px;
+            top: 0;
+        }
+
+        .assignment-card-sub {
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .assignment-btn {
+            width: 50%;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            margin: auto;
+
+            border: 3px solid #E0E0E0;
+            background-color: #E0E0E0;
+            border-radius: 5px 5px 5px 5px;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+
+        .see-more-btn {
+            color: #192A56;
+            font-size: 18px;
+            text-decoration: none;
         }
 
         footer {
@@ -424,35 +527,26 @@
             border: 3px solid #E0E0E0;
         }
 
-        .card-content {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            bottom: -100%;
-            left: 0;
-            right: 0;
-            border-radius: 10px 10px 0 0;
-            background: rgba(25, 42, 86, 0.41);
-            backdrop-filter: blur(7px);
-            color: #ffffff;
-            text-align: center;
-            transition: 1s ease-in-out;
+        #courses-and-certificates-cards>div:hover {
+            border: 4px solid #eab520;
         }
 
-        .card-title {
-            margin: 10px;
-            position: relative;
-            top: 14px;
+        #assignments-cards>div:hover {
+            width: 215px;
+            height: 240px;
+            border: 4px solid #eab520;
+            background-size: 150px 150px;
         }
 
-        .card-sub {
-            padding: 5px;
-            font-size: 16px;
-            font-weight: 600;
+        .assignment-btn:hover {
+            cursor: pointer;
+            border: 3px solid #eab520;
+            border-radius: 5px 15px 5px 15px;
+            color: #192A56;
+            font-weight: bold;
+            text-decoration: none;
         }
+
 
         #courses-and-certificates-cards>div:hover .card-content {
             bottom: 0;
@@ -462,45 +556,8 @@
             border: 4px solid #eab520;
         }
 
-        .assignment-card-content {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            top: 0;
-            left: -100%;
-            right: 0;
-            border-radius: 10px 10px 0 0;
-            background: rgba(25, 42, 86, 0.41);
-            backdrop-filter: blur(7px);
-            color: #ffffff;
-            text-align: center;
-            transition: 1s ease-in-out;
-        }
-
-        .assignment-card-title {
-            margin: 10px;
-            position: relative;
-            top: 14px;
-        }
-
-        .assignment-card-sub {
-            padding: 5px;
-            font-size: 16px;
-            font-weight: 600;
-        }
-
         #assignments-cards>div:hover .assignment-card-content {
             left: 0;
-        }
-
-        #assignments-cards>div:hover {
-            width: 215px;
-            height: 240px;
-            border: 4px solid #eab520;
-            background-size: 150px 150px;
         }
 
         :root {
@@ -621,6 +678,23 @@
             }
         }
 
+        .assignment-btn:hover {
+            cursor: pointer;
+            border: 3px solid #eab520;
+            border-radius: 5px 15px 5px 15px;
+            color: #192A56;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        input:checked + .assignment-card-content {
+            left: 0;
+        }
+
+        input:checked + .card-content {
+            bottom: 0;
+        }
+
     </style>
 
 </head>
@@ -679,40 +753,63 @@
 
             <div class="grid" id="courses-and-certificates-cards">
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title">Course One</h1>
-                        <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
-                    </div>
+                    <label for="cc-card-01" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-01">
+                        <div class="card-content">
+                            <h1 class="card-title">Course One</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
 
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title"></h1>
-                        <p class="card-sub"></p>
-                    </div>
+                    <label for="cc-card-02" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-02">
+                        <div class="card-content">
+                            <h1 class="card-title">Course Two</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
 
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title"></h1>
-                    </div>
+                    <label for="cc-card-03" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-03">
+                        <div class="card-content">
+                            <h1 class="card-title">Course Three</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
 
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title"></h1>
-                    </div>
+                    <label for="cc-card-04" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-04">
+                        <div class="card-content">
+                            <h1 class="card-title">Course Four</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
 
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title"></h1></div>
+                    <label for="cc-card-05" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-05">
+                        <div class="card-content">
+                            <h1 class="card-title">Course Five</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
 
                 <div>
-                    <div class="card-content">
-                        <h1 class="card-title"></h1>
-                    </div>
+                    <label for="cc-card-06" class="cc-label">
+                        <input type="checkbox" name="slide" id="cc-card-06">
+                        <div class="card-content">
+                            <h1 class="card-title">Course Six</h1>
+                            <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
+                        </div>
+                    </label>
                 </div>
             </div>
         </section>
@@ -728,66 +825,121 @@
             <div class="grid" id="assignments-cards">
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-01" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-01">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 01</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
+                </div>
+
+
+                <div class="assignment-card">
+                    <label for="a-card-02" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-02">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 02</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-03" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-03">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 04</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-04" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-04">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 04</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-05" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-05">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 05</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-06" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-06">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 06</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-07" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-07">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 07</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-08" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-08">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 08</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
-                </div>
-
-                <div class="assignment-card">
-                    <div class="assignment-card-content">
-                        <h1 class="assignment-card-title"></h1>
-                        <p class="assignment-card-sub"></p>
-                    </div>
+                    <label for="a-card-09" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-09">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 09</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
             </div>
 
