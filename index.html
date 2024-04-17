@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/normalize/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 
@@ -112,7 +114,7 @@
             height: 100px;
             width: 470px;
             position: absolute;
-            bottom: 15px;
+            bottom: 35px;
             left: -10px;
             display: flex;
             align-items: center;
@@ -189,6 +191,28 @@
             font-weight: 400;
             font-style: normal;
             color: #E1B12C;
+        }
+
+        #introduction>h2>div>span {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: #E1B12C;
+        }
+
+        .words {
+            width: 380px;
+            height: 40px;
+            top: 190px;
+            position: absolute;
+            left: 190px;
+            overflow: hidden;
+        }
+
+
+        #introduction>h2>div>span {
+            display: block;
+            animation: spin_words 6s infinite;
         }
 
         #introduction>h3 {
@@ -690,6 +714,33 @@
             width: 0;
         }
 
+        @keyframes spin_words {
+            10% {
+                transform: translateY(-112%);
+            }
+            25% {
+                transform: translateY(-100%);
+            }
+            35% {
+                transform: translateY(-212%);
+            }
+            50% {
+                transform: translateY(-200%);
+            }
+            60% {
+                transform: translateY(-312%);
+            }
+            75% {
+                transform: translateY(-300%);
+            }
+            85% {
+                transform: translateY(-412%);
+            }
+            100% {
+                transform: translateY(-400%);
+            }
+        }
+
         @media all and (max-width: 764px) {
 
             .hamburger-menu {
@@ -700,7 +751,7 @@
                 width: 100%;
                 height: 0;
                 background: rgba(25, 42, 86, 0.29);
-                backdrop-filter: blur(50px);
+                backdrop-filter: blur(80px);
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -765,7 +816,13 @@
                 <div id="introduction">
                     <h2>Hi there !</h2>
                     <h2>I'm <span id="name">Dasun Nirmal</span></h2>
-                    <h2>And i'm a <span>Web Developer</span></h2>
+                    <h2>And i'm a <div class="words">
+                        <span>Student</span>
+                        <span>Web Developer</span>
+                        <span>Front End Developer</span>
+                        <span>Back End Developer</span>
+                        <span>Student</span>
+                    </div></h2>
                     <h3>A passionate software engineering student <br> from Sri Lanka</h3>
                 </div>
 
