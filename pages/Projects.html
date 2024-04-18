@@ -174,7 +174,7 @@
 
         #projects-section {
             position: relative;
-            height: 930px;
+            height: 1150px;
             width: 88%;
             top: 70px;
             bottom: 0;
@@ -211,12 +211,107 @@
         }
 
         .grid>div{
-            width: 350px;
-            height: 180px;
+            width: 410px;
+            height: 310px;
             margin: 10px;
+            position: relative;
             border-radius: 20px 20px 20px 20px;
-            border: 3px solid #192A56;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            border: 3px solid #001b68;
             align-content: center;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            bottom: -100%;
+            right: 0;
+            border-radius: 10px 10px 10px 10px;
+            background: rgba(25, 42, 86, 0.41);
+            backdrop-filter: blur(7px);
+            color: #ffffff;
+            text-align: center;
+            transition: .8s ease-in-out;
+        }
+
+        .card-title {
+            margin: 10px;
+            position: relative;
+            font-size: 18px;
+            top: 0;
+        }
+
+        .card-sub {
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .projects-card-btn {
+            width: 50%;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            margin: auto;
+
+            border: 3px solid #E0E0E0;
+            background-color: #E0E0E0;
+            border-radius: 5px 5px 5px 5px;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+
+        .see-more-btn {
+            color: #192A56;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .p-label {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .p-label>input {
+            display: none;
+        }
+
+        #P-1 {
+            background: url("../assets/images/stock-management-terminal.png") no-repeat;
+        }
+
+        #P-2 {
+            background: url("../assets/images/Connect-04.png") no-repeat;
+            background-size: 415px 330px;
+        }
+
+        #P-3 {
+            background: url("../assets/images/PastryPal-MVC.png") no-repeat;
+            background-size: 415px 310px;
+        }
+
+        #P-4 {
+            background: url("../assets/images/PastryPal-Lay.png") no-repeat;
+            background-size: 415px 310px;
+        }
+
+        #P-5 {
+            background: url("../assets/images/Echo-Hub.png") no-repeat;
+            background-size: 415px 310px;
+        }
+
+        #P-6 {
+            background: url("../assets/images/BookWorm.png") no-repeat;
+            background-size: 410px 310px;
         }
 
         #github-button {
@@ -225,7 +320,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 100px;
+            bottom: 0;
             margin: auto;
 
             border: 0 solid #E0E0E0;
@@ -246,7 +341,7 @@
             position: relative;
             height: 540px;
             width: 88%;
-            top: 70px;
+            top: 190px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -305,7 +400,7 @@
         footer {
             position: relative;
             height: 360px;
-            top: 210px;
+            top: 280px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -595,6 +690,27 @@
             width: 0;
         }
 
+        .grid>div:hover .card-content {
+            bottom: 0;
+        }
+
+        .grid>div:hover {
+            border: 3px solid #eab520;
+        }
+
+        .projects-card-btn:hover {
+            cursor: pointer;
+            border: 3px solid #eab520;
+            border-radius: 5px 15px 5px 15px;
+            color: #192A56;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        input:checked + .card-content {
+            bottom: 0;
+        }
+
         @media all and (max-width: 764px) {
 
             .hamburger-menu {
@@ -694,27 +810,81 @@
 
             <div class="grid">
                 <div id="P-1">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-01" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-01">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div id="P-2">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-02" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-02">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div id="P-3">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-03" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-03">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div id="P-4">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-04" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-04">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div id="P-5">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-05" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-05">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
 
                 <div id="P-6">
-                    <!--<img src="../assets/gif/Cross-platform%20software.gif" title="gif" alt="gif" width="350" height="275">-->
+                    <label for="p-card-06" class="p-label">
+                        <input type="checkbox" name="slide" id="p-card-06">
+                        <div class="card-content">
+                            <h1 class="card-title">CSS Assignment 01</h1>
+                            <p class="card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="projects-card-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
                 </div>
             </div>
 
