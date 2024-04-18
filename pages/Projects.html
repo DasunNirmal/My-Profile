@@ -287,6 +287,7 @@
 
         #P-1 {
             background: url("../assets/images/stock-management-terminal.png") no-repeat;
+            background-size: 1580px 900px;
         }
 
         #P-2 {
@@ -553,67 +554,6 @@
         }
 
         /*Transitions*/
-        #hero-section-right-side>.socials>.github:hover,
-        footer>.socials>.github:hover,
-        footer>.socials>.linkedin:hover,
-        footer>.socials>.medium:hover,
-        footer>.socials>.stack:hover,
-        footer>.socials>.instagram:hover {
-            border: 3px solid #E0E0E0;
-        }
-
-        #github-button:hover {
-            cursor: pointer;
-            background-color: rgba(242, 193, 118, 0.45);
-            border-top: 3px solid #eab520;
-            border-bottom: 4px solid #eab520;
-            border-radius: 5px 5px 5px 5px;
-
-            color: #192A56;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        #tools>img:first-child:hover {
-            width: 85px;
-            height:130px;
-        }
-
-        #tools>img:nth-child(2):hover {
-            width: 86px;
-            height:86px;
-        }
-
-        #tools>img:nth-child(3):hover {
-            width: 85px;
-            height: 85px;
-        }
-
-        #tools>img:nth-child(4):hover {
-            width: 85px;
-            height: 85px;
-        }
-
-        #tools>img:nth-child(5):hover {
-            width: 155px;
-            height: 95px;
-        }
-
-        #tools>img:nth-child(6):hover {
-            width: 65px;
-            height: 85px;
-        }
-
-        #tools>img:nth-child(7):hover {
-            width: 135px;
-            height: 85px;
-        }
-
-        #tools>img:nth-child(8):hover {
-            width: 180px;
-            height: 105px;
-        }
-
         :root {
             --bar-width: 50px;
             --bar-height: 6px;
@@ -690,25 +630,117 @@
             width: 0;
         }
 
-        .grid>div:hover .card-content {
-            bottom: 0;
+
+        @media (hover: hover) {
+
+            #hero-section-right-side>.socials>.github:hover,
+            footer>.socials>.github:hover,
+            footer>.socials>.linkedin:hover,
+            footer>.socials>.medium:hover,
+            footer>.socials>.stack:hover,
+            footer>.socials>.instagram:hover {
+                border: 3px solid #E0E0E0;
+            }
+
+            #github-button:hover {
+                cursor: pointer;
+                background-color: rgba(242, 193, 118, 0.45);
+                border-top: 3px solid #eab520;
+                border-bottom: 4px solid #eab520;
+                border-radius: 5px 5px 5px 5px;
+
+                color: #192A56;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            #tools>img:first-child:hover {
+                width: 85px;
+                height:130px;
+            }
+
+            #tools>img:nth-child(2):hover {
+                width: 86px;
+                height:86px;
+            }
+
+            #tools>img:nth-child(3):hover {
+                width: 85px;
+                height: 85px;
+            }
+
+            #tools>img:nth-child(4):hover {
+                width: 85px;
+                height: 85px;
+            }
+
+            #tools>img:nth-child(5):hover {
+                width: 155px;
+                height: 95px;
+            }
+
+            #tools>img:nth-child(6):hover {
+                width: 65px;
+                height: 85px;
+            }
+
+            #tools>img:nth-child(7):hover {
+                width: 135px;
+                height: 85px;
+            }
+
+            #tools>img:nth-child(8):hover {
+                width: 180px;
+                height: 105px;
+            }
+
+            .grid>div:hover .card-content {
+                bottom: 0;
+            }
+
+            .grid>div:hover {
+                border: 3px solid #eab520;
+            }
+
+            .projects-card-btn:hover {
+                cursor: pointer;
+                border: 3px solid #eab520;
+                border-radius: 5px 15px 5px 15px;
+                color: #192A56;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            #P-1:hover {
+                background-size: 1980px 1200px;
+            }
+
+            #P-2:hover {
+                background-size: 450px 380px;
+            }
+
+            #P-3:hover {
+                background-size: 450px 380px;
+            }
+
+            #P-4:hover {
+                background-size: 450px 380px;
+            }
+
+            #P-5:hover {
+                background-size: 450px 380px;
+            }
+
+            #P-6:hover {
+                background-size: 450px 380px;
+            }
+
         }
 
-        .grid>div:hover {
-            border: 3px solid #eab520;
-        }
-
-        .projects-card-btn:hover {
-            cursor: pointer;
-            border: 3px solid #eab520;
-            border-radius: 5px 15px 5px 15px;
-            color: #192A56;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        input:checked + .card-content {
-            bottom: 0;
+        @media (hover: none) {
+            input:checked + .card-content {
+                bottom: 0;
+            }
         }
 
         @media all and (max-width: 764px) {
