@@ -1657,6 +1657,441 @@
             }
         }
 
+        @media all and (max-width: 425px) {
+
+            .hamburger-menu {
+                display: flex;
+            }
+
+            header>nav {
+                width: 100%;
+                height: 0;
+                background: rgba(25, 42, 86, 0.29);
+                backdrop-filter: blur(80px);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                transition: .3s ease;
+            }
+
+            header>nav>a {
+                margin: 1rem 0;
+                text-align: center;
+                transform: translateY(-50px);
+                transition: .3s ease;
+                opacity: 0;
+            }
+
+            .hamburger-menu:has(input:checked) + .navbar {
+                height: 18.7rem;
+            }
+
+            .hamburger-menu:has(input:checked) + .navbar>a {
+                transform: translateY(0);
+                transition-delay: calc(56ms * var(--i));
+                opacity: 1;
+            }
+
+            #ellipse {
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 1050px;
+                clip-path: ellipse(98% 48% at 9% 0%);
+            }
+
+            #hero-section {
+                position: relative;
+                height: 500px;
+                width: 96%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #hero-section>#left-side>.socials {
+                bottom: 105px;
+                left: -60px;
+            }
+
+            #hero-section>#left-side>.socials>.github {
+                height: 55px;
+            }
+
+            #hero-section>#left-side>.socials>.linkedin {
+                height: 55px;
+                background-size: 70px 70px;
+            }
+
+            #hero-section>#left-side>.socials>.medium {
+                height: 55px;
+            }
+
+            #hero-section>#left-side>.socials>.stack {
+                height: 55px;
+            }
+
+            #hero-section>#left-side>.socials>.instagram {
+                height: 54px;
+                background-position: -7px -10px;
+                background-size: 71px 74px;
+            }
+
+            #hero-section>#left-side {
+                color: #E0E0E0;
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+            #introduction>h2>#name {
+                font-weight: 400;
+                font-size: 29px;
+            }
+
+            #introduction {
+                height: 330px;
+                width: 350px;
+                left: 7px;
+            }
+
+            .words {
+                width: 380px;
+                height: 24px;
+                top: 110px;
+                position: absolute;
+                left: 106px;
+                overflow: hidden;
+            }
+
+            #hero-section>#right-side {
+                width: 349px;
+                height: 374px;
+                background-size: 359px 374px;
+            }
+
+            #AboutMe {
+                position: relative;
+                height: 500px;
+                width: 98%;
+                top: 100px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .line-left {
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+
+            .line-right {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+
+            #AboutMe>h1 {
+                width: 148px;
+                height: 36px;
+                font-size: 31px;
+            }
+
+            #aboutMe-right-side {
+                height: 240px;
+                width: 411px;
+                position: absolute;
+                font-weight: bold;
+                color: #192A56;
+                font-size: 15px;
+                text-align: center;
+                top: 30px;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #aboutMe-left-side {
+                width: 326px;
+                height: 290px;
+            }
+
+            #backend-development {
+                position: relative;
+                height: 450px;
+                width: 96%;
+                top: 60px;
+            }
+
+            #backend-development>h1 {
+                width: 336px;
+                height: 40px;
+                color: #192A56;
+                font-weight: bold;
+                font-size: 31px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: auto;
+            }
+
+            #line-long_01>hr {
+                height: 3px;
+                width: 46dvw;
+                border: 0;
+                background: #192A56;
+                position: absolute;
+                right: 0;
+                top: 8px;
+            }
+
+            #backend-development-right-side {
+                width: 282px;
+                height: 345px;
+                margin-top: 50px;
+                margin-bottom: 80px;
+            }
+
+            #backend-development-left-side {
+                height: 130px;
+                width: 440px;
+                bottom: 120px;
+                font-size: 15px;
+            }
+
+            #tools {
+                height: 80px;
+                width: 350px;
+                position: absolute;
+                bottom: 110px;
+                display: flex;
+                align-items: center;
+                left: 10dvw;
+                margin: auto;
+            }
+
+            #tools>img {
+                margin-right: 55px;
+            }
+
+            #tools>img:first-child {
+                width: 50px;
+                height: 75px;
+            }
+
+            #tools>img:nth-child(2) {
+                width: 55px;
+                height: 55px;
+            }
+
+            #tools>img:nth-child(3) {
+                width: 55px;
+                height: 55px;
+            }
+
+            #tools-frontend>img {
+                margin-right: 10px;
+                transition-duration: .5s;
+            }
+
+            /*tools backend hover*/
+            #tools>img:first-child:hover {
+                width: 65px;
+                height: 100px;
+            }
+
+            #tools>img:nth-child(2):hover {
+                width: 75px;
+                height: 75px;
+            }
+
+            #tools>img:nth-child(3):hover {
+                width: 70px;
+                height: 70px;
+            }
+
+            #frontend-development {
+                height: 450px;
+                width: 96%;
+                top: 100px;
+            }
+
+            #line-long_02>hr {
+                top: 10px;
+            }
+
+            #frontend-development>h1 {
+                width: 350px;
+                height: 40px;
+                font-size: 31px;
+            }
+
+            #frontend-development-right-side {
+                height: 130px;
+                width: 411px;
+                position: absolute;
+                font-weight: bold;
+                color: #192A56;
+                font-size: 15px;
+                text-align: center;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #frontend-development-left-side {
+                width: 320px;
+                height: 355px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+
+            #tools-frontend {
+                height: 110px;
+                width: 362px;
+                bottom: 70px;
+                right: 1dvw;
+                overflow: hidden;
+            }
+
+            #tools-frontend>img:first-child {
+                width: 60px;
+                height: 60px;
+            }
+
+            #tools-frontend>img:nth-child(2){
+                width: 120px;
+                height: 63px;
+            }
+
+            #tools-frontend>img:nth-child(3){
+                width: 120px;
+                height: 63px;
+            }
+
+            #tools-frontend>img:nth-child(4){
+                width: 130px;
+                height: 83px;
+            }
+
+            /*tools frontend hover*/
+            #tools-frontend>img:first-child:hover {
+                width: 75px;
+                height: 75px;
+            }
+
+            #tools-frontend>img:nth-child(2):hover {
+                width: 135px;
+                height: 80px;
+            }
+
+            #tools-frontend>img:nth-child(3):hover {
+                width: 55px;
+                height: 75px;
+            }
+
+            #tools-frontend>img:nth-child(4):hover {
+                width: 150px;
+                height: 95px;
+            }
+
+            footer {
+                height: 360px;
+                top: 100px;
+            }
+
+            #footer-Ellipse {
+                clip-path: ellipse(96% 21% at 90% 100%);
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 1850px;
+            }
+
+            #logo-footer {
+                right: 40px;
+            }
+
+            #logo-footer>img {
+                width: 200px;
+                height: 60px;
+            }
+
+            #line-vertical {
+                height: 235px;
+                right: 275px;
+                margin: auto;
+            }
+
+            footer>#contact {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                top: 100px;
+                right: 20px;
+                margin: auto;
+            }
+
+            #contact>div {
+                font-size: 20px;
+            }
+
+            #contact>div>span {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            #footer-content {
+                width: 450px;
+                height: 150px;
+                font-size: 15px;
+            }
+
+            footer>.socials {
+                height: 70px;
+                width: 350px;
+                right: 70px;
+            }
+
+            footer>.socials>.github {
+                height: 45px;
+            }
+
+            footer>.socials>.linkedin {
+                height: 45px;
+                background-size: 55px 55px;
+            }
+
+            footer>.socials>.medium {
+                height: 45px;
+                background-size: 65px 65px;
+            }
+
+            footer>.socials>.stack {
+                height: 45px;
+            }
+
+            footer>.socials>.instagram {
+                height: 47px;
+                background-size: 63px 63px;
+                background-position: -7px -8px;
+            }
+
+            #copy-rights {
+                height: 30px;
+                width: 286px;
+                font-size: 15px;
+            }
+        }
+
     </style>
 
 </head>
