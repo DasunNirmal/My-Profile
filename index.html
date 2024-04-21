@@ -1659,25 +1659,18 @@
 
         @media all and (max-width: 425px) {
 
+            :root {
+                --bar-width: 40px;
+                --bar-height: 4px;
+                --hamburger-gap: 6px;
+            }
+
             .hamburger-menu {
                 display: flex;
             }
 
             header>nav {
-                width: 100%;
-                height: 0;
-                background: rgba(25, 42, 86, 0.29);
-                backdrop-filter: blur(80px);
-                position: absolute;
-                top: 100%;
-                left: 0;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                overflow: hidden;
-                transition: .3s ease;
+                justify-content: space-between;
             }
 
             header>nav>a {
@@ -1689,7 +1682,7 @@
             }
 
             .hamburger-menu:has(input:checked) + .navbar {
-                height: 18.7rem;
+                height: 25.7rem;
             }
 
             .hamburger-menu:has(input:checked) + .navbar>a {
@@ -1701,11 +1694,18 @@
             #ellipse {
                 background-color: rgba(25, 42, 86, 0.87);
                 width: 100%;
-                height: 1050px;
-                clip-path: ellipse(98% 48% at 9% 0%);
+                height: 700px;
+                clip-path: circle(68.5% at 50% 0);
+            }
+
+            header>img {
+                left: 15px;
+                background: url("/assets/images/DCODE-mobile.png") no-repeat; !important;
+                display: none;
             }
 
             #hero-section {
+                display: none;
                 position: relative;
                 height: 500px;
                 width: 96%;
@@ -1771,12 +1771,11 @@
             }
 
             #hero-section>#right-side {
-                width: 349px;
-                height: 374px;
-                background-size: 359px 374px;
+                display: none;
             }
 
             #AboutMe {
+                display: none;
                 position: relative;
                 height: 500px;
                 width: 98%;
@@ -1825,6 +1824,7 @@
             }
 
             #backend-development {
+                display: none;
                 position: relative;
                 height: 450px;
                 width: 96%;
@@ -1919,6 +1919,7 @@
             }
 
             #frontend-development {
+                display: none;
                 height: 450px;
                 width: 96%;
                 top: 100px;
@@ -2005,6 +2006,7 @@
             }
 
             footer {
+                display: none;
                 height: 360px;
                 top: 100px;
             }
