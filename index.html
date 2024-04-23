@@ -44,7 +44,9 @@
             z-index: 1000;
         }
 
-        header>img {
+        header>#logo {
+            width: 170px;
+            height: 57px;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -70,6 +72,19 @@
             display: inline-block;
             text-align: center;
             transition: .3s ease-in-out;
+        }
+
+        header>#phone {
+            width: 40px;
+            height: 37px;
+            background: url("assets/images/phone-ringing.png") center no-repeat;
+            background-size: 36px 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 25px;
+            display: none;
+            margin: auto;
         }
 
         header>nav>a:first-child {
@@ -197,13 +212,6 @@
             color: #E1B12C;
         }
 
-        #introduction>h2>div>span {
-            font-family: "Permanent Marker", cursive;
-            font-weight: 400;
-            font-style: normal;
-            color: #E1B12C;
-        }
-
         .words {
             width: 380px;
             height: 40px;
@@ -213,7 +221,11 @@
             overflow: hidden;
         }
 
-        #introduction>h2>div>span {
+        #introduction>div>span {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-size: 34px;
+            color: #E1B12C;
             display: block;
             animation: spin_words 6s infinite;
         }
@@ -994,10 +1006,14 @@
             .words {
                 width: 380px;
                 height: 30px;
-                top: 135px;
+                top: 132px;
                 position: absolute;
                 left: 130px;
                 overflow: hidden;
+            }
+
+            #introduction>div>span {
+                font-size: 25px; !important;
             }
 
             #hero-section>#right-side {
@@ -1329,10 +1345,14 @@
             .words {
                 width: 380px;
                 height: 24px;
-                top: 110px;
+                top: 108px;
                 position: absolute;
                 left: 106px;
                 overflow: hidden;
+            }
+
+            #introduction>div>span {
+                font-size: 23px; !important;
             }
 
             #hero-section>#right-side {
@@ -1661,8 +1681,9 @@
 
             :root {
                 --bar-width: 40px;
-                --bar-height: 4px;
+                --bar-height: 3px;
                 --hamburger-gap: 6px;
+                --hamburger-margin: 23px;
             }
 
             .hamburger-menu {
@@ -1681,11 +1702,11 @@
                 opacity: 0;
             }
 
-            .hamburger-menu:has(input:checked) + .navbar {
+            .hamburger-menu:has(input:checked) + header>nav {
                 height: 25.7rem;
             }
 
-            .hamburger-menu:has(input:checked) + .navbar>a {
+            .hamburger-menu:has(input:checked) + header>nav>a {
                 transform: translateY(0);
                 transition-delay: calc(56ms * var(--i));
                 opacity: 1;
@@ -1694,20 +1715,32 @@
             #ellipse {
                 background-color: rgba(25, 42, 86, 0.87);
                 width: 100%;
-                height: 700px;
+                height: 560px;
                 clip-path: circle(68.5% at 50% 0);
             }
 
-            header>img {
-                left: 15px;
-                background: url("/assets/images/DCODE-mobile.png") no-repeat; !important;
-                display: none;
+            header {
+                height: 70px;
+            }
+
+            header>#logo {
+                width: 60px;
+                height: 57px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            header>#phone {
+                display: block;
             }
 
             #hero-section {
-                display: none;
                 position: relative;
-                height: 500px;
+                height: 270px;
                 width: 96%;
                 top: 0;
                 bottom: 0;
@@ -1719,6 +1752,7 @@
             #hero-section>#left-side>.socials {
                 bottom: 105px;
                 left: -60px;
+                display: none;
             }
 
             #hero-section>#left-side>.socials>.github {
@@ -1745,29 +1779,88 @@
             }
 
             #hero-section>#left-side {
+                width: 95dvw;
+                height: 45dvh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
                 color: #E0E0E0;
                 font-weight: 400;
                 font-size: 14px;
             }
 
+            #introduction>h2 {
+                width: 200px;
+            }
+
+            #introduction>h2:first-child {
+                width: 105px;
+                height: 22px;
+                position: absolute;
+                font-size: 23px;
+                top: 40px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #introduction>h2:nth-child(2) {
+                width: 216px;
+                height: 35px;
+                position: absolute;
+                font-size: 23px;
+                top: 72px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #introduction>h2:nth-child(3) {
+                display: none;
+            }
+
             #introduction>h2>#name {
                 font-weight: 400;
-                font-size: 29px;
+                font-size: 32px;
             }
 
             #introduction {
-                height: 330px;
+                height: 250px;
                 width: 350px;
-                left: 7px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
             }
 
             .words {
-                width: 380px;
-                height: 24px;
-                top: 110px;
+                width: 254px;
+                height: 27px;
                 position: absolute;
-                left: 106px;
+                top: 18px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                text-align: center;
                 overflow: hidden;
+            }
+
+            #introduction>div>span {
+                font-size: 25px; !important;
+            }
+
+            #introduction>h3 {
+                text-align: center;
+                position: absolute;
+                color: #E0E0E0;
+                top: 190px;
+                left: 0;
+                right: 0;
+                margin: auto;
             }
 
             #hero-section>#right-side {
@@ -2104,7 +2197,9 @@
 
         <!--Header-->
         <header>
-            <img src="assets/images/DCODE.png" title="logo" alt="logo" width="171.17" height="57">
+            <div id="logo">
+                <img src="assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
+            </div>
 
             <label class="hamburger-menu">
                 <input type="checkbox" />
@@ -2117,6 +2212,8 @@
                 <a href="pages/Projects.html#Projects" style="--i:3">Projects</a>
                 <a href="pages/ContactMe.html#ContactMe" style="--i:4">Contact Me</a>
             </nav>
+
+            <div id="phone"></div>
         </header>
 
         <!--Hero section-->
@@ -2127,13 +2224,14 @@
                 <div id="introduction">
                     <h2>Hi there !</h2>
                     <h2>I'm <span id="name">Dasun Nirmal</span></h2>
-                    <h2>And i'm a <div class="words">
+                    <h2>And i'm a</h2>
+                    <div class="words">
                         <span>Student</span>
                         <span>Web Developer</span>
                         <span>Front End Developer</span>
                         <span>Back End Developer</span>
                         <span>Student</span>
-                    </div></h2>
+                    </div>
                     <h3>A passionate software engineering student <br> from Sri Lanka</h3>
                 </div>
 
