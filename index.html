@@ -304,6 +304,10 @@
             margin: auto;
         }
 
+        #aboutMe-right-side>p:nth-child(2) {
+            display: none;
+        }
+
         #line-long_01>hr {
             height: 3px;
             width: 55dvw;
@@ -1740,7 +1744,7 @@
 
             #hero-section {
                 position: relative;
-                height: 270px;
+                height: 370px;
                 width: 96%;
                 top: 0;
                 bottom: 0;
@@ -1750,37 +1754,42 @@
             }
 
             #hero-section>#left-side>.socials {
-                bottom: 105px;
-                left: -60px;
-                display: none;
+                height: 60px;
+                width: 315px;
+                top: 270px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;;
             }
 
             #hero-section>#left-side>.socials>.github {
-                height: 55px;
+                height: 45px;
             }
 
             #hero-section>#left-side>.socials>.linkedin {
-                height: 55px;
-                background-size: 70px 70px;
+                height: 45px;
+                background-size: 60px 60px;
             }
 
             #hero-section>#left-side>.socials>.medium {
-                height: 55px;
+                height: 45px;
+                background-size: 65px 65px;
             }
 
             #hero-section>#left-side>.socials>.stack {
-                height: 55px;
+                height: 45px;
             }
 
             #hero-section>#left-side>.socials>.instagram {
-                height: 54px;
-                background-position: -7px -10px;
-                background-size: 71px 74px;
+                height: 45px;
+                background-position: -6px -5px;
+                background-size: 58px 56px;
             }
 
             #hero-section>#left-side {
                 width: 95dvw;
-                height: 45dvh;
+                height: 60dvh;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1832,7 +1841,7 @@
                 left: 0;
                 right: 0;
                 top: 0;
-                bottom: 0;
+                bottom: 90px;
                 margin: auto;
             }
 
@@ -1868,52 +1877,68 @@
             }
 
             #AboutMe {
-                display: none;
                 position: relative;
-                height: 500px;
+                height: 300px;
                 width: 98%;
-                top: 100px;
+                top: 50px;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 margin: auto;
+            }
+
+            .line-right,.line-left {
+                position: absolute;
+                top: 6px;
             }
 
             .line-left {
-                position: absolute;
-                left: 0;
-                top: 10px;
+                left: 2dvw;
+
             }
 
             .line-right {
-                position: absolute;
-                right: 0;
-                top: 10px;
+                right: 2dvw;
+            }
+
+            .line-left>hr, .line-right>hr {
+                height: 3px;
+                width: 25dvw;
             }
 
             #AboutMe>h1 {
-                width: 148px;
-                height: 36px;
-                font-size: 31px;
+                width: 112px;
+                height: 26px;
+                font-size: 24px;
             }
 
             #aboutMe-right-side {
-                height: 240px;
-                width: 411px;
+                height: 140px;
+                width: 200px;
                 position: absolute;
                 font-weight: bold;
                 color: #192A56;
-                font-size: 15px;
+                font-size: 12.6px;
                 text-align: center;
-                top: 30px;
+                top: 0;
                 bottom: 0;
                 right: 0;
                 margin: auto;
             }
 
+            #aboutMe-right-side>p:first-child {
+                display: none;
+            }
+
+            #aboutMe-right-side>p:nth-child(2) {
+                display: inline-block;
+
+            }
+
             #aboutMe-left-side {
-                width: 326px;
-                height: 290px;
+                width: 216px;
+                height: 210px;
+                margin: auto;
             }
 
             #backend-development {
@@ -2273,6 +2298,12 @@
                     engineering, I'm always up for a challenge <br>
                     and excited to connect with like-minded professionals.<br>
                     You can find what kind of tools i’m using for all my developments down below.......
+                </p>
+                <p>
+                    My name is <span>Dasun Nirmal</span> As a passionate software
+                    engineering student,I specialize in <span>Java</span>.I'm always up for a challenge
+                    and excited to connect with like minded professionals.
+                    You can find what kind of tools i’m using for all my developments down below....
                 </p>
             </div>
         </section>
