@@ -62,7 +62,7 @@ header>nav>a {
 header>#phone {
     width: 40px;
     height: 37px;
-    background: url("assets/images/phone-ringing.png") center no-repeat;
+    background: url("../images/phone-ringing.png") center no-repeat;
     background-size: 36px 30px;
     position: absolute;
     top: 0;
@@ -102,7 +102,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
     top: 0;
     right: 0;
     bottom: 0;
-    background: url("assets/images/Hand coding-pana.png") center no-repeat;
+    background: url("../images/Hand coding-pana.png") center no-repeat;
     background-size: cover;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -128,7 +128,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
 #hero-section>#left-side>.socials>.github {
     height: 75px;
     aspect-ratio: 1/1;
-    background: url("assets/images/gihub.jpeg") center;
+    background: url("../images/gihub.jpeg") center;
     margin-right: 15px;
     background-size: cover;
     border-radius: 100%;
@@ -138,7 +138,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
 #hero-section>#left-side>.socials>.linkedin {
     height: 75px;
     aspect-ratio: 1/1;
-    background: url("assets/images/Linkedin-logo-on-transparent-Background-PNG- (1).png") center;
+    background: url("../images/Linkedin-logo-on-transparent-Background-PNG- (1).png") center;
     background-size: 90px 90px;
     margin-right: 15px;
     border-radius: 100%;
@@ -148,7 +148,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
 #hero-section>#left-side>.socials>.medium {
     height: 75px;
     aspect-ratio: 1/1;
-    background: url("assets/images/Mediumlogo.jpeg") center no-repeat;
+    background: url("../images/Mediumlogo.jpeg") center no-repeat;
     background-size: 75px 75px;
     margin-right: 15px;
     border-radius: 100%;
@@ -158,7 +158,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
 #hero-section>#left-side>.socials>.stack {
     height: 75px;
     aspect-ratio: 1/1;
-    background: url("assets/images/StackoverflowLogo.jpeg") center no-repeat;
+    background: url("../images/StackoverflowLogo.jpeg") center no-repeat;
     background-size: cover;
     margin-right: 15px;
     border-radius: 100%;
@@ -168,7 +168,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
 #hero-section>#left-side>.socials>.instagram {
     height: 76px;
     aspect-ratio: 1/1;
-    background: url("assets/images/insta-removebg-preview.png") no-repeat -10px -11px;
+    background: url("../images/insta-removebg-preview.png") no-repeat -10px -11px;
     background-size: 98px 98px;
     margin-right: 15px;
     border-radius: 50%;
@@ -269,7 +269,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
     top: 0;
     left: 0;
     bottom: 0;
-    background: url("assets/gif/Programming (1).gif") center no-repeat;
+    background: url("../gif/Programming (1).gif") center no-repeat;
     background-size: cover;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -333,7 +333,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
     top: 0;
     right: 0;
     bottom: 0;
-    background: url("assets/gif/Programming (2).gif") center no-repeat;
+    background: url("../gif/Programming (2).gif") center no-repeat;
     background-size: cover;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -415,7 +415,7 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
     top: 0;
     left: 0;
     bottom: 0;
-    background: url("assets/gif/Programming.gif") center no-repeat;
+    background: url("../gif/Programming.gif") center no-repeat;
     background-size: cover;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -559,7 +559,7 @@ footer>.socials {
 footer>.socials>.github {
     height: 55px;
     aspect-ratio: 1/1;
-    background: url("assets/images/gihub.jpeg") center;
+    background: url("../images/gihub.jpeg") center;
     margin-right: 15px;
     background-size: cover;
     border-radius: 100%;
@@ -569,7 +569,7 @@ footer>.socials>.github {
 footer>.socials>.linkedin {
     height: 55px;
     aspect-ratio: 1/1;
-    background: url("assets/images/Linkedin-logo-on-transparent-Background-PNG- (1).png") center;
+    background: url("../images/Linkedin-logo-on-transparent-Background-PNG- (1).png") center;
     background-size: 65px 65px;
     margin-right: 15px;
     border-radius: 100%;
@@ -579,7 +579,7 @@ footer>.socials>.linkedin {
 footer>.socials>.medium {
     height: 55px;
     aspect-ratio: 1/1;
-    background: url("assets/images/Mediumlogo.jpeg") center no-repeat;
+    background: url("../images/Mediumlogo.jpeg") center no-repeat;
     background-size: 75px 75px;
     margin-right: 15px;
     border-radius: 100%;
@@ -589,7 +589,7 @@ footer>.socials>.medium {
 footer>.socials>.stack {
     height: 55px;
     aspect-ratio: 1/1;
-    background: url("assets/images/StackoverflowLogo.jpeg") center no-repeat;
+    background: url("../images/StackoverflowLogo.jpeg") center no-repeat;
     background-size: cover;
     margin-right: 15px;
     border-radius: 100%;
@@ -599,7 +599,7 @@ footer>.socials>.stack {
 footer>.socials>.instagram {
     height: 56px;
     aspect-ratio: 1/1;
-    background: url("assets/images/insta-removebg-preview.png") no-repeat -8px -8px;
+    background: url("../images/insta-removebg-preview.png") no-repeat -8px -8px;
     background-size: 74px 74px;
     margin-right: 15px;
     border-radius: 50%;
@@ -789,7 +789,7 @@ footer>.socials>.instagram:hover {
         top: 0;
         right: 0;
         bottom: 0;
-        background: url("assets/images/Hand coding-pana.png") center no-repeat;
+        background: url("../images/Hand coding-pana.png") center no-repeat;
         background-size: cover;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -833,7 +833,7 @@ footer>.socials>.instagram:hover {
         top: 0;
         left: 0;
         bottom: 0;
-        background: url("assets/gif/Programming (1).gif") center no-repeat;
+        background: url("../gif/Programming (1).gif") center no-repeat;
         background-size: cover;
         margin-top: 80px;
         margin-bottom: 80px;
@@ -856,7 +856,7 @@ footer>.socials>.instagram:hover {
         top: 0;
         right: 0;
         bottom: 0;
-        background: url("assets/gif/Programming (2).gif") center no-repeat;
+        background: url("../gif/Programming (2).gif") center no-repeat;
         background-size: cover;
         margin-top: 80px;
         margin-bottom: 80px;
@@ -894,7 +894,7 @@ footer>.socials>.instagram:hover {
         top: 0;
         left: 0;
         bottom: 0;
-        background: url("assets/gif/Programming.gif") center no-repeat;
+        background: url("../gif/Programming.gif") center no-repeat;
         background-size: cover;
         margin-top: 80px;
         margin-bottom: 80px;
@@ -1025,7 +1025,7 @@ footer>.socials>.instagram:hover {
         top: 0;
         right: 0;
         bottom: 0;
-        background: url("assets/images/Hand coding-pana.png") center no-repeat;
+        background: url("../images/Hand coding-pana.png") center no-repeat;
         background-size: cover;
         margin-top: 50px;
         margin-bottom: 50px;
