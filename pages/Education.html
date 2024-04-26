@@ -252,7 +252,7 @@
             border: 3px solid #192A56;
             align-content: center;
             overflow: hidden;
-            transition: 1s ease-in-out;
+            transition: .5s ease-in-out;
         }
 
         .cc-label {
@@ -280,7 +280,7 @@
             backdrop-filter: blur(7px);
             color: #ffffff;
             text-align: center;
-            transition: .8s ease-in-out;
+            transition: .7s ease-in-out;
         }
 
         .card-title {
@@ -331,7 +331,7 @@
             border: 3px solid #192A56;
             align-content: center;
             overflow: hidden;
-            transition: 1s ease-in-out;
+            transition: .8s ease-in-out;
         }
 
         .as-label {
@@ -359,7 +359,7 @@
             backdrop-filter: blur(7px);
             color: #ffffff;
             text-align: center;
-            transition: .8s ease-in-out;
+            transition: .7s ease-in-out;
         }
 
         .assignment-card-title {
@@ -641,12 +641,12 @@
             }
 
             #courses-and-certificates-cards>div:hover {
-                border: 4px solid #eab520;
+                border: 3px solid #eab520;
                 background-size: 290px 150px;
             }
 
             #assignments-cards>div:hover {
-                border: 4px solid #eab520;
+                border: 3px solid #eab520;
                 background-size: 150px 150px;
             }
 
@@ -761,6 +761,18 @@
 
         @media all and (max-width: 1024px) {
 
+            #ellipse {
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 1370px;
+                clip-path: ellipse(76% 45% at 63% 0%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+            }
+
             header>img {
                 left: 15px;
             }
@@ -812,7 +824,7 @@
                 font-size: 20px;
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 20px;
                 bottom: 0;
                 margin-top: 160px;
                 margin-bottom: 60px;
@@ -821,7 +833,7 @@
             #hero-section>#right-side>.socials {
                 height: 100px;
                 width: 90px;
-                bottom: 5px;
+                bottom: 25px;
                 right: 190px;
             }
 
@@ -905,6 +917,47 @@
                 grid-row-gap: 80px;
                 grid-column-gap: 20px;
                 grid-template-columns: repeat(3, 1fr);
+            }
+
+            footer {
+                position: relative;
+                height: 360px;
+                top: 70px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                color: #E0E0E0;
+            }
+
+            #logo-footer {
+                position: absolute;
+                top: 8px;
+                right: 80px;
+                margin: auto;
+            }
+
+            #contact>div>span {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            #footer-content {
+                width: 420px;
+                height: 190px;
+                font-size: 19px;
+            }
+
+            footer>.socials {
+                height: 70px;
+                width: 350px;
+                left: -80px;
+            }
+
+            #copy-rights {
+                height: 30px;
+                width: 351px;
+                font-size: 18px;
             }
 
         }
