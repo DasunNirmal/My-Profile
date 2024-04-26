@@ -43,7 +43,9 @@
             z-index: 1000;
         }
 
-        header>img {
+        header>#logo {
+            width: 170px;
+            height: 57px;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -71,6 +73,19 @@
             transition-duration: 1s;
         }
 
+        header>#phone {
+            width: 40px;
+            height: 37px;
+            background: url("../assets/images/phone-ringing.png") center no-repeat;
+            background-size: 36px 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 25px;
+            display: none;
+            margin: auto;
+        }
+
         header>nav>a:nth-child(3) {
             border: 3px solid #E1B12C;
             border-radius: 20px;
@@ -95,6 +110,10 @@
         }
 
         #hero-section>#left-side {
+            width: 722px;
+            height: 762px;
+            background: url("../assets/images/Learning-cuate.png") no-repeat center;
+            background-size: cover;
             position: absolute;
             top: 0;
             left: 0;
@@ -194,6 +213,7 @@
         }
 
         .grid{
+            height: 560px;
             display: grid;
             margin: 140px;
             position: absolute;
@@ -645,6 +665,86 @@
             }
         }
 
+        @media all and (max-width: 1440px) {
+
+            header>nav {
+                height: fit-content;
+                position: absolute;
+                font-weight: 400;
+                font-size: 22px;
+                right: 30px;
+                bottom: 28%;
+            }
+
+            #hero-section {
+                position: relative;
+                height: 690px;
+                width: 98%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #hero-section>#left-side {
+                width: 612px;
+                height: 662px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+
+            #hero-section>#right-side {
+                height: 500px;
+                width: 710px;
+                font-size: 24px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin-top: 130px;
+                margin-bottom: 60px;
+            }
+
+            #hero-section>#right-side>.socials {
+                height: 100px;
+                width: 90px;
+                bottom: 155px;
+                right: 310px;
+            }
+
+            #courses-and-certificates {
+                position: relative;
+                height: 690px;
+                width: 98%;
+                top: 120px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #assignments {
+                position: relative;
+                height: 1180px;
+                width: 98%;
+                top: 200px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .line-left-01>hr, .line-right-02>hr {
+                height: 3px;
+                width: 34dvw;
+            }
+
+        }
+
         @media all and (max-width: 764px) {
 
             .hamburger-menu {
@@ -697,7 +797,9 @@
 
         <!--Header-->
         <header>
-            <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="171.17" height="57">
+            <div id="logo">
+                <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
+            </div>
 
             <label class="hamburger-menu">
                 <input type="checkbox" />
@@ -710,14 +812,15 @@
                 <a href="../pages/Projects.html#Projects" style="--i:3">Projects</a>
                 <a href="../pages/ContactMe.html#ContactMe" style="--i:4">Contact Me</a>
             </nav>
+
+            <div id="phone"></div>
         </header>
 
         <!--Hero Section-->
         <section id="hero-section">
             <!--Left Side-->
             <div id="left-side">
-                <img src="../assets/images/Learning-cuate.png" title="Learning" alt="Learning" width="722" height="761">
-
+                <!--<img src="../assets/images/Learning-cuate.png" title="Learning" alt="Learning" width="722" height="761">-->
             </div>
 
             <!--Right Side-->
