@@ -226,6 +226,20 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
+        .grid-assignments {
+            height: 928px;
+            display: grid;
+            margin: 140px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            justify-items: center;
+            grid-row-gap: 80px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         #courses-and-certificates-cards>div{
             width: 350px;
             height: 210px;
@@ -860,16 +874,37 @@
                 position: relative;
                 height: 1180px;
                 width: 98%;
-                top: 200px;
+                top: 100px;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 margin: auto;
             }
 
+            #assignments>h1 {
+                width: 230px;
+                height: 44px;
+                font-size: 38px;
+            }
+
             .line-left-01>hr, .line-right-02>hr {
                 height: 3px;
-                width: 34dvw;
+                width: 32dvw;
+            }
+
+            .grid-assignments {
+                height: 928px;
+                display: grid;
+                margin: 120px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-items: center;
+                grid-row-gap: 80px;
+                grid-column-gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
             }
 
         }
@@ -1044,7 +1079,7 @@
 
             <h1>Assignments</h1>
 
-            <div class="grid" id="assignments-cards">
+            <div class="grid-assignments" id="assignments-cards">
 
                 <div class="assignment-card">
                     <label for="a-card-01" class="as-label">
