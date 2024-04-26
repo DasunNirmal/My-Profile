@@ -812,14 +812,48 @@
             }
 
             #courses-and-certificates {
-                position: relative;
-                height: 690px;
+                height: 154dvh;
                 width: 98%;
-                top: 120px;
+                top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 margin: auto;
+            }
+
+            .line-left, .line-left-01 {
+                top: 13px;
+            }
+
+            .line-right, .line-right-02 {
+                top: 13px;
+            }
+
+            .line-left>hr, .line-right>hr {
+                height: 3px;
+                width: 22dvw;
+            }
+
+            #courses-and-certificates>h1 {
+                width: 446px;
+                height: 40px;
+                font-size: 38px;
+            }
+
+            .grid {
+                height: 903px;
+                width: 789px;
+                display: grid;
+                margin: 100px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-items: center;
+                grid-row-gap: 80px;
+                grid-column-gap: 30px;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             #assignments {
