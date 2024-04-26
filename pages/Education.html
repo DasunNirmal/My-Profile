@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dasun Nirmal</title>
+    <link rel="icon" type="x-icon" href="../assets/images/logo.png">
     <meta name="description" content="My Portfolio">
     <meta name="keywords" content="Dasun Nirmal Student of IJSE,learning to be a software engineer">
     <meta name="author" content="Dasun Nirmal">
@@ -645,6 +646,14 @@
                 background-size: 290px 150px;
             }
 
+            .card-01 {
+                pointer-events: none;
+            }
+
+            .cc-label {
+                pointer-events: none;
+            }
+
             #assignments-cards>div:hover {
                 border: 3px solid #eab520;
                 background-size: 150px 150px;
@@ -1062,9 +1071,9 @@
             <h1>Courses and Certificates</h1>
 
             <div class="grid" id="courses-and-certificates-cards">
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-01" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-01">
+                        <input type="checkbox" name="slide" id="cc-card-01" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course One</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1072,9 +1081,9 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-02" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-02">
+                        <input type="checkbox" name="slide" id="cc-card-02" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course Two</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1082,9 +1091,9 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-03" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-03">
+                        <input type="checkbox" name="slide" id="cc-card-03" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course Three</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1092,9 +1101,9 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-04" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-04">
+                        <input type="checkbox" name="slide" id="cc-card-04" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course Four</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1102,9 +1111,9 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-05" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-05">
+                        <input type="checkbox" name="slide" id="cc-card-05" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course Five</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1112,9 +1121,9 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="courses-and-certificates-card">
                     <label for="cc-card-06" class="cc-label">
-                        <input type="checkbox" name="slide" id="cc-card-06">
+                        <input type="checkbox" name="slide" id="cc-card-06" class="card-01">
                         <div class="card-content">
                             <h1 class="card-title">Course Six</h1>
                             <p class="card-sub"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet facilis ipsa, maiores natus placeat possimus quas rerum! Accusantium corporis culpa debitis ea esse id laudantium tempora? Nesciunt possimus, quos.</p>
@@ -1295,6 +1304,25 @@
 
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
+
+        <!-- JavaScript to toggle the border color -->
+        <script>
+            // Get all the checkboxes and their respective containers
+            var checkboxes = document.querySelectorAll('.card-01');
+            var containers = document.querySelectorAll('.courses-and-certificates-card');
+
+            // Add event listener to each checkbox
+            checkboxes.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked, change border color to blue, else change to default color
+                    if (this.checked) {
+                        containers[index].style.borderColor = '#eab520';
+                    } else {
+                        containers[index].style.borderColor = '#192A56';
+                    }
+                });
+            });
+        </script>
 
     </body>
 </html>
