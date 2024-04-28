@@ -659,14 +659,6 @@
                 background-size: 150px 150px;
             }
 
-            #courses-and-certificates-cards>div:hover .card-content {
-                bottom: 0;
-            }
-
-            #assignments-cards>div:hover .assignment-card-content {
-                left: 0;
-            }
-
             .assignment-btn:hover {
                 cursor: pointer;
                 border: 3px solid #eab520;
@@ -674,6 +666,25 @@
                 color: #192A56;
                 font-weight: bold;
                 text-decoration: none;
+            }
+
+            .assignment-card:hover .assignment-btn {
+                pointer-events: auto;
+            }
+
+            .card-02 {
+                pointer-events: none;
+            }
+            .as-label {
+                pointer-events: none;
+            }
+
+            #courses-and-certificates-cards>div:hover .card-content {
+                bottom: 0;
+            }
+
+            #assignments-cards>div:hover .assignment-card-content {
+                left: 0;
             }
         }
 
@@ -1145,7 +1156,7 @@
 
                 <div class="assignment-card">
                     <label for="a-card-01" class="as-label">
-                        <input type="checkbox" name="slide" id="a-card-01">
+                        <input type="checkbox" name="slide" id="a-card-01" class="card-02">
                         <div class="assignment-card-content">
                             <h1 class="assignment-card-title">CSS Assignment 01</h1>
                             <p class="assignment-card-sub"></p>
@@ -1305,20 +1316,37 @@
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
 
-        <!-- JavaScript to toggle the border color -->
         <script>
-            // Get all the checkboxes and their respective containers
+            // Get all the checkboxes and their respective containers in courses and certificates
             var checkboxes = document.querySelectorAll('.card-01');
             var containers = document.querySelectorAll('.courses-and-certificates-card');
 
-            // Add event listener to each checkbox
+            // Get all the checkboxes and their respective containers in assignments
+            var checkboxesAssignments = document.querySelectorAll('.card-02');
+            var containersAssignments = document.querySelectorAll('.assignment-card');
+
             checkboxes.forEach(function(checkbox, index) {
                 checkbox.addEventListener('change', function() {
-                    // If checkbox is checked, change border color to blue, else change to default color
+                    // If checkbox is checked
                     if (this.checked) {
                         containers[index].style.borderColor = '#eab520';
+                        containers[index].style.backgroundSize = '290px 150px';
                     } else {
                         containers[index].style.borderColor = '#192A56';
+                        containers[index].style.backgroundSize = '350px 210px';
+                    }
+                });
+            });
+
+            checkboxesAssignments.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersAssignments[index].style.borderColor = '#eab520';
+                        containersAssignments[index].style.backgroundSize = '150px 150px';
+                    } else {
+                        containersAssignments[index].style.borderColor = '#192A56';
+                        containersAssignments[index].style.backgroundSize = '225px 210px';
                     }
                 });
             });
