@@ -143,6 +143,10 @@
             color: #E1B12C;
         }
 
+        #right-side>p:nth-child(2) {
+            display: none;
+        }
+
         #hero-section>#right-side>.socials {
             height: 100px;
             width: 90px;
@@ -1212,6 +1216,260 @@
 
         }
 
+        @media all and (max-width: 425px) {
+
+            :root {
+                --bar-width: 40px;
+                --bar-height: 3px;
+                --hamburger-gap: 6px;
+                --hamburger-margin: 23px;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+
+            header>nav {
+                justify-content: space-between;
+            }
+
+            header>nav>a {
+                margin: 1rem 0;
+                text-align: center;
+                transform: translateY(-50px);
+                transition: .3s ease;
+                opacity: 0;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav {
+                height: 25.7rem;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav>a {
+                transform: translateY(0);
+                transition-delay: calc(56ms * var(--i));
+                opacity: 1;
+            }
+
+            #ellipse {
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 560px;
+                clip-path: circle(68.5% at 50% 0);
+            }
+
+            header {
+                height: 70px;
+            }
+
+            header>#logo {
+                width: 60px;
+                height: 57px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            header>#phone {
+                display: block;
+            }
+
+            #hero-section {
+                position: relative;
+                height: 510px;
+                width: 98%;
+            }
+
+            #hero-section>#left-side {
+                width: 373px;
+                height: 422px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+
+            #hero-section>#right-side {
+                height: 300px;
+                width: 330px;
+                font-size: 15.5px;
+                right: 0;
+                margin-top: 100px;
+                margin-bottom: 70px;
+            }
+
+            #right-side>p:first-child {
+                display: none;
+            }
+
+            #right-side>p:nth-child(2) {
+                display: block;
+            }
+
+            #hero-section>#right-side>.socials {
+                height: 100px;
+                width: 90px;
+                bottom: 25px;
+                right: 125px;
+            }
+
+            #hero-section>#right-side>.socials>.github {
+                height: 65px;
+            }
+
+            .line-left, .line-left-01 {
+                top: 8px;
+            }
+
+            .line-right, .line-right-02 {
+                top: 8px;
+            }
+
+            #courses-and-certificates {
+                height: 900px;
+            }
+
+            #courses-and-certificates>h1 {
+                width: 366px;
+                height: 31px;
+                font-size: 31px;
+            }
+
+            .grid {
+                height: 713px;
+                width: 752px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-items: center;
+                grid-row-gap: 45px;
+                grid-column-gap: 0;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            #assignments>h1 {
+                width: 190px;
+                height: 40px;
+                font-size: 31px;
+            }
+
+            .grid-assignments {
+                height: 928px;
+                display: grid;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-items: center;
+                grid-row-gap: 0;
+                grid-column-gap: 0;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            #assignments {
+                position: relative;
+                height: 1160px;
+                width: 98%;
+                top: 150px;
+            }
+
+            footer {
+                height: 360px;
+                top: 100px;
+            }
+
+            #footer-Ellipse {
+                clip-path: ellipse(96% 21% at 90% 100%);
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 1850px;
+            }
+
+            #logo-footer {
+                right: 40px;
+            }
+
+            #logo-footer>img {
+                width: 200px;
+                height: 60px;
+            }
+
+            #line-vertical {
+                height: 235px;
+                right: 275px;
+                margin: auto;
+            }
+
+            footer>#contact {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                top: 100px;
+                right: 20px;
+                margin: auto;
+            }
+
+            #contact>div {
+                font-size: 20px;
+            }
+
+            #contact>div>span {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            #footer-content {
+                width: 450px;
+                height: 150px;
+                font-size: 15px;
+            }
+
+            footer>.socials {
+                height: 70px;
+                width: 350px;
+                right: 70px;
+            }
+
+            footer>.socials>.github {
+                height: 45px;
+            }
+
+            footer>.socials>.linkedin {
+                height: 45px;
+                background-size: 55px 55px;
+            }
+
+            footer>.socials>.medium {
+                height: 45px;
+                background-size: 65px 65px;
+            }
+
+            footer>.socials>.stack {
+                height: 45px;
+            }
+
+            footer>.socials>.instagram {
+                height: 47px;
+                background-size: 63px 63px;
+                background-position: -7px -8px;
+            }
+
+            #copy-rights {
+                height: 30px;
+                width: 286px;
+                font-size: 15px;
+            }
+
+        }
+
     </style>
 
 </head>
@@ -1253,6 +1511,12 @@
                     engineering diploma at <span> IJSE | Institute of <br>
                     Software Engineering.</span> The program is called <span> GDSE (Graduate Diploma in Software <br>
                     Engineering)</span> which gives me a <br> rich Academic and Professional experience. <br>
+                    You can find more about my education down below.
+                </p>
+                <p>
+                    At the moment i’m following a software
+                    engineering diploma at <span> IJSE | Institute of <br>
+                    Software Engineering.</span>
                     You can find more about my education down below.
                 </p>
 
