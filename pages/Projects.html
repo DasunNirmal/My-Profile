@@ -230,11 +230,11 @@
             margin: 10px;
             position: relative;
             border-radius: 20px 20px 20px 20px;
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
             border: 3px solid #001b68;
             align-content: center;
             overflow: hidden;
-            transition: 1s ease-in-out;
+            transition: .8s ease-in-out;
         }
 
         .card-content {
@@ -409,7 +409,7 @@
 
         #tools>img {
             margin-right: 54px;
-            transition-duration: 1s;
+            transition-duration: .5s;
         }
 
         footer {
@@ -716,6 +716,14 @@
                 border: 3px solid #eab520;
             }
 
+            .check-box {
+                pointer-events: none;
+            }
+
+            .p-label {
+                pointer-events: none;
+            }
+
             .projects-card-btn:hover {
                 cursor: pointer;
                 border: 3px solid #eab520;
@@ -723,30 +731,41 @@
                 color: #192A56;
                 font-weight: bold;
                 text-decoration: none;
+                pointer-events: auto;
+            }
+
+            .grid>div:hover .projects-card-btn {
+                pointer-events: auto;
             }
 
             #P-1:hover {
                 background-size: 1980px 1200px;
+                pointer-events: auto;
             }
 
             #P-2:hover {
                 background-size: 450px 380px;
+                pointer-events: auto;
             }
 
             #P-3:hover {
                 background-size: 450px 380px;
+                pointer-events: auto;
             }
 
             #P-4:hover {
                 background-size: 450px 380px;
+                pointer-events: auto;
             }
 
             #P-5:hover {
                 background-size: 450px 380px;
+                pointer-events: auto;
             }
 
             #P-6:hover {
                 background-size: 450px 380px;
+                pointer-events: auto;
             }
 
         }
@@ -1037,7 +1056,7 @@
             }
         }
 
-        @media all and (max-width: 764px) {
+        @media all and (max-width: 768px) {
 
             .hamburger-menu {
                 display: flex;
@@ -1076,6 +1095,71 @@
                 transform: translateY(0);
                 transition-delay: calc(56ms * var(--i));
                 opacity: 1;
+            }
+
+            #hero-section {
+                height: 510px;
+                width: 98%;
+            }
+
+            #ellipse {
+                height: 1370px;
+                clip-path: ellipse(113% 37% at 28% 1%);
+            }
+
+            #hero-section-left-side {
+                height: 440px;
+                width: 410px;
+                margin-top: 0;
+            }
+
+            #hero-section-right-side {
+                height: 320px;
+                width: 272px;
+                font-size: 18px;
+                right: 20px;
+                margin-top: 100px;
+                margin-bottom: 60px;
+            }
+
+            #hero-section-right-side>.socials {
+                height: 100px;
+                width: 90px;
+                bottom: 25px;
+                right: 100px;
+            }
+
+            #hero-section-right-side>.socials>.github {
+                height: 55px;
+            }
+
+
+            .line-left, .line-left-01 {
+                top: 8px;
+            }
+
+            .line-right, .line-right-02 {
+                top: 8px;
+            }
+
+            #projects-section>h1 {
+                width: 122px;
+                height: 40px;
+                font-size: 31px;
+            }
+
+            .grid>div {
+                width: 320px;
+                height: 260px;
+            }
+
+            .projects-card-btn {
+                cursor: pointer;
+                border: 3px solid #eab520;
+                border-radius: 5px 15px 5px 15px;
+                color: #192A56;
+                font-weight: bold;
+                text-decoration: none;
             }
         }
 
@@ -1119,9 +1203,8 @@
                 <p>
                     When it’s comes to developing my target is to made
                     use full applications as well as reduce code complexity as possible and following the standards
-                    to make the application run smoothly. <br> make sure to follow me on <span>GitHub</span> where you can
-                    find all the projects of mine.You can find all
-                    the tools i’m currently using to develop softwares down below.
+                    to make the application run smoothly. make sure to follow me on <span>GitHub</span> where you can
+                    find all the projects of mine.
                 </p>
 
                 <div class="socials">
@@ -1139,9 +1222,9 @@
             <h1>Projects</h1>
 
             <div class="grid">
-                <div id="P-1">
+                <div id="P-1" class="cards">
                     <label for="p-card-01" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-01">
+                        <input type="checkbox" name="slide" id="p-card-01" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1154,7 +1237,7 @@
 
                 <div id="P-2">
                     <label for="p-card-02" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-02">
+                        <input type="checkbox" name="slide" id="p-card-02" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1167,7 +1250,7 @@
 
                 <div id="P-3">
                     <label for="p-card-03" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-03">
+                        <input type="checkbox" name="slide" id="p-card-03" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1180,7 +1263,7 @@
 
                 <div id="P-4">
                     <label for="p-card-04" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-04">
+                        <input type="checkbox" name="slide" id="p-card-04" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1193,7 +1276,7 @@
 
                 <div id="P-5">
                     <label for="p-card-05" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-05">
+                        <input type="checkbox" name="slide" id="p-card-05" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1206,7 +1289,7 @@
 
                 <div id="P-6">
                     <label for="p-card-06" class="p-label">
-                        <input type="checkbox" name="slide" id="p-card-06">
+                        <input type="checkbox" name="slide" id="p-card-06" class="check-box">
                         <div class="card-content">
                             <h1 class="card-title">CSS Assignment 01</h1>
                             <p class="card-sub"></p>
@@ -1305,5 +1388,98 @@
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
 
+        <script>
+            var checkboxes1 = document.querySelectorAll('#p-card-01');
+            var checkboxes2 = document.querySelectorAll('#p-card-02');
+            var checkboxes3 = document.querySelectorAll('#p-card-03');
+            var checkboxes4 = document.querySelectorAll('#p-card-04');
+            var checkboxes5 = document.querySelectorAll('#p-card-05');
+            var checkboxes6 = document.querySelectorAll('#p-card-06');
+            var containersP01 = document.querySelectorAll('#P-1');
+            var containersP02 = document.querySelectorAll('#P-2');
+            var containersP03 = document.querySelectorAll('#P-3');
+            var containersP04 = document.querySelectorAll('#P-4');
+            var containersP05 = document.querySelectorAll('#P-5');
+            var containersP06 = document.querySelectorAll('#P-6');
+
+            checkboxes1.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP01[index].style.borderColor = '#eab520';
+                        containersP01[index].style.backgroundSize = '1980px 1200px';
+
+                    } else {
+                        containersP01[index].style.borderColor = '#192A56';
+                        containersP01[index].style.backgroundSize = '1580px 900px';
+                    }
+                });
+            });
+
+            checkboxes2.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP02[index].style.borderColor = '#eab520';
+                        containersP02[index].style.backgroundSize = '450px 380px';
+                    } else {
+                        containersP02[index].style.borderColor = '#192A56';
+                        containersP02[index].style.backgroundSize = '415px 310px';
+                    }
+                });
+            });
+
+            checkboxes3.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP03[index].style.borderColor = '#eab520';
+                        containersP03[index].style.backgroundSize = '450px 380px';
+                    } else {
+                        containersP03[index].style.borderColor = '#192A56';
+                        containersP03[index].style.backgroundSize = '415px 310px';
+                    }
+                });
+            });
+
+            checkboxes4.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP04[index].style.borderColor = '#eab520';
+                        containersP04[index].style.backgroundSize = '450px 380px';
+                    } else {
+                        containersP04[index].style.borderColor = '#192A56';
+                        containersP04[index].style.backgroundSize = '415px 310px';
+                    }
+                });
+            });
+
+            checkboxes5.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP05[index].style.borderColor = '#eab520';
+                        containersP05[index].style.backgroundSize = '450px 380px';
+                    } else {
+                        containersP05[index].style.borderColor = '#192A56';
+                        containersP05[index].style.backgroundSize = '415px 310px';
+                    }
+                });
+            });
+
+            checkboxes6.forEach(function(checkbox, index) {
+                checkbox.addEventListener('change', function() {
+                    // If checkbox is checked
+                    if (this.checked) {
+                        containersP06[index].style.borderColor = '#eab520';
+                        containersP06[index].style.backgroundSize = '450px 380px';
+                    } else {
+                        containersP06[index].style.borderColor = '#192A56';
+                        containersP06[index].style.backgroundSize = '415px 310px';
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
