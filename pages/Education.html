@@ -1339,7 +1339,6 @@
 
             #courses-and-certificates {
                 height: 1750px;
-                border: 2px solid #eab520;
             }
 
             #courses-and-certificates>h1 {
@@ -1358,14 +1357,26 @@
                 grid-template-columns: repeat(1, 1fr);
             }
 
+            #assignments {
+                position: relative;
+                height: 1160px;
+                width: 98%;
+                top: 100px;
+            }
+
+            .line-left-01>hr, .line-right-02>hr {
+                height: 3px;
+                width: 22dvw;
+            }
+
             #assignments>h1 {
-                width: 190px;
-                height: 40px;
-                font-size: 31px;
+                width: 146px;
+                height: 30px;
+                font-size: 24px;
             }
 
             .grid-assignments {
-                height: 928px;
+                height: 1038px;
                 display: grid;
                 margin: auto;
                 position: absolute;
@@ -1376,101 +1387,178 @@
                 justify-items: center;
                 grid-row-gap: 0;
                 grid-column-gap: 0;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            #assignments {
-                position: relative;
-                height: 1160px;
-                width: 98%;
-                top: 150px;
+            .as-label {
+                display: inline-block;
+                width: 155px;
+                height: 180px;
+            }
+
+            #assignments-cards>div {
+                width: 155px;
+                height: 180px;
+                margin: 10px;
+                background-size: 175px 160px;
+                z-index: 2;
+            }
+
+            .see-more-btn {
+                color: #192A56;
+                font-size: 13.5px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .assignment-btn {
+                border: 3px solid #eab520;
+                border-radius: 5px 15px 5px 15px;
+                transition-duration: 1s;
+                cursor: pointer;
+                font-weight: bold;
             }
 
             footer {
                 height: 360px;
-                top: 100px;
+                top: 0;
             }
 
             #footer-Ellipse {
-                clip-path: ellipse(96% 21% at 90% 100%);
+                clip-path: polygon(0 53%, 100% 53%, 100% 100%, 0% 100%);
                 background-color: rgba(25, 42, 86, 0.87);
                 width: 100%;
-                height: 1850px;
+                height: 620px;
+            }
+
+            #footer-circle {
+                width: 100%;
+                height: 230px;
+                overflow: hidden;
+                position: absolute;
+                background-color: #E0E0E0;
+                clip-path: ellipse(61% 90% at 50% 0%);
+                z-index: -1;
             }
 
             #logo-footer {
-                right: 40px;
+                width: 130px;
+                height: 44px;
+                top: 140px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
             }
 
             #logo-footer>img {
-                width: 200px;
-                height: 60px;
+                width: 130px;
+                height: 44px;
             }
 
             #line-vertical {
-                height: 235px;
-                right: 275px;
-                margin: auto;
+                display: none;
             }
 
             footer>#contact {
-                width: 220px;
-                height: 220px;
+                width: 90px;
+                height: 100px;
                 position: absolute;
-                top: 100px;
-                right: 20px;
+                top: 200px;
+                right: 5px;
                 margin: auto;
             }
 
+            #contact>div:nth-child(2) {
+                position: absolute;
+                top: 65px;
+            }
+
             #contact>div {
-                font-size: 20px;
+                font-size: 12px;
             }
 
             #contact>div>span {
-                font-size: 22px;
+                font-size: 13px;
                 font-weight: bold;
             }
 
             #footer-content {
+                display: none;
                 width: 450px;
                 height: 150px;
                 font-size: 15px;
             }
 
             footer>.socials {
-                height: 70px;
-                width: 350px;
-                right: 70px;
+                height: 162px;
+                width: 106px;
+                right: 230px;
+                top: 170px;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .socials>a {
+                border: 1px solid #a5a5a5;
+            }
+
+            footer>.socials>.github:hover,
+            footer>.socials>.linkedin:hover,
+            footer>.socials>.medium:hover,
+            footer>.socials>.stack:hover,
+            footer>.socials>.instagram:hover {
+                border: 2px solid #eab520;
+            }
+
+            #hero-section>#left-side>.socials>.github:hover,
+            #hero-section>#left-side>.socials>.linkedin:hover,
+            #hero-section>#left-side>.socials>.medium:hover,
+            #hero-section>#left-side>.socials>.stack:hover,
+            #hero-section>#left-side>.socials>.instagram:hover {
+                border: 3px solid #eab520;
             }
 
             footer>.socials>.github {
-                height: 45px;
+                height: 35px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.linkedin {
-                height: 45px;
-                background-size: 55px 55px;
+                height: 34px;
+                background-size: 45px 45px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.medium {
-                height: 45px;
-                background-size: 65px 65px;
+                height: 35px;
+                background-size: 55px 55px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.stack {
-                height: 45px;
+                height: 35px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.instagram {
-                height: 47px;
-                background-size: 63px 63px;
-                background-position: -7px -8px;
+                height: 38px;
+                background-size: 50px 52px;
+                background-position: -5px -7px;
             }
 
             #copy-rights {
-                height: 30px;
-                width: 286px;
-                font-size: 15px;
+                height: 20px;
+                width: 230px;
+                font-size: 12px;
             }
 
         }
@@ -1728,6 +1816,19 @@
                         </div>
                     </label>
                 </div>
+
+                <div class="assignment-card">
+                    <label for="a-card-10" class="as-label">
+                        <input type="checkbox" name="slide" id="a-card-10" class="card-02">
+                        <div class="assignment-card-content">
+                            <h1 class="assignment-card-title">CSS Assignment 09</h1>
+                            <p class="assignment-card-sub"></p>
+                            <a href="path to git" class="see-more-btn">
+                                <button class="assignment-btn">See More</button>
+                            </a>
+                        </div>
+                    </label>
+                </div>
             </div>
 
         </section>
@@ -1736,6 +1837,7 @@
         <footer>
             <!--Footer Ellipse-->
             <div id="footer-Ellipse"></div>
+            <div id="footer-circle"></div>
 
             <!--Right Side-->
             <div id="logo-footer">
@@ -1767,7 +1869,6 @@
                 <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" target="_blank" class="stack"></a>
 
                 <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" target="_blank" class="instagram"></a>
-
             </div>
 
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
@@ -1807,6 +1908,42 @@
                     }
                 });
             });
+
+
+            // Function to detect changes in width and height of #assignments-cards>div
+            function detectDivSizeChanges() {
+                var assignmentDiv = document.querySelector('#assignments-cards>div');
+                var assignmentDivComputedStyle = window.getComputedStyle(assignmentDiv);
+                var divWidth = parseInt(assignmentDivComputedStyle.getPropertyValue('width')); /*this get's the width of the div by getPropertyValue and convert it to int then store it in a variable*/
+                var divHeight = parseInt(assignmentDivComputedStyle.getPropertyValue('height')); /*this get's the height of the div by getPropertyValue and convert it to int then store it in a variable*/
+
+                if (divWidth === 155 && divHeight === 180) {
+                    // Applying changes to the background size in the checkbox event listener
+                    var checkboxesAssignments = document.querySelectorAll('.card-02');
+                    var containersAssignments = document.querySelectorAll('.assignment-card');
+
+                    checkboxesAssignments.forEach(function(checkbox, index) {
+                        checkbox.addEventListener('change', function() {
+                            // If checkbox is checked
+                            if (this.checked) {
+                                containersAssignments[index].style.borderColor = '#eab520';
+                                containersAssignments[index].style.backgroundSize = '110px 110px';
+                            } else {
+                                containersAssignments[index].style.borderColor = '#192A56';
+                                containersAssignments[index].style.backgroundSize = '175px 160px';
+                            }
+                        });
+                    });
+                }
+            }
+
+            // Call the function initially
+            detectDivSizeChanges();
+
+            // Add event listener for resize event
+            window.addEventListener("resize", detectDivSizeChanges);
+
+
         </script>
 
     </body>
