@@ -21,7 +21,6 @@
             font-family: "Sen", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
-            overflow-x: hidden;
         }
 
         #ellipse {
@@ -842,7 +841,7 @@
                 position: relative;
                 height: 540px;
                 width: 98%;
-                top: 190px;
+                top: 140px;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -860,6 +859,181 @@
                 right: 0;
                 margin: auto;
                 justify-content: space-between;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+
+            header>img {
+                left: 15px;
+            }
+
+            header>nav {
+                height: fit-content;
+                position: absolute;
+                font-weight: 400;
+                font-size: 22px;
+                right: 20px;
+                bottom: 28%;
+            }
+
+            header>nav>a {
+                color: #E0E0E0;
+                text-decoration: none;
+                margin-right: 5px;
+                width: 122px;
+                height: 29px;
+                display: inline-block;
+                text-align: center;
+                transition: .3s ease-in-out;
+            }
+            #ellipse {
+                height: 1370px;
+                clip-path: ellipse(109% 47% at 28% 0%);
+            }
+
+
+            #hero-section {
+                height: 690px;
+                width: 98%;
+            }
+
+            #hero-section-right-side {
+                height: 500px;
+                width: 390px;
+                font-size: 20px;
+                right: 20px;
+                margin-top: 120px;
+                margin-bottom: 60px;
+            }
+
+            #hero-section-left-side {
+                height: 590px;
+                width: 570px;
+            }
+
+            #hero-section-right-side>.socials {
+                height: 100px;
+                width: 90px;
+                bottom: 135px;
+                right: 150px;
+            }
+
+            #projects-section {
+                height: 1380px;
+                width: 98%;
+                top: 0;
+            }
+            .grid {
+                height: 1110px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                grid-row-gap: 50px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            #github-button {
+                width: 280px;
+                height: 50px;
+                bottom: 0;
+            }
+
+            .line-left-01>hr, .line-right-02>hr {
+                height: 3px;
+                width: 25dvw;
+            }
+
+            #skills-and-tools {
+                position: relative;
+                height: 640px;
+                width: 98%;
+                top: 100px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #skills-and-tools-middle>p {
+                font-weight: bold;
+                color: #192A56;
+                font-size: 22px;
+                text-align: center;
+            }
+
+            #skills-and-tools-middle {
+                width: 790px;
+                height: 130px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 190px;
+            }
+
+            #tools {
+                height: 260px;
+                width: 85dvw;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                bottom: 70px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+
+            #tools>img {
+                transition-duration: 1s;
+                margin: 20px;
+            }
+
+            footer {
+                position: relative;
+                height: 360px;
+                top: 70px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                color: #E0E0E0;
+            }
+
+            #logo-footer {
+                position: absolute;
+                top: 8px;
+                right: 80px;
+                margin: auto;
+            }
+
+            #contact>div>span {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            #footer-content {
+                width: 420px;
+                height: 190px;
+                font-size: 19px;
+            }
+
+            footer>.socials {
+                height: 70px;
+                width: 350px;
+                left: -80px;
+            }
+
+            #copy-rights {
+                height: 30px;
+                width: 351px;
+                font-size: 18px;
             }
         }
 
@@ -943,10 +1117,10 @@
             <!--Right Side-->
             <div id="hero-section-right-side">
                 <p>
-                    When it’s comes to developing my target is to made <br>
-                    use full applications as well as reduce code <br> complexity as possible and following the standards
-                    <br> to make the application run smoothly. <br> make sure to follow me on <span>GitHub</span> where you can <br>
-                    find all the projects of mine.You can find all <br>
+                    When it’s comes to developing my target is to made
+                    use full applications as well as reduce code complexity as possible and following the standards
+                    to make the application run smoothly. <br> make sure to follow me on <span>GitHub</span> where you can
+                    find all the projects of mine.You can find all
                     the tools i’m currently using to develop softwares down below.
                 </p>
 
