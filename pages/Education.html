@@ -1904,6 +1904,302 @@
 
         }
 
+        @media all and (max-width: 320px) {
+
+            :root {
+                --bar-width: 40px;
+                --bar-height: 3px;
+                --hamburger-gap: 6px;
+                --hamburger-margin: 23px;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+
+            header>nav {
+                justify-content: space-between;
+            }
+
+            header>nav>a {
+                margin: 1rem 0;
+                text-align: center;
+                transform: translateY(-50px);
+                transition: .3s ease;
+                opacity: 0;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav {
+                height: 25.7rem;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav>a {
+                transform: translateY(0);
+                transition-delay: calc(56ms * var(--i));
+                opacity: 1;
+            }
+
+            #ellipse {
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 560px;
+                clip-path: circle(68.5% at 50% 0);
+            }
+
+            header {
+                height: 70px;
+            }
+
+            header>#logo {
+                width: 60px;
+                height: 57px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            header>#phone {
+                display: block;
+            }
+
+            #hero-section {
+                position: relative;
+                height: 400px;
+                width: 98%;
+            }
+
+            #hero-section>#left-side {
+                width: 171px;
+                height: 192px;
+            }
+
+            #hero-section>#right-side {
+                height: 300px;
+                width: 250px;
+                font-size: 11px;
+                right: 0;
+                margin-top: 90px;
+                margin-bottom: 70px;
+            }
+
+            #right-side>p:first-child {
+                display: none;
+            }
+
+            #right-side>p:nth-child(2) {
+                display: block;
+                width: 120px;
+                position: absolute;
+                right: 4px;
+            }
+
+            #hero-section>#right-side>.socials {
+                height: 100px;
+                width: 90px;
+                bottom: 15px;
+                left: 50px;
+            }
+
+            #hero-section>#right-side>.socials>.github {
+                height: 55px;
+            }
+
+            .line-left, .line-left-01 {
+                top: 3px;
+            }
+
+            .line-right, .line-right-02 {
+                top: 3px;
+            }
+
+            .line-left>hr, .line-right>hr {
+                height: 3px;
+                width: 8dvw;
+            }
+
+            #courses-and-certificates {
+                height: 1750px;
+            }
+
+            #courses-and-certificates>h1 {
+                width: 246px;
+                height: 26px;
+                font-size: 21px;
+            }
+
+            .grid {
+                height: 1643px;
+                width: 306px;
+                margin-bottom: 10px;
+                margin-top: 100px;
+                grid-row-gap: 45px;
+                grid-column-gap: 0;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            #courses-and-certificates-cards>div {
+                width: 280px;
+                height: 210px;
+            }
+
+            #assignments {
+                position: relative;
+                height: 1210px;
+                width: 98%;
+                top: 100px;
+            }
+
+            .line-left-01>hr, .line-right-02>hr {
+                height: 3px;
+                width: 22dvw;
+            }
+
+            #assignments>h1 {
+                width: 146px;
+                height: 30px;
+                font-size: 24px;
+            }
+
+            .grid-assignments {
+                height: 1158px;
+                display: grid;
+                margin: auto;
+                position: absolute;
+                top: 90px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-items: center;
+                grid-row-gap: 0;
+                grid-column-gap: 0;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .as-label {
+                display: inline-block;
+                width: 125px;
+                height: 150px;
+            }
+
+            #assignments-cards>div {
+                width: 125px;
+                height: 150px;
+                margin: 10px;
+                background-size: 130px 130px;
+                border-radius: 20px 70px 20px 20px;
+                z-index: 2;
+            }
+
+            .see-more-btn {
+                color: #192A56;
+                font-size: 13.5px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .assignment-btn {
+                border: 3px solid #eab520;
+                border-radius: 5px 15px 5px 15px;
+                transition-duration: 1s;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            footer {
+                height: 340px;
+                top: 0;
+            }
+
+            #logo-footer {
+                width: 100px;
+                height: 36px;
+                top: 140px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            #logo-footer>img {
+                width: 100px;
+                height: 36px;
+            }
+
+            footer>#contact {
+                width: 75px;
+                height: 100px;
+                position: absolute;
+                top: 200px;
+                right: 3px;
+                margin: auto;
+            }
+
+            #contact>div:nth-child(2) {
+                position: absolute;
+                top: 65px;
+            }
+
+            #contact>div {
+                font-size: 11px;
+            }
+
+            #contact>div>span {
+                font-size: 11px;
+                font-weight: bold;
+            }
+
+            footer>.socials {
+                right: 140px;
+            }
+
+            .socials>a {
+                border: 1px solid #a5a5a5;
+            }
+
+            footer>.socials>.github {
+                height: 25px;
+                margin-right: 14px;
+                margin-bottom: 12px;
+            }
+
+            footer>.socials>.linkedin {
+                height: 24px;
+                background-size: 34px 34px;
+                margin-right: 14px;
+                margin-bottom: 12px;
+            }
+
+            footer>.socials>.medium {
+                height: 25px;
+                background-size: 45px 44px;
+                margin-right: 14px;
+                margin-bottom: 12px;
+            }
+
+            footer>.socials>.stack {
+                height: 25px;
+                margin-right: 14px;
+                margin-bottom: 12px;
+            }
+
+            footer>.socials>.instagram {
+                height: 28px;
+                background-size: 40px 42px;
+                background-position: -5px -7px;
+            }
+
+
+            #copy-rights {
+                height: 15px;
+                width: 191px;
+                font-size: 10px;
+            }
+
+        }
+
     </style>
 
 </head>
@@ -2298,6 +2594,25 @@
                             } else {
                                 containersAssignments[index].style.borderColor = '#192A56';
                                 containersAssignments[index].style.backgroundSize = '175px 160px';
+                            }
+                        });
+                    });
+                }
+
+                if (divWidth === 125 && divHeight === 150) {
+                    // Applying changes to the background size in the checkbox event listener
+                    var checkboxesAssignments1 = document.querySelectorAll('.card-02');
+                    var containersAssignments1 = document.querySelectorAll('.assignment-card');
+
+                    checkboxesAssignments1.forEach(function(checkbox, index) {
+                        checkbox.addEventListener('change', function() {
+                            // If checkbox is checked
+                            if (this.checked) {
+                                containersAssignments1[index].style.borderColor = '#eab520';
+                                containersAssignments1[index].style.backgroundSize = '110px 110px';
+                            } else {
+                                containersAssignments1[index].style.borderColor = '#192A56';
+                                containersAssignments1[index].style.backgroundSize = '130px 130px';
                             }
                         });
                     });
