@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dasun Nirmal</title>
+    <link rel="icon" type="x-icon" href="../assets/images/logo.png">
     <meta name="description" content="My Portfolio">
     <meta name="keywords" content="Dasun Nirmal Student of IJSE,learning to be a software engineer">
     <meta name="author" content="Dasun Nirmal">
@@ -43,7 +44,9 @@
             z-index: 1000;
         }
 
-        header>img {
+        header>#logo {
+            width: 170px;
+            height: 57px;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -69,6 +72,19 @@
             display: inline-block;
             text-align: center;
             transition-duration: 1s;
+        }
+
+        header>#phone {
+            width: 40px;
+            height: 37px;
+            background: url("../assets/images/phone-ringing.png") center no-repeat;
+            background-size: 36px 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 25px;
+            display: none;
+            margin: auto;
         }
 
         header>nav>a:nth-child(5) {
@@ -585,7 +601,9 @@
 
         <!--Header-->
         <header id="ContactMe">
-            <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="171.17" height="57">
+            <div id="logo">
+                <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
+            </div>
 
             <label class="hamburger-menu">
                 <input type="checkbox" />
@@ -598,6 +616,8 @@
                 <a href="Projects.html#Projects" style="--i:3">Projects</a>
                 <a href="../pages/ContactMe.html#ContactMe" style="--i:4">Contact Me</a>
             </nav>
+
+            <div id="phone"></div>
         </header>
 
         <!--Hero Section-->
