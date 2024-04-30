@@ -1442,34 +1442,92 @@
                 text-decoration: none;
             }
 
+            .line-left-01>hr, .line-right-02>hr {
+                height: 3px;
+                width: 20dvw;
+            }
+
+            #skills-and-tools {
+                height: 460px;
+                width: 98%;
+                top: 100px;
+            }
+
             #skills-and-tools>h1 {
-                width: 230px;
-                height: 40px;
-                font-size: 31px;
+                width: 177px;
+                height: 30px;
+                font-size: 24px;
             }
 
             #skills-and-tools-middle {
-                width: 720px;
-                height: 130px;
+                width: 370px;
+                height: 90px;
                 left: 0;
                 right: 0;
                 top: 0;
-                bottom: 190px;
+                bottom: 250px;
+            }
+
+            #skills-and-tools-middle>p {
+                font-weight: bold;
+                color: #192A56;
+                font-size: 12.5px;
+                text-align: center;
             }
 
             #tools {
-                height: 270px;
-                width: 73dvw;
+                height: 280px;
+                width: 84dvw;
                 position: absolute;
                 display: flex;
-                bottom: 70px;
+                bottom: 10px;
                 left: 0;
                 right: 0;
                 margin: auto;
-                flex-direction: column-reverse;
+                flex-direction: row-reverse;
                 flex-wrap: wrap;
-                align-content: center;
-                justify-content: space-evenly;
+                align-content: flex-start;
+                justify-content: center;
+            }
+
+            #tools>img:first-child {
+                width: 30px;
+                height: 55px;
+            }
+
+            #tools>img:nth-child(2) {
+                width: 35px;
+                height: 35px;
+            }
+
+            #tools>img:nth-child(3) {
+                width: 35px;
+                height: 35px;
+            }
+
+            #tools>img:nth-child(4) {
+                width: 50px;
+                height: 50px;
+            }
+
+            #tools>img:nth-child(5) {
+                width: 100px;
+                height: 53px;
+            }
+
+            #tools>img:nth-child(6) {
+                width: 39px;
+                height: 53px;
+            }
+
+            #tools>img:nth-child(7) {
+                width: 80px;
+                height: 50px;
+            }
+
+            #tools>img:nth-child(8) {
+                width: 100px;
+                height: 63px;
             }
 
             footer {
@@ -1477,86 +1535,146 @@
                 top: 100px;
             }
 
+            footer {
+                height: 360px;
+                top: 0;
+            }
+
             #footer-Ellipse {
-                clip-path: ellipse(96% 21% at 90% 100%);
+                clip-path: polygon(0 53%, 100% 53%, 100% 100%, 0% 100%);
                 background-color: rgba(25, 42, 86, 0.87);
                 width: 100%;
-                height: 1850px;
+                height: 620px;
+            }
+
+            #footer-circle {
+                width: 100%;
+                height: 230px;
+                overflow: hidden;
+                position: absolute;
+                background-color: #E0E0E0;
+                clip-path: ellipse(61% 90% at 50% 0%);
+                z-index: -1;
             }
 
             #logo-footer {
-                right: 40px;
+                width: 130px;
+                height: 44px;
+                top: 140px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
             }
 
             #logo-footer>img {
-                width: 200px;
-                height: 60px;
+                width: 130px;
+                height: 44px;
             }
 
             #line-vertical {
-                height: 235px;
-                right: 275px;
-                margin: auto;
+                display: none;
             }
 
             footer>#contact {
-                width: 220px;
-                height: 220px;
+                width: 90px;
+                height: 100px;
                 position: absolute;
-                top: 100px;
-                right: 20px;
+                top: 200px;
+                right: 5px;
                 margin: auto;
             }
 
+            #contact>div:nth-child(2) {
+                position: absolute;
+                top: 65px;
+            }
+
             #contact>div {
-                font-size: 20px;
+                font-size: 12px;
             }
 
             #contact>div>span {
-                font-size: 22px;
+                font-size: 13px;
                 font-weight: bold;
             }
 
             #footer-content {
+                display: none;
                 width: 450px;
                 height: 150px;
                 font-size: 15px;
             }
 
             footer>.socials {
-                height: 70px;
-                width: 350px;
-                right: 70px;
+                height: 162px;
+                width: 106px;
+                right: 230px;
+                top: 170px;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .socials>a {
+                border: 1px solid #a5a5a5;
+            }
+
+            footer>.socials>.github:hover,
+            footer>.socials>.linkedin:hover,
+            footer>.socials>.medium:hover,
+            footer>.socials>.stack:hover,
+            footer>.socials>.instagram:hover {
+                border: 2px solid #eab520;
+            }
+
+            #hero-section>#left-side>.socials>.github:hover,
+            #hero-section>#left-side>.socials>.linkedin:hover,
+            #hero-section>#left-side>.socials>.medium:hover,
+            #hero-section>#left-side>.socials>.stack:hover,
+            #hero-section>#left-side>.socials>.instagram:hover {
+                border: 3px solid #eab520;
             }
 
             footer>.socials>.github {
-                height: 45px;
+                height: 35px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.linkedin {
-                height: 45px;
-                background-size: 55px 55px;
+                height: 34px;
+                background-size: 45px 45px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.medium {
-                height: 45px;
-                background-size: 65px 65px;
+                height: 35px;
+                background-size: 55px 55px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.stack {
-                height: 45px;
+                height: 35px;
+                margin-right: 14px;
+                margin-bottom: 12px;
             }
 
             footer>.socials>.instagram {
-                height: 47px;
-                background-size: 63px 63px;
-                background-position: -7px -8px;
+                height: 38px;
+                background-size: 50px 52px;
+                background-position: -5px -7px;
             }
 
             #copy-rights {
-                height: 30px;
-                width: 286px;
-                font-size: 15px;
+                height: 20px;
+                width: 230px;
+                font-size: 12px;
             }
         }
 
@@ -1723,7 +1841,7 @@
             <!--Middle-->
             <div id="skills-and-tools-middle">
                 <p>
-                    Java Programming,Software Engineering Principles,Version Control <br>
+                    Java Programming,Software Engineering Principles,Version Control
                     Systems,Problem-Solving Skills,Continuous Learning are some of my skills.
                     These are the tools i’m using to develop softwares.
                 </p>
@@ -1754,6 +1872,7 @@
         <footer>
             <!--Footer Ellipse-->
             <div id="footer-Ellipse"></div>
+            <div id="footer-circle"></div>
 
             <!--Right Side-->
             <div id="logo-footer">
@@ -1785,7 +1904,6 @@
                 <a href="https://stackoverflow.com/users/21981045/dasun-nirmal" target="_blank" class="stack"></a>
 
                 <a href="https://www.instagram.com/_dasunnirmal_23?igsh=MXd0MnAzYTk1a2d4&utm_source=qr" target="_blank" class="instagram"></a>
-
             </div>
 
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
