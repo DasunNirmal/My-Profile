@@ -1390,17 +1390,30 @@
 
 
             .line-left, .line-left-01 {
-                top: 8px;
+                top: 5px;
             }
 
             .line-right, .line-right-02 {
-                top: 8px;
+                top: 5px;
+            }
+
+            #projects-section {
+                height: 2170px;
+                width: 98%;
+                top: 0;
             }
 
             #projects-section>h1 {
-                width: 122px;
-                height: 40px;
-                font-size: 31px;
+                width: 92px;
+                height: 30px;
+                font-size: 24px;
+            }
+
+            .grid {
+                height: 1970px;
+                margin: auto;
+                grid-row-gap: 50px;
+                grid-template-columns: repeat(1, 1fr);
             }
 
             .grid>div {
@@ -1412,6 +1425,18 @@
                 cursor: pointer;
                 border: 3px solid #eab520;
                 border-radius: 5px 15px 5px 15px;
+                color: #192A56;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            #github-button {
+                cursor: pointer;
+                background-color: rgba(242, 193, 118, 0.45);
+                border-top: 3px solid #eab520;
+                border-bottom: 4px solid #eab520;
+                border-radius: 20px;
+
                 color: #192A56;
                 font-weight: bold;
                 text-decoration: none;
