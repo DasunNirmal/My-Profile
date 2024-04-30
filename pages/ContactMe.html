@@ -937,6 +937,217 @@
 
         }
 
+        @media all and (max-width: 425px) {
+
+            :root {
+                --bar-width: 40px;
+                --bar-height: 3px;
+                --hamburger-gap: 6px;
+                --hamburger-margin: 23px;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+
+            header>nav {
+                justify-content: space-between;
+            }
+
+            header>nav>a {
+                margin: 1rem 0;
+                text-align: center;
+                transform: translateY(-50px);
+                transition: .3s ease;
+                opacity: 0;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav {
+                height: 25.7rem;
+            }
+
+            .hamburger-menu:has(input:checked) + header>nav>a {
+                transform: translateY(0);
+                transition-delay: calc(56ms * var(--i));
+                opacity: 1;
+            }
+
+            #ellipse {
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 560px;
+                clip-path: circle(68.5% at 50% 0);
+            }
+
+            header {
+                height: 70px;
+            }
+
+            header>#logo {
+                width: 60px;
+                height: 57px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            header>#phone {
+                display: block;
+            }
+
+            #hero-section-left-side {
+                height: 300px;
+                top: 50px;
+                left: 10px;
+            }
+
+            #circle {
+                height: 250px;
+            }
+
+            #hero-section {
+                height: 540px;
+                width: 98%;
+            }
+
+            #hero-section-right-side {
+                height: 500px;
+                width: 420px;
+                font-size: 18px;
+            }
+
+            #hero-section-right-side>.socials {
+                height: 90px;
+                width: 400px;
+                bottom: 235px;
+            }
+
+            #contact-details-left-side {
+                width: 250px;
+                height: 330px;
+                top: 0;
+                bottom: 0;
+                left: 10px;
+            }
+
+            #contact-details-left-side>input {
+                width: 210px;
+                height: 40px;
+            }
+
+            #contact-details-left-side>textarea {
+                width: 220px;
+                height: 100px;
+            }
+
+            #contact-details-right-side {
+                width: 275px;
+                height: 350px;
+            }
+
+            #contact-details-middle {
+                width: 280px;
+                height: 400px;
+            }
+
+            #contact-details-middle>p {
+                width: 300px;
+                height: 90px;
+                font-size: 15px;
+            }
+
+            footer {
+                height: 360px;
+                top: 60px;
+            }
+
+            #footer-Ellipse {
+                clip-path: ellipse(96% 21% at 90% 100%);
+                background-color: rgba(25, 42, 86, 0.87);
+                width: 100%;
+                height: 1850px;
+            }
+
+            #logo-footer {
+                right: 40px;
+            }
+
+            #logo-footer>img {
+                width: 200px;
+                height: 60px;
+            }
+
+            #line-vertical {
+                height: 235px;
+                right: 275px;
+                margin: auto;
+            }
+
+            footer>#contact {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                top: 100px;
+                right: 20px;
+                margin: auto;
+            }
+
+            #contact>div {
+                font-size: 20px;
+            }
+
+            #contact>div>span {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            #footer-content {
+                width: 450px;
+                height: 150px;
+                font-size: 15px;
+            }
+
+            footer>.socials {
+                height: 70px;
+                width: 350px;
+                right: 70px;
+            }
+
+            footer>.socials>.github {
+                height: 45px;
+            }
+
+            footer>.socials>.linkedin {
+                height: 45px;
+                background-size: 55px 55px;
+            }
+
+            footer>.socials>.medium {
+                height: 45px;
+                background-size: 65px 65px;
+            }
+
+            footer>.socials>.stack {
+                height: 45px;
+            }
+
+            footer>.socials>.instagram {
+                height: 47px;
+                background-size: 63px 63px;
+                background-position: -7px -8px;
+            }
+
+            #copy-rights {
+                height: 30px;
+                width: 286px;
+                font-size: 15px;
+            }
+
+        }
+
     </style>
 
 </head>
