@@ -550,7 +550,49 @@
             width: 0;
         }
 
-        @media all and (max-width: 764px) {
+        @media all and (max-width: 1440px) {
+
+            header>nav {
+                height: fit-content;
+                position: absolute;
+                font-weight: 400;
+                font-size: 22px;
+                right: 30px;
+                bottom: 28%;
+            }
+
+            #hero-section {
+                height: 690px;
+                width: 98%;
+            }
+
+            #hero-section-right-side {
+                height: 500px;
+                width: 790px;
+                font-size: 24px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin-top: 130px;
+                margin-bottom: 60px;
+            }
+
+            #hero-section-left-side {
+                height: 400px;
+                aspect-ratio: 1 / 1;
+                position: absolute;
+                background-size: cover;
+                top: 20px;
+                left: 180px;
+            }
+
+            #contact-details-section {
+                height: 500px;
+                width: 98%;
+            }
+        }
+
+        @media all and (max-width: 768px) {
 
             .hamburger-menu {
                 display: flex;
