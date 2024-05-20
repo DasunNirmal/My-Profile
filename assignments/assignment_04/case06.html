@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 06</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+
+        #sky {
+            width: 219vw;
+            height: 100vh;
+            background-image: url("assets/Car_Animation_Img/sky.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        section {
+            width: 219vw;
+            height: 100vh;
+            display: flex;
+            position: relative;
+            animation: car-animation 6s infinite linear;
+        }
+
+        .city {
+            width: 73vw;
+            height: 38vh;
+            background-image: url("assets/Car_Animation_Img/city.png");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        .road {
+            width: 219vw;
+            height: 40vh;
+            background-image: url("assets/Car_Animation_Img/road.jpg");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        #car {
+            width: 500px;
+            height: 210px;
+            background-image: url("assets/Car_Animation_Img/car.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 573px;
+            bottom: 0;
+            left: 35vw;
+            right: 0;
+        }
+
+        #wheel-back {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-image: url("assets/Car_Animation_Img/wheel.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            animation: car-animation-wheels 6s infinite linear;
+            bottom: 0;
+            left: 38px;
+            right: 0;
+        }
+        #wheel-front {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-image: url("assets/Car_Animation_Img/wheel.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            animation: car-animation-wheels 6s infinite linear;
+            bottom: 0;
+            left: 346px;
+
+        }
+
+        @keyframes car-animation {
+            0% {
+                transform: translateX(0%);
+                transition: ease-in;
+            }
+
+            25%, 50%{
+                transform: translateX(-25%);
+            }
+
+            50%, 75%{
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+                transition: ease;
+            }
+        }
+
+        @keyframes car-animation-wheels {
+            0% {
+                transform: rotate(90deg);
+                transition: ease-in;
+            }
+
+            25%, 50% {
+                transform: rotate(-180deg);
+            }
+
+            50%, 75% {
+                transform: rotate(180deg);
+            }
+
+            75%, 100% {
+                transform: rotate(180deg);
+                transition: ease;
+            }
+        }
+
+    </style>
+
+</head>
+    <body>
+
+    <div id="sky">
+        <section>
+            <div class="city"></div>
+            <div class="city"></div>
+            <div class="city"></div>
+            <div class="road"></div>
+        </section>
+        <div id="car">
+            <div id="wheel-back"></div>
+            <div id="wheel-front"></div>
+        </div>
+    </div>
+
+    </body>
+</html>

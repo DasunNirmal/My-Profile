@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 05</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+
+  <style>
+      body {overflow: hidden}
+
+      section {
+          width: 400vw;
+          height: 100vh;
+          display: flex;
+          animation: animation 6s infinite ease;
+          animation-direction: alternate-reverse;
+      }
+      section>div {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+
+      section>div:first-child {
+          background-image: url("assets/animation_slide/slide1.jpeg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+      }
+      section>div:nth-child(2) {
+          background-image: url("assets/animation_slide/slide2.jpeg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      section>div:nth-child(3) {
+          background-image: url("assets/animation_slide/slide3.jpeg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      section>div:nth-child(4) {
+          background-image: url("assets/animation_slide/slide4.jpeg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+    @keyframes animation {
+        0%, 25%{
+            transform: translateX(0%);
+        }
+
+        25%, 50%{
+            transform: translateX(-25%);
+        }
+
+        50%, 75%{
+            transform: translateX(-50%);
+        }
+
+        75%, 100%{
+            transform: translateX(-75%);
+        }
+    }
+  </style>
+
+</head>
+  <body>
+      <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </section>
+  </body>
+</html>

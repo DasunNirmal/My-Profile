@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <Style>
+    div {
+      width: 20px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      animation: my-animation 3s infinite ease;
+    }
+
+    @keyframes my-animation {
+          0% {
+            width: 20px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+              border: 8px solid darkslateblue;
+
+          }
+          50% {
+            width: 400px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            opacity: 0;
+          }
+    }
+
+  </Style>
+
+</head>
+  <body>
+    <div></div>
+  </body>
+</html>

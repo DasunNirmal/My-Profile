@@ -26,7 +26,7 @@
             border-radius: 30px;
             background: white;
             border: 3px solid rgba(39, 60, 115, 0.88);
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
             transition: all 0.5s;
             display: flex;
             flex-direction: column;
@@ -40,8 +40,13 @@
             visibility: hidden;
         }
 
-        .display {
+        .display-card-03 {
             top: 20%;
+            visibility: visible;
+        }
+
+        .display-card-04 {
+            top: 30%;
             visibility: visible;
         }
 
@@ -216,12 +221,24 @@
 
             <div class="pop-up-box-for-card-03" id="pop-up-card-03">
                 <div class="pop-up-box-for-card-03-content">
-                    <div class="as-03-cases" onclick="caseOne()">Case 01</div>
-                    <div class="as-03-cases" onclick="caseTwo()">Case 02</div>
-                    <div class="as-03-cases" onclick="caseThree()">Case 03</div>
-                    <div class="as-03-cases" onclick="caseFore()">Case 04</div>
-                    <div class="as-03-cases" onclick="caseFive()">Case 05</div>
-                    <div class="as-03-cases" onclick="caseSix()">Case 06</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseOne()">Case 01</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseTwo()">Case 02</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseThree()">Case 03</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseFore()">Case 04</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseFive()">Case 05</div>
+                    <div class="as-03-cases" onclick="CardThreeCaseSix()">Case 06</div>
+                    <button class="close" onclick="closePopUp()">Close</button>
+                </div>
+            </div>
+
+            <div class="pop-up-box-for-card-03" id="pop-up-card-04">
+                <div class="pop-up-box-for-card-03-content">
+                    <div class="as-03-cases" onclick="CardForeCaseOne()">Case 01</div>
+                    <div class="as-03-cases" onclick="CardForeCaseTwo()">Case 02</div>
+                    <div class="as-03-cases" onclick="CardForeCaseThree()">Case 03</div>
+                    <div class="as-03-cases" onclick="CardForeCaseFore()">Case 04</div>
+                    <div class="as-03-cases" onclick="CardForeCaseFive()">Case 05</div>
+                    <div class="as-03-cases" onclick="CardForeCaseSix()">Case 06</div>
                     <button class="close" onclick="closePopUp()">Close</button>
                 </div>
             </div>
@@ -281,10 +298,10 @@
                                 <a href="https://drive.google.com/file/d/1SKit_R45jtLVVswh3Tiwp9Hu8d7hyUfQ/view?usp=sharing" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/pdf.png" alt="" class="assignment-btn" id="pdf-2">
                                 </a>
-                                <button class="see-more-btn" onclick="displayPopUpCard03()">
+                                <button class="see-more-btn" onclick="displayPopUpCard03(); backgroundBluer();">
                                     <img src="../assets/images/view.png" alt="" class="assignment-btn" id="view-2">
                                 </button>
-                                <a href="path to git" class="see-more-btn">
+                                <a href="https://github.com/DasunNirmal/CSS-Assignment-03.git" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/github.png" alt="" class="assignment-btn" id="git-2">
                                 </a>
                             </div>
@@ -300,13 +317,13 @@
                             <p class="assignment-card-sub"></p>
                             <div class="grid-btn">
                                 <a href="https://drive.google.com/file/d/1Siiw_F3ywkosPNxCnLGlLTEhHiLJSzBk/view?usp=sharing" target="_blank" class="see-more-btn">
-                                    <img src="../assets/images/pdf.png" alt="" class="assignment-btn"id="pdf-3">
+                                    <img src="../assets/images/pdf.png" alt="" class="assignment-btn" id="pdf-3">
                                 </a>
-                                <a href="path to view" class="see-more-btn">
-                                    <img src="../assets/images/view.png" alt="" class="assignment-btn"id="view-3">
-                                </a>
+                                <button class="see-more-btn" onclick="displayPopUpCard04(); backgroundBluer();">
+                                    <img src="../assets/images/view.png" alt="" class="assignment-btn" id="view-3">
+                                </button>
                                 <a href="path to git" class="see-more-btn">
-                                    <img src="../assets/images/github.png" alt="" class="assignment-btn"id="git-3">
+                                    <img src="../assets/images/github.png" alt="" class="assignment-btn" id="git-3">
                                 </a>
                             </div>
                         </div>
@@ -528,10 +545,9 @@
         <script src="../assets/js/education_page.js"></script>
         <script>
             let popupBoxCard03 = document.getElementById("pop-up-card-03");
+            let popupBoxCard04 = document.getElementById("pop-up-card-04");
 
-            function displayPopUpCard03() {
-                popupBoxCard03.classList.add("display");
-                document.body.classList.add("no-scroll");
+            function backgroundBluer() {
                 document.querySelector(".grid-assignments").classList.add("blur-background");
                 document.querySelector("#assignments-h1").classList.add("blur-background");
                 document.querySelector(".line-left-01").classList.add("blur-background");
@@ -539,8 +555,20 @@
                 document.querySelector("#courses-and-certificates").classList.add("blur-background");
             }
 
+            function displayPopUpCard03() {
+                popupBoxCard03.classList.add("display-card-03");
+                document.body.classList.add("no-scroll");
+
+            }
+
+            function displayPopUpCard04() {
+                popupBoxCard04.classList.add("display-card-04");
+                document.body.classList.add("no-scroll");
+            }
+
             function closePopUp() {
-                popupBoxCard03.classList.remove("display");
+                popupBoxCard03.classList.remove("display-card-03");
+                popupBoxCard04.classList.remove("display-card-04");
                 document.body.classList.remove("no-scroll");
                 document.querySelector(".grid-assignments").classList.remove("blur-background");
                 document.querySelector("#assignments-h1").classList.remove("blur-background");
@@ -549,28 +577,52 @@
                 document.querySelector("#courses-and-certificates").classList.remove("blur-background");
             }
 
-            function caseOne() {
+            function CardThreeCaseOne() {
                 window.open("../assignments/assignment_03/index.html", "_blank");
             }
 
-            function caseTwo() {
+            function CardThreeCaseTwo() {
                 window.open("../assignments/assignment_03/Case-02.html", "_blank");
             }
 
-            function caseThree() {
+            function CardThreeCaseThree() {
                 window.open("../assignments/assignment_03/Case-03.html", "_blank");
             }
 
-            function caseFore() {
+            function CardThreeCaseFore() {
                 window.open("../assignments/assignment_03/Case-04.html", "_blank");
             }
 
-            function caseFive() {
+            function CardThreeCaseFive() {
                 window.open("../assignments/assignment_03/Case-05.html", "_blank");
             }
 
-            function caseSix() {
+            function CardThreeCaseSix() {
                 window.open("../assignments/assignment_03/Case-06.html", "_blank");
+            }
+
+            function CardForeCaseOne() {
+                window.open("../assignments/assignment_04/index.html", "_blank");
+            }
+
+            function CardForeCaseTwo() {
+                window.open("../assignments/assignment_04/case02.html", "_blank");
+            }
+
+            function CardForeCaseThree() {
+                window.open("../assignments/assignment_04/case03.html", "_blank");
+            }
+
+            function CardForeCaseFore() {
+                window.open("../assignments/assignment_04/case04.html", "_blank");
+            }
+
+            function CardForeCaseFive() {
+                window.open("../assignments/assignment_04/case05.html", "_blank");
+            }
+
+            function CardForeCaseSix() {
+                window.open("../assignments/assignment_04/case06.html", "_blank");
             }
 
         </script>
