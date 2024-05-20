@@ -17,6 +17,41 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+
+    <style>
+
+        .pop-up-box-for-card-03 {
+            width: 350px;
+            aspect-ratio: 1/1;
+            border-radius: 30px;
+            background: white;
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            top: -60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+
+        .display {
+            top: 20%;
+            visibility: visible;
+        }
+
+        .blur-background {
+            filter: blur(5px);
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+    </style>
+
 </head>
     <body>
 
@@ -140,14 +175,19 @@
                 </div>
             </div>
         </section>
-    
+
         <!--Assignments-->
         <section id="assignments" data-aos="zoom-in-right" data-aos-duration="1000">
 
             <div class="line-left-01"><hr></div>
             <div class="line-right-02"><hr></div>
 
-            <h1>Assignments</h1>
+            <h1 id="assignments-h1">Assignments</h1>
+
+            <div class="pop-up-box-for-card-03" id="pop-up-card-03">
+                <div></div>
+                <button class="close" onclick="closePopUp()">Close</button>
+            </div>
 
             <div class="grid-assignments" id="assignments-cards">
 
@@ -183,10 +223,10 @@
                                 <a href="https://drive.google.com/file/d/1NinPsjLBylEm5iNIN_Moyj1nj0Xzt2RU/view?usp=sharing" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/pdf.png" alt="" class="assignment-btn" id="pdf-1">
                                 </a>
-                                <a href="path to view" class="see-more-btn">
+                                <a href="../assignments/assignment_02/index.html" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/view.png" alt="" class="assignment-btn" id="view-1">
                                 </a>
-                                <a href="path to git" class="see-more-btn">
+                                <a href="https://github.com/DasunNirmal/My-Profile/tree/master" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/github.png" alt="" class="assignment-btn" id="git-1">
                                 </a>
                             </div>
@@ -204,9 +244,9 @@
                                 <a href="https://drive.google.com/file/d/1SKit_R45jtLVVswh3Tiwp9Hu8d7hyUfQ/view?usp=sharing" target="_blank" class="see-more-btn">
                                     <img src="../assets/images/pdf.png" alt="" class="assignment-btn" id="pdf-2">
                                 </a>
-                                <a href="path to view" class="see-more-btn">
+                                <button class="see-more-btn" onclick="displayPopUpCard03()">
                                     <img src="../assets/images/view.png" alt="" class="assignment-btn" id="view-2">
-                                </a>
+                                </button>
                                 <a href="path to git" class="see-more-btn">
                                     <img src="../assets/images/github.png" alt="" class="assignment-btn" id="git-2">
                                 </a>
@@ -449,6 +489,30 @@
         </footer>
 
         <script src="../assets/js/education_page.js"></script>
+        <script>
+            let popupBoxCard03 = document.getElementById("pop-up-card-03");
+
+            function displayPopUpCard03() {
+                popupBoxCard03.classList.add("display");
+                document.body.classList.add("no-scroll");
+                document.querySelector(".grid-assignments").classList.add("blur-background");
+                document.querySelector("#assignments-h1").classList.add("blur-background");
+                document.querySelector(".line-left-01").classList.add("blur-background");
+                document.querySelector(".line-right-02").classList.add("blur-background");
+                document.querySelector("#courses-and-certificates").classList.add("blur-background");
+            }
+
+            function closePopUp() {
+                popupBoxCard03.classList.remove("display");
+                document.body.classList.remove("no-scroll");
+                document.querySelector(".grid-assignments").classList.remove("blur-background");
+                document.querySelector("#assignments-h1").classList.remove("blur-background");
+                document.querySelector(".line-left-01").classList.remove("blur-background");
+                document.querySelector(".line-right-02").classList.remove("blur-background");
+                document.querySelector("#courses-and-certificates").classList.remove("blur-background");
+            }
+
+        </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
     </body>
