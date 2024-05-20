@@ -22,9 +22,11 @@
 
         .pop-up-box-for-card-03 {
             width: 350px;
-            aspect-ratio: 1/1;
+            height: 370px;
             border-radius: 30px;
             background: white;
+            border: 3px solid rgba(39, 60, 115, 0.88);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
             transition: all 0.5s;
             display: flex;
             flex-direction: column;
@@ -50,6 +52,34 @@
         body.no-scroll {
             overflow: hidden;
         }
+
+        .as-03-cases {
+            width: 330px;
+            height: 40px;
+            color: #E0E0E0;
+            cursor: pointer;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #f0932b;
+            background-color: #192A56;
+            border-radius: 20px;
+            /*margin-bottom: 8px;*/
+        }
+
+        .pop-up-box-for-card-03-content {
+            width: 338px;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            position: absolute;
+            top: 15px;
+        }
+
     </style>
 
 </head>
@@ -185,8 +215,15 @@
             <h1 id="assignments-h1">Assignments</h1>
 
             <div class="pop-up-box-for-card-03" id="pop-up-card-03">
-                <div></div>
-                <button class="close" onclick="closePopUp()">Close</button>
+                <div class="pop-up-box-for-card-03-content">
+                    <div class="as-03-cases" onclick="caseOne()">Case 01</div>
+                    <div class="as-03-cases" onclick="caseTwo()">Case 02</div>
+                    <div class="as-03-cases" onclick="caseThree()">Case 03</div>
+                    <div class="as-03-cases" onclick="caseFore()">Case 04</div>
+                    <div class="as-03-cases" onclick="caseFive()">Case 05</div>
+                    <div class="as-03-cases" onclick="caseSix()">Case 06</div>
+                    <button class="close" onclick="closePopUp()">Close</button>
+                </div>
             </div>
 
             <div class="grid-assignments" id="assignments-cards">
@@ -510,6 +547,30 @@
                 document.querySelector(".line-left-01").classList.remove("blur-background");
                 document.querySelector(".line-right-02").classList.remove("blur-background");
                 document.querySelector("#courses-and-certificates").classList.remove("blur-background");
+            }
+
+            function caseOne() {
+                window.open("../assignments/assignment_03/index.html", "_blank");
+            }
+
+            function caseTwo() {
+                window.open("../assignments/assignment_03/Case-02.html", "_blank");
+            }
+
+            function caseThree() {
+                window.open("../assignments/assignment_03/Case-03.html", "_blank");
+            }
+
+            function caseFore() {
+                window.open("../assignments/assignment_03/Case-04.html", "_blank");
+            }
+
+            function caseFive() {
+                window.open("../assignments/assignment_03/Case-05.html", "_blank");
+            }
+
+            function caseSix() {
+                window.open("../assignments/assignment_03/Case-06.html", "_blank");
             }
 
         </script>

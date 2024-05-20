@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <style>
+
+        #div1 {
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+            position: absolute;
+        }
+        #div2 {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+            position: absolute;
+
+            right: 0;
+        }
+        #div3 {
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+        }
+        #div4 {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+        }
+
+        .sub-circle {
+            width: 150px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100px;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        .red-box {
+            width: 60px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #main {
+            width: 150px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #main_circle {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border-radius: 100px;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #half-circle-bottom {
+            width: 120px;
+            height: 60px;
+            background-color: white;
+            border-radius: 10rem 10rem 0 0;
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        #half-circle-top {
+            width: 120px;
+            height: 60px;
+            background-color: white;
+            border-radius: 0 0 10rem 10rem;
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #circle-top-left {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 0 15rem 0;
+            position: absolute;
+
+            left: 0;
+        }
+        #circle-top-right {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 0 0 15rem;
+            position: absolute;
+
+            right: 0;
+        }
+
+        #circle-bottom-left {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 15rem 0 0;
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+        }
+        #circle-bottom-right {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 15rem 0 0 0;
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+
+</head>
+    <body>
+
+        <!--Red Color div-->
+        <div id="div1">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
+
+        <!--Green Color div-->
+        <div id="div2">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
+
+        <!--Deeppink Color div-->
+        <div id="div3">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
+
+        <!--Orange Color div-->
+        <div id="div4">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
+
+        <!--Center div-->
+        <div id="main">
+            <div id="main_circle"></div>
+        </div>
+
+        <!--Bottom 180 degrees Circle-->
+        <div id="half-circle-bottom"></div>
+
+        <!--Top 180 degrees Circle-->
+        <div id="half-circle-top"></div>
+
+        <!--90 degrees Circle Top Left-->
+        <div id="circle-top-left"></div>
+
+        <!--90 degrees Circle Top Right-->
+        <div id="circle-top-right"></div>
+
+        <!--90 degrees Circle Bottom Left-->
+        <div id="circle-bottom-left"></div>
+
+        <!--90 degrees Circle Bottom Right-->
+        <div id="circle-bottom-right"></div>
+
+    </body>
+</html>
