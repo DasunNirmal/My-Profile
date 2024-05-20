@@ -361,28 +361,68 @@ header>nav>a:nth-child(4):hover,header>nav>a:nth-child(5):hover {
     padding: 5px;
     font-size: 16px;
     font-weight: 600;
+    position: relative;
+    bottom: 20px;
 }
 
 .assignment-btn {
-    width: 50%;
-    height: 40px;
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.see-more-btn {
+    width: 55px;
+    height: 35px;
+    border: 2px solid rgba(25, 42, 86, 0);
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#siteMap,#wireFrame,#figma {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#pdf-1,#view-1,#git-1,#pdf-2,#view-2,#git-2,#pdf-3,#view-3,#git-3,#pdf-4,#view-4,#git-4,#pdf-5,#view-5,#git-5,
+#pdf-6,#view-6,#git-6,#pdf-7,#view-7,#git-7,#pdf-8,#view-8,#git-8,#pdf-9,#view-9,#git-9,#pdf-10,#view-10,#git-10,
+#pdf-11,#view-11,#git-1{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#git-1,#git-2,#git-3, #git-4, #git-5, #git-6, #git-7, #git-8, #git-9, #git-10,#git-11 {
+    width: 35px;
+    height: 30px;
+}
+
+.grid-btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 20px;
     margin: auto;
-
-    border: 3px solid #E0E0E0;
-    background-color: #E0E0E0;
-    border-radius: 5px 5px 5px 5px;
-    transition-duration: 1s;
-    cursor: pointer;
-}
-
-.see-more-btn {
-    color: #192A56;
-    font-size: 18px;
-    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
 }
 
 footer {
@@ -646,12 +686,11 @@ footer>.socials>.instagram {
         background-size: 150px 150px;
     }
 
-    .assignment-btn:hover {
+    .see-more-btn:hover {
         cursor: pointer;
-        border: 3px solid #eab520;
+        border: 2px solid #eab520;
         border-radius: 5px 15px 5px 15px;
-        color: #192A56;
-        font-weight: bold;
+        background-color: #192A56;
         text-decoration: none;
     }
 
@@ -671,6 +710,10 @@ footer>.socials>.instagram {
     }
 
     #assignments-cards>div:hover .assignment-card-content {
+        left: 0;
+    }
+
+    .assignment-card-content {
         left: 0;
     }
 }
@@ -1411,8 +1454,6 @@ footer>.socials>.instagram {
     }
 
     .assignment-btn {
-        border: 3px solid #eab520;
-        border-radius: 5px 15px 5px 15px;
         transition-duration: 1s;
         cursor: pointer;
         font-weight: bold;
@@ -1762,8 +1803,6 @@ footer>.socials>.instagram {
     }
 
     .assignment-btn {
-        border: 3px solid #eab520;
-        border-radius: 5px 15px 5px 15px;
         transition-duration: 1s;
         cursor: pointer;
         font-weight: bold;
@@ -2108,8 +2147,6 @@ footer>.socials>.instagram {
     }
 
     .assignment-btn {
-        border: 3px solid #eab520;
-        border-radius: 5px 15px 5px 15px;
         transition-duration: 1s;
         cursor: pointer;
         font-weight: bold;
