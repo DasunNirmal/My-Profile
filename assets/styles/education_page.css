@@ -688,6 +688,10 @@ footer>.socials>.instagram {
 
 @media all and (max-width: 1440px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     header>nav {
         height: fit-content;
         position: absolute;
@@ -767,6 +771,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     #ellipse {
         background-color: rgba(25, 42, 86, 0.87);
@@ -970,6 +978,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     .hamburger-menu {
         display: flex;
@@ -1200,6 +1212,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 425px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;
@@ -1548,6 +1564,10 @@ footer>.socials>.instagram {
 
 @media all and (max-width: 375px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     :root {
         --bar-width: 40px;
         --bar-height: 3px;
@@ -1888,6 +1908,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 320px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;

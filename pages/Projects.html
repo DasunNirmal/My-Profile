@@ -14,15 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/projects_page.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
     <body>
 
         <!--Ellipse-->
-        <div id="ellipse"></div>
+        <div id="ellipse" data-aos="zoom-out"></div>
 
         <!--Header-->
-        <header id="Projects">
+        <header id="Projects" data-aos="fade-left">
             <div id="logo">
                 <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
             </div>
@@ -43,7 +45,7 @@
         </header>
 
         <!--Hero Section-->
-        <section id="hero-section">
+        <section id="hero-section" data-aos="fade-right" data-aos-duration="1000">
 
             <!--Left Side-->
             <div id="hero-section-left-side"></div>
@@ -70,7 +72,7 @@
         </section>
 
         <!--Projects-->
-        <section id="projects-section">
+        <section id="projects-section" data-aos="zoom-in-up" data-aos-duration="1200">
 
             <div class="line-left"><hr></div>
             <div class="line-right"><hr></div>
@@ -78,7 +80,7 @@
             <h1>Projects</h1>
 
             <div class="grid">
-                <div id="P-1" class="cards">
+                <div id="P-1" class="cards" data-aos="zoom-out-down" data-aos-duration="900">
                     <label for="p-card-01" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-01" class="check-box">
                         <div class="card-content">
@@ -91,7 +93,7 @@
                     </label>
                 </div>
 
-                <div id="P-2">
+                <div id="P-2" data-aos="zoom-out-down" data-aos-duration="900">
                     <label for="p-card-02" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-02" class="check-box">
                         <div class="card-content">
@@ -104,7 +106,7 @@
                     </label>
                 </div>
 
-                <div id="P-3">
+                <div id="P-3" data-aos="zoom-out-down" data-aos-duration="900">
                     <label for="p-card-03" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-03" class="check-box">
                         <div class="card-content">
@@ -117,7 +119,7 @@
                     </label>
                 </div>
 
-                <div id="P-4">
+                <div id="P-4" data-aos="zoom-out-up" data-aos-duration="900">
                     <label for="p-card-04" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-04" class="check-box">
                         <div class="card-content">
@@ -130,7 +132,7 @@
                     </label>
                 </div>
 
-                <div id="P-5">
+                <div id="P-5" data-aos="zoom-out-up" data-aos-duration="900">
                     <label for="p-card-05" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-05" class="check-box">
                         <div class="card-content">
@@ -143,7 +145,7 @@
                     </label>
                 </div>
 
-                <div id="P-6">
+                <div id="P-6" data-aos="zoom-out-up" data-aos-duration="900">
                     <label for="p-card-06" class="p-label">
                         <input type="checkbox" name="slide" id="p-card-06" class="check-box">
                         <div class="card-content">
@@ -159,14 +161,14 @@
 
             <!--Navigate to Git Hub-->
             <a href="https://github.com/DasunNirmal" target="_blank" id="github-button-tag">
-                <button id="github-button">More Projects</button>
+                <button id="github-button"  data-aos="fade-down" data-aos-duration="1200">More Projects</button>
             </a>
 
 
         </section>
 
         <!--Skills and Tools-->
-        <section id="skills-and-tools">
+        <section id="skills-and-tools" data-aos="fade-right" data-aos-duration="1200">
 
             <div class="line-left-01"><hr></div>
             <div class="line-right-02"><hr></div>
@@ -174,7 +176,7 @@
             <h1>Skills and Tools</h1>
 
             <!--Middle-->
-            <div id="skills-and-tools-middle">
+            <div id="skills-and-tools-middle" data-aos="fade-up" data-aos-duration="1000">
                 <p>
                     Java Programming,Software Engineering Principles,Version Control
                     Systems,Problem-Solving Skills,Continuous Learning are some of my skills.
@@ -182,7 +184,7 @@
                 </p>
             </div>
 
-            <div id="tools">
+            <div id="tools"  data-aos="zoom-out" data-aos-duration="1000">
                 <img src="../assets/images/Java.png" alt="java" width="60" height="100">
 
                 <img src="../assets/images/mysql.png" alt="java" width="70" height="70">
@@ -245,5 +247,7 @@
         </footer>
 
         <script src="../assets/js/projects_page.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

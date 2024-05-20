@@ -534,6 +534,10 @@ footer>.socials>.instagram:hover {
 
 @media all and (max-width: 1440px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     header>nav {
         height: fit-content;
         position: absolute;
@@ -575,6 +579,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     header>img {
         left: 15px;
@@ -725,6 +733,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     .hamburger-menu {
         display: flex;
@@ -920,6 +932,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 425px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;
@@ -1223,6 +1239,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 375px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;
@@ -1530,6 +1550,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 320px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;

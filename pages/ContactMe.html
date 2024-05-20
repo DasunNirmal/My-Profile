@@ -14,14 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/contact_page.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
     <body>
         <!--Ellipse-->
-        <div id="ellipse"></div>
+        <div id="ellipse" data-aos="zoom-out"></div>
 
         <!--Header-->
-        <header id="ContactMe">
+        <header id="ContactMe" data-aos="fade-left">
             <div id="logo">
                 <img src="../assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
             </div>
@@ -42,7 +44,7 @@
         </header>
 
         <!--Hero Section-->
-        <section id="hero-section">
+        <section id="hero-section" data-aos="fade-right" data-aos-duration="1000">
             <!--Left Side-->
             <div id="hero-section-left-side">
                 <div id="circle"></div>
@@ -73,10 +75,10 @@
         </section>
 
         <!--Contact Details-->
-        <section id="contact-details-section">
+        <section id="contact-details-section" data-aos="fade-up" data-aos-duration="1000">
 
             <!--Left Side-->
-                <form id="contact-details-left-side">
+                <form id="contact-details-left-side" data-aos="zoom-out-down" data-aos-duration="1000">
                     <h2>Send a Email</h2>
 
                     <input id="name" type="text" placeholder="Your Name"> <br> <br>
@@ -86,7 +88,7 @@
                 </form>
 
                 <!--Middle-->
-                <div id="contact-details-middle">
+                <div id="contact-details-middle" data-aos="zoom-in">
 
                     <p>
                         My Email <br>
@@ -106,7 +108,7 @@
                 </div>
 
                 <!--Right Side-->
-                <div id="contact-details-right-side"></div>
+                <div id="contact-details-right-side" data-aos="zoom-in-up" data-aos-duration="1000"></div>
 
         </section>
 
@@ -150,6 +152,7 @@
 
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

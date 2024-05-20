@@ -16,17 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/styles/home_page.css">
 
 </head>
     <body id="home">
 
         <!--Ellipse-->
-        <div id="ellipse"></div>
+        <div id="ellipse" data-aos="zoom-out"></div>
 
         <!--Header-->
-        <header>
+        <header data-aos="fade-left">
             <div id="logo">
                 <img src="assets/images/DCODE.png" title="logo" alt="logo" width="170" height="57">
             </div>
@@ -47,7 +48,7 @@
         </header>
 
         <!--Hero section-->
-        <section id="hero-section">
+        <section id="hero-section" data-aos="fade-right" data-aos-duration="1000">
             <!--Left side-->
             <div id="left-side">
 
@@ -84,16 +85,16 @@
         </section>
 
         <!--About me-->
-        <section id="AboutMe">
+        <section id="AboutMe" data-aos="fade-up" data-aos-duration="1000">
             <div class="line-left"><hr></div>
             <div class="line-right"><hr></div>
             <h1>About Me</h1>
 
             <!--Left side-->
-            <div id="aboutMe-left-side"></div>
+            <div id="aboutMe-left-side" data-aos="zoom-out-down" data-aos-duration="1000"></div>
 
             <!--Right side-->
-            <div id="aboutMe-right-side">
+            <div id="aboutMe-right-side" data-aos="zoom-in-right" data-aos-duration="1000">
                 <p>
                     My name is <span>Dasun Nirmal</span> As a passionate software <br>
                     engineering student, I specialize in <span>Java</span>.I believe in <br> pushing myself to grow and improve as a developer <br>
@@ -114,12 +115,12 @@
         </section>
 
         <!--Backend Development-->
-        <section id="backend-development">
+        <section id="backend-development" data-aos="fade-down-right" data-aos-duration="1000">
             <div id="line-long_01"><hr></div>
             <h1>Backend Development</h1>
 
             <!--Left Side-->
-            <div id="backend-development-left-side">
+            <div id="backend-development-left-side" data-aos="fade-right" data-aos-duration="1000">
                 <p>
                     Currently i’m mastering <span>Java</span>, And i’m using <span>MySQL</span> to create
                     databases along side java.With the help of <span>IntelliJ IDEA</span> i’ve
@@ -128,26 +129,26 @@
             </div>
 
             <!--Java,MySql,Intellij-->
-            <div id="tools">
+            <div id="tools" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/Java.png" alt="java" width="60" height="100">
                 <img src="assets/images/mysql.png" alt="java" width="70" height="70">
                 <img src="assets/images/IntelliJ_IDEA_Icon.svg.png" alt="java" width="70" height="70">
             </div>
 
             <!--Right Side-->
-            <div id="backend-development-right-side"></div>
+            <div id="backend-development-right-side" data-aos="zoom-out-down" data-aos-duration="1000"></div>
         </section>
 
         <!--Frontend Development-->
-        <section id="frontend-development">
+        <section id="frontend-development" data-aos="fade-down" data-aos-duration="1000">
             <div id="line-long_02"><hr></div>
             <h1>Frontend Development</h1>
 
             <!--Left Side-->
-            <div id="frontend-development-left-side"></div>
+            <div id="frontend-development-left-side" data-aos="zoom-in-left" data-aos-duration="1000"></div>
 
             <!--Right Side-->
-            <div id="frontend-development-right-side">
+            <div id="frontend-development-right-side" data-aos="fade-right" data-aos-duration="1000">
                 <p>
                     As a full stack developer, part of my job is to
                     make the user experience seamless and intuitive.
@@ -157,7 +158,7 @@
             </div>
 
             <!--HTML,JS,CSS,FIGMA-->
-            <div id="tools-frontend">
+            <div id="tools-frontend" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/Html-removebg-preview.png" alt="html" width="70" height="70">
                 <img src="assets/images/JavaScript-Logo.png" alt="js" width="130" height="73.13">
                 <img src="assets/images/CSS3_logo_and_wordmark.svg.png" alt="css" width="50" height="70.52">
@@ -205,6 +206,7 @@
 
             <div id="copy-rights">© 2023 Dasun Nirmal. All rights reserved</div>
         </footer>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

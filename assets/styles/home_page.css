@@ -1,12 +1,9 @@
-html{
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #E0E0E0;
     font-family: "Sen", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 #ellipse {
@@ -761,6 +758,10 @@ footer>.socials>.instagram:hover {
 /*brake points*/
 @media all and (max-width: 1440px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     header>nav {
         height: fit-content;
         position: absolute;
@@ -902,6 +903,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     #ellipse {
         background-color: rgba(25, 42, 86, 0.87);
@@ -1241,6 +1246,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     .hamburger-menu {
         display: flex;
@@ -1717,6 +1726,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 425px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;
@@ -2283,6 +2296,10 @@ footer>.socials>.instagram:hover {
 
 @media all and (max-width: 375px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     :root {
         --bar-width: 40px;
         --bar-height: 3px;
@@ -2840,6 +2857,10 @@ footer>.socials>.instagram:hover {
 }
 
 @media all and (max-width: 320px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;

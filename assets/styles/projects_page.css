@@ -3,6 +3,7 @@ body {
     font-family: "Sen", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 #ellipse {
@@ -288,31 +289,37 @@ header>nav>a:nth-child(3):hover,header>nav>a:nth-child(5):hover {
 #P-1 {
     background: url("/assets/images/stock-management-terminal.png") no-repeat;
     background-size: 1580px 900px;
+    transition: .8s ease-in-out;
 }
 
 #P-2 {
     background: url("/assets/images/Connect-04.png") no-repeat;
     background-size: 415px 330px;
+    transition: .8s ease-in-out;
 }
 
 #P-3 {
     background: url("/assets/images/PastryPal-MVC.png") no-repeat;
     background-size: 415px 310px;
+    transition: .8s ease-in-out;
 }
 
 #P-4 {
     background: url("/assets/images/PastryPal-Lay.png") no-repeat;
     background-size: 415px 310px;
+    transition: .8s ease-in-out;
 }
 
 #P-5 {
     background: url("/assets/images/Echo-Hub.png") no-repeat;
     background-size: 415px 310px;
+    transition: .8s ease-in-out;
 }
 
 #P-6 {
     background: url("/assets/images/BookWorm.png") no-repeat;
     background-size: 410px 310px;
+    transition: .8s ease-in-out;
 }
 
 #github-button {
@@ -329,7 +336,7 @@ header>nav>a:nth-child(3):hover,header>nav>a:nth-child(5):hover {
     border-left: 3px solid #192A56;
     border-right: 3px solid #192A56;
     border-radius: 5px 5px 5px 5px;
-    transition-duration: 1s;
+    transition: .5s ease-in-out;
 }
 
 #github-button-tag {
@@ -763,6 +770,10 @@ footer>.socials>.instagram {
 
 @media all and (max-width: 1440px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     header>nav {
         height: fit-content;
         position: absolute;
@@ -867,6 +878,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     header>img {
         left: 15px;
@@ -1042,6 +1057,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     .hamburger-menu {
         display: flex;
@@ -1267,6 +1286,10 @@ footer>.socials>.instagram {
 
 @media all and (max-width: 425px) {
 
+    body {
+        overflow-x: hidden; !important;
+    }
+
     :root {
         --bar-width: 40px;
         --bar-height: 3px;
@@ -1280,6 +1303,7 @@ footer>.socials>.instagram {
 
     header>nav {
         justify-content: space-between;
+        overflow-x: hidden;
     }
 
     header>nav>a {
@@ -1655,6 +1679,10 @@ footer>.socials>.instagram {
 }
 
 @media all and (max-width: 375px) {
+
+    body {
+        overflow-x: hidden; !important;
+    }
 
     :root {
         --bar-width: 40px;
