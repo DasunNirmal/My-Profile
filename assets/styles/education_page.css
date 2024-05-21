@@ -713,11 +713,6 @@ footer>.socials>.instagram {
     #assignments-cards>div:hover .assignment-card-content {
         left: 0;
     }
-
-    .assignment-card-content {
-
-        left: 0;
-    }
 }
 
 @media (hover: none) {
