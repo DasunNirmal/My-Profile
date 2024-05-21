@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/calculator.css">
+
+</head>
+    <body>
+        <div data-aos="zoom-in-up">
+            <p class="animate__animated animate__jello animate__infinite animate__slower	3s">Java Script <br> Calculator</p>
+        </div>
+        <section class="container" data-aos="zoom-in-down">
+            <div class="display"><span></span></div>
+            <div id="clear">C</div>
+            <div id="button-section">
+                <div class="buttons" data-value="7">7</div>
+                <div class="buttons" data-value="8">8</div>
+                <div class="buttons" data-value="9">9</div>
+                <div class="buttons" data-value="+" id="plus">+</div>
+                <div class="buttons" data-value="4">4</div>
+                <div class="buttons" data-value="5">5</div>
+                <div class="buttons" data-value="6">6</div>
+                <div class="buttons" data-value="-" id="minus">-</div>
+                <div class="buttons" data-value="1">1</div>
+                <div class="buttons" data-value="2">2</div>
+                <div class="buttons" data-value="3">3</div>
+                <div class="buttons" data-value="/" id="divide">/</div>
+                <div class="buttons" data-value="0">0</div>
+                <div class="buttons" data-value="." id="point">.</div>
+                <div class="buttons" data-value="=" id="equal">=</div>
+                <div class="buttons" data-value="*" id="multiply">*</div>
+            </div>
+        </section>
+
+        <script src="assets/lib/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/calculator.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

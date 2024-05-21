@@ -1,0 +1,1380 @@
+body {
+    background-color: #FEE5D4;
+}
+#nav-bar-tags>a {
+    margin-right: 25px; /* Adjust this value to set the space between anchor tags */
+    margin-top: 10px;
+    font-family: "Lexend", sans-serif;
+}
+
+#navbarNavAltMarkup {
+    position: sticky;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.current-page-button,
+.Customers,
+.Items {
+    display: inline-block;
+    color: #B05200;
+    padding: 18px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 25px; /* Adjust this value to set the space between anchor tags */
+    font-weight: 700;
+}
+
+.Home:hover,
+.Customers:hover,
+.Items:hover {
+    background-color: #B05200;
+    color: #FEE5D4;
+}
+
+footer {
+    height: 110px;
+    width: 100%;
+    color: #FEE5D4;
+    background-color: #B05200;
+    text-align: center;
+
+}
+footer>p {
+    margin-bottom: 8px;
+}
+
+#orders-main-section {
+    width: 98vw;
+    height: 675px;
+    background-color: #FFF4ED;
+    position: relative;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px; /* Add padding to prevent content from sticking to edges */
+}
+
+#orders-container {
+    position: relative;
+    padding-bottom: 47px; /* Height of the footer */
+}
+
+#orders-content-card-left {
+    width: 715px;
+    height: 325px;
+    border: 3px solid #B05200;
+    border-radius: 30px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+#total-price {
+    width: 195px;
+    height: 80px;
+    background-color: #FEE5D4;
+    border: 3px solid #B05200;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#price-tag {
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#orders-content-card-right {
+    width: 715px;
+    height: 325px;
+    border: 3px solid #B05200;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+#Tbl-orders {
+    position: relative;
+    top: 400px;
+}
+table.table-bordered > thead > tr > th{
+    border:2px solid #B05200;
+    background-color: #FEE5D4;
+    color: #B05200;
+    text-align: center;
+    font-weight: 950;
+}
+table.table-bordered > tbody {
+    border:2px solid #B05200;
+    text-align: center;
+}
+table.table.table-bordered > tbody > tr > td {
+    color: #B05200;
+}
+
+#orders-content-card-left > input,
+#orders-content-card-right > input,
+#orders-main-section > input {
+    width: 140px;
+    height: 45px;
+    background-color: #FEE5D4;
+    border: 2px solid #B05200;
+    border-radius: 25px;
+}
+
+#orders-content-card-left > #txtSearch-01,
+#orders-content-card-right > #txtSearch-02 {
+    width: 356px;
+    height: 45px;
+    position: absolute;
+    background-image:url('/assets/icons/icons8-search-100.png');
+    background-repeat:no-repeat;
+    background-size: 36px 36px;
+    background-position:306px;
+    left: 18px;
+    top: 40px;
+}
+
+#orders-main-section>#txtSearch-03 {
+    width: 305px;
+    height: 39px;
+    position: absolute;
+    background-image:url('/assets/icons/icons8-search-100.png');
+    background-repeat:no-repeat;
+    background-size: 33px 33px;
+    background-position:259px;
+    left: 18px;
+    top: 394px;
+}
+
+#orders-content-card-left>label,
+#orders-content-card-right>label {
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 550;
+    color: #B05200;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+#orders-main-section>#lblSearchOrders {
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 550;
+    color: #B05200;
+    position: absolute;
+    left: 30px;
+    top: 366px;
+}
+
+#orders-main-section>#lblTotalPrice {
+    width: fit-content;
+    height: fit-content;
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 750;
+    color: #B05200;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 110px;
+    right: 0;
+    margin: auto;
+}
+
+#orders-content-card-left>button.btn.btn-outline-primary,
+#orders-content-card-right>button.btn.btn-outline-primary {
+    width: 90px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 416px;
+    top: 43px;
+}
+
+#orders-main-section>button.btn.btn-outline-primary {
+    width: 112px;
+    height: 40px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 335px;
+    top: 393px;
+}
+
+#orders-main-section>#btnUpdate,
+#orders-main-section>#btnDelete,
+#orders-main-section>#btnClearAll {
+    width: 112px;
+    height: 40px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+}
+
+#orders-main-section>#btnUpdate {
+    left: 70vw;
+    top: 393px;
+}
+
+#orders-main-section>#btnDelete {
+    left: 80vw;
+    top: 393px;
+}
+
+#orders-main-section>#btnClearAll {
+    left: 90vw;
+    top: 393px;
+}
+
+#orders-content-card-left>button.btn.btn-primary {
+    width: 110px;
+    position: absolute;
+    border-radius: 20px;
+    border-color: #B05200;
+    background-color: #B05200;
+    color: #FEE5D4;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 395px;
+    top: 244px;
+}
+
+#orders-content-card-left>#btnClear-1 {
+    width: 90px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 385px;
+    top: 241px;
+}
+
+#orders-content-card-right>#btnClear-2 {
+    width: 90px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 588px;
+    top: 241px;
+}
+
+#orders-content-card-right>button.btn.btn-primary {
+    width: 130px;
+    position: absolute;
+    border-radius: 20px;
+    border-color: #B05200;
+    background-color: #B05200;
+    color: #FEE5D4;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 425px;
+    top: 244px;
+}
+
+#orders-content-card-left>button.btn.btn-primary:hover,
+#orders-content-card-right>button.btn.btn-primary:hover {
+    border: 3px solid rgba(255, 255, 255, 0.53);
+}
+
+#orders-content-card-left>#btnClear-1:hover,
+#orders-content-card-right>#btnClear-2:hover,
+#orders-content-card-left>button.btn.btn-outline-primary:hover,
+#orders-content-card-right>button.btn.btn-outline-primary:hover,
+#orders-main-section>button.btn.btn-outline-primary:hover,
+#orders-main-section>#btnUpdate:hover,
+#orders-main-section>#btnDelete:hover,
+#orders-main-section>#btnClearAll:hover {
+    background-color: #B05200;
+    color: #FEE5D4;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+}
+
+#orders-content-card-left>#lblItemID-orders,
+#orders-content-card-right>#lblOrderID {
+    position: absolute;
+    left: 30px;
+    top: 110px;
+}
+
+#orders-content-card-left>#txtItemId-orders,
+#orders-content-card-right>#txtOrderId {
+    position: absolute;
+    left: 18px;
+    top: 140px;
+}
+
+#orders-content-card-left>#lblQtyOnHand-orders,
+#orders-content-card-right>#lblPhoneNumber-orders {
+    position: absolute;
+    left: 30px;
+    top: 210px;
+}
+
+#orders-content-card-left>#txtQtyOnHand-orders {
+    width: 150px;
+    position: absolute;
+    left: 18px;
+    top: 240px;
+}
+
+#orders-content-card-right>#txtPhoneNumber-orders {
+    width: 180px;
+    position: absolute;
+    left: 18px;
+    top: 240px;
+}
+
+#orders-content-card-right>#lblCustomerID-orders {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+}
+
+#orders-content-card-right>#txtCustomerId-orders {
+    width: 145px;
+    position: absolute;
+    left: 188px;
+    top: 140px;
+}
+
+#orders-content-card-left>#lblItemName-orders {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+}
+
+#orders-content-card-left>#txtItemName-orders {
+    width: 250px;
+    position: absolute;
+    left: 188px;
+    top: 140px;
+}
+
+#orders-content-card-right>#lblCustomerName-orders {
+    position: absolute;
+    left: 380px;
+    top: 110px;
+}
+
+#orders-content-card-right>#txtCustomerName-orders {
+    width: 250px;
+    position: absolute;
+    left: 370px;
+    top: 140px;
+}
+
+#orders-content-card-left>#lblUnitPrice-orders {
+    position: absolute;
+    left: 490px;
+    top: 110px;
+}
+
+#orders-content-card-left>#txtUnitPrice-orders {
+    position: absolute;
+    left: 475px;
+    top: 140px;
+}
+
+#orders-content-card-left>#lblOrderQuantity {
+    position: absolute;
+    left: 200px;
+    top: 210px;
+}
+
+#orders-content-card-left>#txtOrderQuantity {
+    width: 165px;
+    position: absolute;
+    left: 190px;
+    top: 240px;
+}
+
+#orders-content-card-right>#lblOrderDate {
+    position: absolute;
+    left: 240px;
+    top: 210px;
+}
+
+#orders-content-card-right>#txtOrderDate {
+    width: 165px;
+    background-image:url('/assets/icons/icons8-date-picker-100.png');
+    background-repeat:no-repeat;
+    background-size: 34px 34px;
+    background-position:120px;
+    position: absolute;
+    left: 230px;
+    top: 240px;
+}
+
+#orders-content-card-left > #txtSearch-01:focus,
+#orders-content-card-right > #txtSearch-02:focus,
+#orders-content-card-left > #txtItemId-orders:focus,
+#orders-content-card-right > #txtOrderId:focus,
+#orders-content-card-left > #txtItemName-orders:focus,
+#orders-content-card-right > #txtCustomerName-orders:focus,
+#orders-content-card-left > #txtUnitPrice-orders:focus,
+#orders-content-card-right > #txtCustomerId-orders:focus,
+#orders-content-card-left > #txtQtyOnHand-orders:focus,
+#orders-content-card-right > #txtPhoneNumber-orders:focus,
+#orders-content-card-left > #txtOrderQuantity:focus,
+#orders-content-card-right > #txtOrderDate:focus,
+#orders-main-section > #txtSearch-03:focus {
+    background-color: #FEE5D4;
+    border: 3px solid #B05200;
+    box-shadow: none;
+}
+
+@media all and (max-width: 1440px) {
+    #orders-content-card-left {
+        width: 40vw;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 300px;
+        height: 45px;
+        background-position:250px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders,
+    #orders-content-card-right > #txtCustomerName-orders {
+        width: 180px;
+    }
+
+    #orders-content-card-left > #txtUnitPrice-orders {
+        left: 410px;
+    }
+
+    #orders-content-card-left > #lblUnitPrice-orders {
+        left: 425px;
+    }
+
+    #orders-content-card-left > #txtItemId-orders,
+    #orders-content-card-right > #txtOrderId {
+        width: 120px;
+    }
+
+    #orders-content-card-right {
+        width: 40vw;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 102px;
+        left: 370px;
+        top: 244px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 75px;
+        left: 484px;
+        top: 241px;
+    }
+
+    #orders-content-card-right>#txtPhoneNumber-orders {
+        width: 160px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        left: 214px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        width: 140px;
+        background-position: 97px;
+        left: 202px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 120px;
+        left: 358px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 75px;
+        left: 486px;
+    }
+
+    #orders-main-section>#lblTotalPrice {
+        font-size: 21px;
+        left: 45vw;
+        top: 29vh;
+    }
+
+    #total-price {
+        position: absolute;
+        left: 0;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #orders-main-section>#btnUpdate {
+        left: 67vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        left: 77vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        left: 87vw;
+    }
+}
+
+@media all and (max-width: 1333px) {
+    #orders-content-card-left {
+        width: 44vw;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 300px;
+        height: 45px;
+        background-position:250px;
+    }
+
+    #orders-content-card-left>#lblItemName-orders {
+        position: absolute;
+        left: 187px;
+        top: 110px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders,
+    #orders-content-card-right > #txtCustomerName-orders {
+        width: 150px;
+    }
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        left: 364px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders {
+        left: 171px;
+        width: 180px;
+    }
+
+    #orders-content-card-left > #txtUnitPrice-orders {
+        left: 383px;
+    }
+
+    #orders-content-card-left > #lblUnitPrice-orders {
+        left: 396px;
+    }
+
+    #orders-content-card-left > #txtItemId-orders,
+    #orders-content-card-right > #txtOrderId {
+        width: 120px;
+    }
+
+    #orders-content-card-right {
+        width: 44vw;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 102px;
+        left: 370px;
+        top: 244px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 75px;
+        left: 484px;
+        top: 241px;
+    }
+
+    #orders-content-card-right>#txtPhoneNumber-orders {
+        width: 160px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        left: 214px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        width: 140px;
+        background-position: 97px;
+        left: 202px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 120px;
+        left: 358px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 75px;
+        left: 486px;
+    }
+
+    #orders-main-section>#lblTotalPrice {
+        font-size: 18px;
+        left: 0;
+        top: 170px;
+    }
+
+    #total-price {
+        width: 115px;
+        height: 58px;
+        position: absolute;
+        left: 0;
+        top: 138px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #orders-main-section>#btnUpdate {
+        left: 67vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        left: 77vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        left: 87vw;
+    }
+}
+
+@media all and (max-width: 1024px) {
+
+    #orders-container {
+        height: 1270px;
+        position: relative;
+        padding-bottom: 47px; /* Height of the footer */
+    }
+
+    #orders-main-section {
+        height: 1230px;
+    }
+
+    #Tbl-orders {
+        position: relative;
+        top: 880px;
+    }
+
+    #orders-main-section>#lblSearchOrders {
+        position: absolute;
+        left: 30px;
+        top: 845px;
+    }
+
+    #orders-main-section>#txtSearch-03 {
+        background-position: 259px;
+        left: 18px;
+        top: 872px;
+    }
+
+    #orders-main-section>button.btn.btn-outline-primary {
+        width: 89px;
+        left: 335px;
+        top: 872px;
+    }
+
+    #orders-main-section>#lblTotalPrice {
+        font-size: 18px;
+        left: 0;
+        top: 440px;
+    }
+
+    #total-price {
+        width: 130px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 418px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #orders-main-section>#btnUpdate {
+        width: 100px;
+        top: 872px;
+        left: 62vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        width: 100px;
+        top: 872px;
+        left: 73.2vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        width: 100px;
+        top: 872px;
+        left: 84vw;
+    }
+
+    #orders-content-card-left {
+        top: 40px;
+        width: 90vw;
+    }
+
+    #orders-content-card-right {
+        top: 410px;
+        width: 90vw;
+    }
+
+    #orders-content-card-left>#lblUnitPrice-orders {
+        position: absolute;
+        left: 675px;
+        top: 110px;
+    }
+
+    #orders-content-card-left>#txtUnitPrice-orders {
+        position: absolute;
+        left: 665px;
+        top: 140px;
+    }
+
+    #orders-content-card-left>#txtItemName-orders {
+        width: 270px;
+        position: absolute;
+        left: 277px;
+    }
+
+    #orders-content-card-left>#lblItemName-orders {
+        width: 270px;
+        position: absolute;
+        left: 290px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 80px;
+        left: 714px;
+        top: 241px;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 115px;
+        left: 560px;
+        top: 244px;
+    }
+
+    #orders-content-card-left>#lblOrderQuantity {
+        position: absolute;
+        left: 290px;
+        top: 210px;
+    }
+
+    #orders-content-card-left>#txtOrderQuantity {
+        width: 180px;
+        position: absolute;
+        left: 277px;
+        top: 240px;
+    }
+
+    #orders-content-card-left > #txtItemId-orders,
+    #orders-content-card-right > #txtOrderId {
+        width: 155px;
+    }
+
+    #orders-content-card-left>#txtQtyOnHand-orders {
+        width: 155px;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 325px;
+        height: 45px;
+        background-position: 270px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders,
+    #orders-content-card-right > #txtCustomerName-orders {
+        width: 288px;
+    }
+
+    #orders-content-card-right > #txtCustomerName-orders {
+        left: 598px;
+    }
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        left: 615px;
+    }
+
+    #orders-content-card-right>#txtCustomerId-orders {
+        width: 155px;
+        position: absolute;
+        left: 277px;
+        top: 140px;
+    }
+
+    #orders-content-card-right>#lblCustomerID-orders {
+        position: absolute;
+        left: 289px;
+        top: 110px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 80px;
+        left: 714px;
+        top: 241px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 125px;
+        left: 560px;
+        top: 244px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        width: 175px;
+        background-position: 130px;
+        left: 277px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        left: 288px;
+    }
+}
+
+
+@media all and (max-width: 990px) {
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        left: 555px;
+    }
+
+    #orders-content-card-right > #txtCustomerName-orders {
+        left: 540px;
+        width: 288px;
+    }
+}
+
+@media all and (max-width: 764px) {
+
+    #orders-content-card-left {
+        left: 20px;
+        top: 40px;
+        width: 90vw;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 264px;
+        height: 45px;
+        background-position: 216px;
+    }
+
+    #orders-content-card-left>button.btn.btn-outline-primary,
+    #orders-content-card-right>button.btn.btn-outline-primary {
+        left: 308px;
+    }
+
+    #orders-content-card-left>#lblItemName-orders {
+        width: 270px;
+        position: absolute;
+        left: 248px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders {
+        left: 227px;
+        width: 245px;
+    }
+
+    #orders-content-card-left>#lblUnitPrice-orders {
+        position: absolute;
+        left: 548px;
+        top: 110px;
+    }
+
+    #orders-content-card-left>#txtUnitPrice-orders {
+        position: absolute;
+        left: 526px;
+        top: 140px;
+    }
+
+    #orders-content-card-left>#lblOrderQuantity {
+        position: absolute;
+        left: 240px;
+        top: 210px;
+    }
+
+    #orders-content-card-left>#txtOrderQuantity {
+        position: absolute;
+        left: 227px;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 115px;
+        left: 440px;
+        top: 244px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 80px;
+        left: 575px;
+        top: 241px;
+    }
+
+    #orders-content-card-right>#txtCustomerId-orders {
+        left: 218px;
+    }
+
+    #orders-content-card-right>#lblCustomerID-orders {
+        left: 238px;
+    }
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        left: 432px;
+    }
+
+    #orders-content-card-right > #txtCustomerName-orders {
+        left: 417px;
+        width: 238px;
+    }
+
+    #orders-content-card-right>#txtPhoneNumber-orders {
+        width: 174px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        width: 175px;
+        background-position: 130px;
+        left: 226px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        left: 239px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 125px;
+        left: 435px;
+        top: 244px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 80px;
+        left: 581px;
+        top: 241px;
+    }
+
+    #orders-main-section>#txtSearch-03 {
+        width: 200px;
+        background-position: 157px;
+        left: 18px;
+        top: 872px;
+    }
+
+    #orders-main-section>button.btn.btn-outline-primary {
+        width: 81px;
+        left: 237px;
+        top: 872px;
+    }
+
+    #orders-main-section>#btnUpdate {
+        width: 90px;
+        top: 872px;
+        left: 55vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        width: 90px;
+        top: 872px;
+        left: 68.2vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        width: 97px;
+        top: 872px;
+        left: 81vw;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    #orders-container {
+        height: 1390px;
+        position: relative;
+        padding-bottom: 47px;
+    }
+
+    #orders-content-card-right {
+        height: 410px;
+        top: 480px;
+        left: 15px;
+        width: 90vw;
+    }
+
+    #orders-content-card-left {
+        height: 410px;
+        left: 15px;
+        top: 40px;
+        width: 90vw;
+    }
+
+    #orders-main-section {
+        width: 96vw;
+        height: 1360px;
+    }
+
+    #Tbl-orders {
+        position: relative;
+        top: 1068px;
+    }
+
+    #orders-main-section>#txtSearch-03 {
+        width: 178px;
+        background-position: 136px;
+        left: 18px;
+        top: 1062px;
+    }
+
+    #orders-main-section>button.btn.btn-outline-primary {
+        width: 81px;
+        left: 208px;
+        top: 1060px;
+    }
+
+    #orders-main-section>#lblSearchOrders {
+        position: absolute;
+        left: 30px;
+        top: 1034px;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 217px;
+        height: 45px;
+        background-position: 174px;
+    }
+
+    #orders-content-card-left>button.btn.btn-outline-primary,
+    #orders-content-card-right>button.btn.btn-outline-primary {
+        left: 262px;
+    }
+
+    #orders-main-section>#btnUpdate {
+        width: 88px;
+        top: 931px;
+        left: 3vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        width: 90px;
+        top: 931px;
+        left: 24.2vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        width: 97px;
+        top: 931px;
+        left: 46vw;
+    }
+
+    #orders-main-section>#lblTotalPrice {
+        font-size: 18px;
+        left: 59vw;
+        top: 760px;
+    }
+
+    #total-price {
+        width: 140px;
+        height: 72px;
+        position: absolute;
+        left: 357px;
+        top: 761px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #orders-content-card-left>#txtUnitPrice-orders {
+        position: absolute;
+        left: 18px;
+        top: 335px;
+    }
+
+    #orders-content-card-left>#lblUnitPrice-orders {
+        position: absolute;
+        left: 33px;
+        top: 306px;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 115px;
+        left: 191px;
+        top: 338px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 80px;
+        left: 335px;
+        top: 334px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        top: 335px;
+        width: 175px;
+        background-position: 130px;
+        left: 16px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        top: 305px;
+        left: 29px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 125px;
+        left: 225px;
+        top: 338px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 80px;
+        left: 381px;
+        top: 333px;
+    }
+
+    #orders-content-card-right > #txtCustomerName-orders {
+        top: 240px;
+        left: 227px;
+        width: 238px;
+    }
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        top: 209px;
+        left: 247px;
+    }
+}
+
+@media all and (max-width: 425px) {
+
+    #orders-container {
+        height: 1900px;
+        position: relative;
+        padding-bottom: 47px;
+    }
+
+    #orders-content-card-right {
+        height: 560px;
+        top: 660px;
+        left: 8px;
+        width: 90vw;
+    }
+
+    #orders-content-card-left {
+        height: 560px;
+        left: 8px;
+        top: 60px;
+        width: 90vw;
+    }
+
+    #orders-main-section {
+        width: 94vw;
+        height: 1880px;
+    }
+
+    #Tbl-orders {
+        position: relative;
+        top: 1592px;
+    }
+
+    #orders-main-section>#txtSearch-03 {
+        width: 158px;
+        background-position: 116px;
+        left: 18px;
+        top: 1584px;
+    }
+
+    #orders-main-section>#lblSearchOrders {
+        position: absolute;
+        left: 30px;
+        top: 1556px;
+    }
+
+    #orders-main-section>button.btn.btn-outline-primary {
+        width: 81px;
+        left: 208px;
+        top: 1582px;
+    }
+
+    #orders-content-card-left > #txtSearch-01,
+    #orders-content-card-right > #txtSearch-02 {
+        width: 217px;
+        height: 45px;
+        background-position: 174px;
+    }
+
+    #orders-content-card-left>button.btn.btn-outline-primary,
+    #orders-content-card-right>button.btn.btn-outline-primary {
+        left: 262px;
+    }
+
+    #orders-main-section>#btnUpdate {
+        width: 88px;
+        top: 1260px;
+        left: 9vw;
+    }
+
+    #orders-main-section>#btnDelete {
+        width: 90px;
+        top: 1260px;
+        left: 35.2vw;
+    }
+
+    #orders-main-section>#btnClearAll {
+        width: 97px;
+        top: 1260px;
+        left: 62vw;
+    }
+
+    #orders-main-section>#lblTotalPrice {
+        font-size: 17px;
+        left: 6vw;
+        top: 1015px;
+    }
+
+    #total-price {
+        width: 140px;
+        height: 72px;
+        position: absolute;
+        left: 27px;
+        top: 1000px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #orders-content-card-left>#txtUnitPrice-orders {
+        width: 340px;
+        left: 18px;
+        top: 405px;
+    }
+
+    #orders-content-card-left>#lblUnitPrice-orders {
+        position: absolute;
+        left: 33px;
+        top: 376px;
+    }
+
+    #orders-content-card-left>button.btn.btn-primary {
+        width: 115px;
+        left: 21px;
+        top: 469px;
+    }
+
+    #orders-content-card-left>#btnClear-1 {
+        width: 80px;
+        left: 165px;
+        top: 464px;
+    }
+
+    #orders-content-card-right>button.btn.btn-primary {
+        width: 125px;
+        left: 18px;
+        top: 478px;
+    }
+
+    #orders-content-card-right>#btnClear-2 {
+        width: 80px;
+        left: 181px;
+        top: 474px;
+    }
+
+    #orders-content-card-right > #txtCustomerName-orders {
+        top: 327px;
+        left: 18px;
+        width: 342px;
+    }
+
+    #orders-content-card-right > #lblCustomerName-orders {
+        top: 295px;
+        left: 30px;
+    }
+
+    #orders-content-card-right>#lblOrderDate {
+        top: 385px;
+        left: 29px;
+    }
+
+    #orders-content-card-right>#txtOrderDate {
+        top: 415px;
+        width: 347px;
+        background-position: 300px;
+        left: 16px;
+    }
+
+    #orders-content-card-right>#txtPhoneNumber-orders {
+        width: 339px;
+    }
+
+    #orders-content-card-right>#txtCustomerId-orders {
+        left: 202px;
+    }
+
+    #orders-content-card-right>#lblCustomerID-orders {
+        left: 216px;
+    }
+
+    #orders-content-card-left>#txtOrderQuantity {
+        width: 340px;
+        top: 320px;
+        left: 18px;
+    }
+
+    #orders-content-card-left>#lblOrderQuantity {
+        left: 30px;
+        top: 290px;
+    }
+
+    #orders-content-card-left>#txtQtyOnHand-orders {
+        width: 340px;
+        left: 18px;
+        top: 230px;
+    }
+
+    #orders-content-card-left>#lblQtyOnHand-orders {
+        left: 30px;
+        top: 200px;
+    }
+
+    #orders-content-card-left > #txtItemId-orders {
+        width: 130px;
+    }
+
+    #orders-content-card-left>#lblItemName-orders {
+        width: 113px;
+        left: 188px;
+    }
+
+    #orders-content-card-left > #txtItemName-orders {
+        left: 167px;
+        width: 192px;
+    }
+}

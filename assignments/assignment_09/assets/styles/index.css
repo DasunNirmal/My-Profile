@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+section {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#button {
+    width: 90px;
+    background: black;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.light_on {
+    background: red;
+    box-shadow: 0px 0px 20px red;
+}
+.light_on2 {
+    background: hotpink;
+    box-shadow: 0px 0px 20px hotpink;
+}

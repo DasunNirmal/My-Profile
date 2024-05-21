@@ -1,0 +1,91 @@
+body {
+    background-color: #353b48;
+}
+
+#colors {
+    width: 70%;
+    height: 140px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 2px solid #ced6e0;
+    border-top: 2px solid #ced6e0;
+}
+
+div {
+    position: relative;
+    width: 150px;
+    height: 70px;
+    display: inline-block;
+    margin: 50px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+div:first-child {
+    background-color: red;
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+}
+div:nth-child(2) {
+    background-color: green;
+}
+div:nth-child(3) {
+    background-color: blue;
+}
+div:nth-child(4) {
+    background-color: yellow;
+}
+div:nth-child(5) {
+    background-color: lightsalmon;
+}
+div:nth-child(6) {
+    background-color: deeppink;
+    position: absolute;
+    right: 0;
+    top: 140px;
+}
+
+#buttons {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 490px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #487eb0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid #cedff3;
+}
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    color: #ced6e0;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: "Abyssinica SIL",serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

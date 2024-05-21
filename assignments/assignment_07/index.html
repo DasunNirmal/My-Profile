@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PTO</title>
+    <link rel="icon" type="x-icon" href="assets/icons/pto-high-resolution-logo-transparent.png">
+    <link rel="stylesheet" href="../../assets/normalize/normalize.css">
+    <meta name="description" content="POS">
+    <meta name="keywords" content="Dasun Nirmal Student of IJSE,learning to be a software engineer">
+    <meta name="author" content="Dasun Nirmal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/items-page.css">
+    <link rel="stylesheet" href="assets/style/customer-page.css">
+    <link rel="stylesheet" href="assets/style/orders-page.css">
+    <link rel="stylesheet" href="assets/style/home-page.css">
+
+</head>
+    <body>
+        <!--Hero section-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-highlight">
+                <div class="container-fluid">
+                    <img class="float-left" src="./assets/icons/pto-high-resolution-logo-transparent%20(1).png" alt="Bootstrap" width="106" height="115">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav" id="nav-bar-tags">
+                            <span class="current-page-button" id="nav-home-section">Home</span>
+                            <span class="Orders" id="nav-orders-section">Orders</span>
+                            <span class="Customers" id="nav-customers-section">Customers</span>
+                            <span class="Items" id="nav-items-section">Items</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home-section">
+
+            <!--Main Content-->
+            <main id="container-home-section">
+
+                <!--Sub Section-->
+                <div id="home-sub-section">
+
+                    <!--Card 01-02-->
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card" id="card1">
+                                <div class="card-body ">
+                                    <label for="card1">Total Orders</label>
+                                    <label id="totalOrdersHome" for="card1">0</label>
+                                    <img src="./assets/icons/icons8-maximum-order-100.png" alt="order chart" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" id="card2">
+                                <div class="card-body">
+                                    <label for="card2">Total Today Orders</label>
+                                    <label id="totalTodayOrders" for="card2">0</label>
+                                    <img src="./assets/icons/icons8-today-100.png" alt="order chart" width="48" height="48">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="home-middle-card">
+                        <label for="home-middle-card">Sales</label>
+                        <label id="sales" for="home-middle-card">0</label>
+                        <img src="./assets/icons/icons8-sales-100.png" alt="order chart" width="60" height="60">
+                    </div>
+
+                    <!--Cards 03-04-->
+                    <div class="row" id="cards-2">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card" id="card3">
+                                <div class="card-body ">
+                                    <label for="card3">Total Items</label>
+                                    <label id="totalItemsHome" for="card3">0</label>
+                                    <img src="./assets/icons/icons8-grocery-shelf-100.png" alt="order chart" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" id="card4">
+                                <div class="card-body">
+                                    <label for="card4">Total Customers</label>
+                                    <label id="totalCustomersHome" for="card4">0</label>
+                                    <img src="./assets/icons/icons8-customers-100.png" alt="order chart" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--section left-->
+                <section id="home-main-section">
+
+                    <label for="home-main-section">Orders Summary</label>
+
+                    <div class="col-md-12 mt-4" style="height:515px; overflow-y: scroll" id="Tbl-home-section">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Item ID</th>
+                                <th>Item Name</th>
+                                <th>Quantity</th>
+                                <th>Order Date</th>
+                                <th>Total Price</th>
+                            </tr>
+                            </thead>
+                            <tbody id="orders-summary">
+                            <tr>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </main>
+
+            <!--Page Footer-->
+            <footer>
+                <img src="./assets/icons/pto-high-resolution-logo-transparent.png" alt="logo" width="73" height="80">
+                <p>© 2024 Dasun Nirmal. All rights reserved</p>
+            </footer>
+        </section>
+
+        <section id="orders-section">
+
+            <!--Main Content-->
+            <main id="orders-container">
+
+                <section id="orders-main-section">
+
+                    <!--Left-->
+                    <div id="orders-content-card-left">
+
+                        <!--label search-->
+                        <label for="orders-content-card-left">Search Items :</label>
+
+                        <!--search field-->
+                        <input id="txtSearch-01" class="form-control" type="text" placeholder="search by id or name" aria-label="default input example">
+                        <button id="search-items-orders" type="button" class="btn btn-outline-primary">search</button>
+
+                        <!--label Item ID-->
+                        <label id="lblItemID-orders" for="orders-content-card-left">Item ID :</label>
+                        <!--itemId field-->
+                        <input id="txtItemId-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Item Name-->
+                        <label id="lblItemName-orders" for="orders-content-card-left">Item Name :</label>
+                        <!--itemName field-->
+                        <input id="txtItemName-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label UnitPrice-->
+                        <label id="lblUnitPrice-orders" for="orders-content-card-left">Unit Price :</label>
+                        <!--itemName field-->
+                        <input id="txtUnitPrice-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Qty On Hand-->
+                        <label id="lblQtyOnHand-orders" for="orders-content-card-left">Qty On Hand :</label>
+                        <!--itemName field-->
+                        <input id="txtQtyOnHand-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Order Quantity-->
+                        <label id="lblOrderQuantity" for="orders-content-card-left">Order Quantity :</label>
+                        <!--Order Quantity field-->
+                        <input id="txtOrderQuantity" class="form-control" type="text" aria-label="default input example">
+                        <button id="btnClear-1" type="button" class="btn btn-outline-primary">Clear</button>
+
+                    </div>
+
+                    <!--Middle-->
+                    <label id="lblTotalPrice" for="orders-main-section">Total Price</label>
+                    <div id="total-price">
+                        <label id="price-tag" for="total-price">0</label>
+                    </div>
+
+                    <!--Right-->
+                    <div id="orders-content-card-right">
+
+                        <!--label search-->
+                        <label for="orders-content-card-right">Search Customer :</label>
+
+                        <!--search field-->
+                        <input id="txtSearch-02" class="form-control" type="text" placeholder="search by id or name" aria-label="default input example">
+                        <button id="search-customers-orders" type="button" class="btn btn-outline-primary">search</button>
+
+                        <!--label Order ID-->
+                        <label id="lblOrderID" for="orders-content-card-right">Order ID :</label>
+                        <!--itemId field-->
+                        <input id="txtOrderId" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Customer ID-->
+                        <label id="lblCustomerID-orders" for="orders-content-card-right">Customer ID :</label>
+                        <!--itemId field-->
+                        <input id="txtCustomerId-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Customer Name-->
+                        <label id="lblCustomerName-orders" for="orders-content-card-right">Customer Name :</label>
+                        <!--Customer field-->
+                        <input id="txtCustomerName-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Phone Number-->
+                        <label id="lblPhoneNumber-orders" for="orders-content-card-right">Phone Number :</label>
+                        <!--itemName field-->
+                        <input id="txtPhoneNumber-orders" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Order Date-->
+                        <label id="lblOrderDate" for="orders-content-card-right">Order Date :</label>
+                        <!--itemName field-->
+                        <input id="txtOrderDate" class="form-control" type="text" aria-label="default input example">
+                        <button id="place-order" type="button" class="btn btn-primary">Place Order</button>
+                        <button id="btnClear-2" type="button" class="btn btn-outline-primary">Clear</button>
+
+                    </div>
+
+                    <!--label search-->
+                    <label id="lblSearchOrders" for="orders-main-section">Search Orders :</label>
+
+                    <!--search orders field-->
+                    <input id="txtSearch-03" class="form-control" type="text" placeholder="search by id" aria-label="default input example">
+                    <button type="button" class="btn btn-outline-primary">search</button>
+
+                    <!--Table-->
+                    <div class="col-md-12 mt-4" style="height:225px; overflow-y: scroll" id="Tbl-orders">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Item ID</th>
+                                <th>Item Name</th>
+                                <th>Unit Price</th>
+                                <th>QtyOnHand</th>
+                                <th>Quantity</th>
+                                <th>Order Date</th>
+                                <th>Customer ID</th>
+                                <th>Total Price</th>
+                            </tr>
+                            </thead>
+                            <tbody id="orders-table-tb">
+                            <tr>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--btn Update-->
+                    <button id="btnUpdate" type="button" class="btn btn-outline-primary">Update</button>
+
+                    <!--btn Delete-->
+                    <button id="btnDelete" type="button" class="btn btn-outline-primary">Delete</button>
+
+                    <!--btn Clear All-->
+                    <button id="btnClearAll" type="button" class="btn btn-outline-primary">Clear All</button>
+                </section>
+
+            </main>
+
+            <!--Page Footer-->
+            <footer>
+                <img src="./assets/icons/pto-high-resolution-logo-transparent.png" alt="logo" width="73" height="80">
+                <p>© 2024 Dasun Nirmal. All rights reserved</p>
+            </footer>
+        </section>
+
+        <section id="customers-section">
+            <!--Main Content-->
+            <main id="customers-container">
+
+                <section id="customers-main-section">
+
+                    <!--Left Card-->
+                    <div id="customers-content-card-left">
+
+                        <!--label Customer ID-->
+                        <label id="lblCustomerID" for="customers-content-card-left">Customer ID :</label>
+                        <!--Customer ID field-->
+                        <input id="txtCustomerID" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Customer Name-->
+                        <label id="lblName" for="customers-content-card-left">Name :</label>
+                        <!--Customer Name field-->
+                        <input id="txtName" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Customer Address-->
+                        <label id="lblAddress" for="customers-content-card-left">Address :</label>
+                        <!--Customer Address field-->
+                        <input id="txtAddress" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Customer Phone Number-->
+                        <label id="lblPhoneNumber" for="customers-content-card-left">Phone Number :</label>
+                        <!--Customer Phone Number field-->
+                        <input id="txtPhoneNumber" class="form-control" type="text" aria-label="default input example">
+
+                        <!--Add Customer-->
+                        <button type="button" class="btn btn-primary" id="addCustomers">Add a New Customer</button>
+
+                    </div>
+
+                    <!--label search-->
+                    <label id="lblSearchCustomers" for="customers-main-section">Search Customers :</label>
+
+                    <!--search orders field-->
+                    <input id="txtSearch-customers" class="form-control" type="text" placeholder="search by id or tele" aria-label="default input example">
+                    <button id="search-customer" type="button" class="btn btn-outline-primary">search</button>
+
+                    <!--Table-->
+                    <div class="col-md-12 mt-4" style="height:225px; overflow-y: scroll" id="Tbl-customers">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Address</th>
+                                <th>Phone Number</th>
+                            </tr>
+                            </thead>
+                            <tbody id="customers-table-tb">
+                            <tr>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="totalCustomers">
+                        <label id="totalCustomers-label" for="totalCustomers">Total Customers</label>
+                        <label id="count" for="totalCustomers">0</label>
+                        <img src="./assets/icons/icons8-customers-100.png" alt="customers" width="65" height="65">
+                    </div>
+
+                    <!--btn Update-->
+                    <button id="btnUpdate-customer" type="button" class="btn btn-outline-primary">Update</button>
+
+                    <!--btn Delete-->
+                    <button id="btnDelete-customer" type="button" class="btn btn-outline-primary">Delete</button>
+
+                    <!--btn Clear All-->
+                    <button id="btnClearAll-customer" type="reset" class="btn btn-outline-primary">Clear All</button>
+
+                </section>
+
+            </main>
+
+            <!--Page Footer-->
+            <footer>
+                <img src="./assets/icons/pto-high-resolution-logo-transparent.png" alt="logo" width="73" height="80">
+                <p>© 2024 Dasun Nirmal. All rights reserved</p>
+            </footer>
+        </section>
+
+        <section id="items-section">
+            <!--Main Content-->
+            <main id="items-container">
+
+                <section id="items-main-section">
+
+                    <!--Left Card-->
+                    <div id="items-content-card-left">
+
+                        <!--label Item ID-->
+                        <label id="lblItemID" for="items-content-card-left">Item ID :</label>
+                        <!--Item ID field-->
+                        <input id="txtItemID" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Item Name-->
+                        <label id="lblItemName" for="items-content-card-left">Item Name :</label>
+                        <!--Item Name field-->
+                        <input id="txtItemName" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Item price-->
+                        <label id="lblPrice" for="items-content-card-left">Price :</label>
+                        <!--Item Price field-->
+                        <input id="txtPrice" class="form-control" type="text" aria-label="default input example">
+
+                        <!--label Quantity-->
+                        <label id="lblQuantity" for="items-content-card-left">Quantity :</label>
+                        <!--Quantity field-->
+                        <input id="txtQuantity" class="form-control" type="text" aria-label="default input example">
+
+                        <!--Add Item-->
+                        <button id="addItems" type="button" class="btn btn-primary">Add a New Item</button>
+
+                    </div>
+
+                    <!--label search-->
+                    <label id="lblSearchItems" for="items-main-section">Search Items :</label>
+
+                    <!--search orders field-->
+                    <input id="txtSearch-items" class="form-control" type="text" placeholder="search by id" aria-label="default input example">
+                    <button type="button" class="btn btn-outline-primary">search</button>
+
+                    <!--Table-->
+                    <div class="col-md-12 mt-4" style="height:225px; overflow-y: scroll" id="Tbl-items">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Item ID</th>
+                                <th>Item Name</th>
+                                <th>Price</th>
+                                <th>Quantity On Hand</th>
+                            </tr>
+                            </thead>
+                            <tbody id="items-table-tb">
+                            <tr>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="totalItems">
+                        <label id="totalItems-label" for="totalItems">Total Items</label>
+                        <label id="count-items" for="totalItems">0</label>
+                        <img src="./assets/icons/icons8-grocery-shelf-100.png" alt="Items" width="65" height="65">
+                    </div>
+
+                    <!--btn Update-->
+                    <button id="btnUpdate-items" type="button" class="btn btn-outline-primary">Update</button>
+
+                    <!--btn Delete-->
+                    <button id="btnDelete-items" type="button" class="btn btn-outline-primary">Delete</button>
+
+                    <!--btn Clear All-->
+                    <button id="btnClearAll-items" type="button" class="btn btn-outline-primary">Clear All</button>
+
+                </section>
+
+            </main>
+
+            <!--Page Footer-->
+            <footer>
+                <img src="./assets/icons/pto-high-resolution-logo-transparent.png" alt="logo" width="73" height="80">
+                <p>© 2024 Dasun Nirmal. All rights reserved</p>
+            </footer>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="assets/lib/jquery-3.7.1.min.js"></script>
+        <script type="module" src="controller/IndexController.js"></script>
+        <script type="module" src="controller/OrdersController.js"></script>
+        <script type="module" src="controller/CustomersController.js"></script>
+        <script type="module" src="controller/ItemsController.js"></script>
+    </body>
+</html>

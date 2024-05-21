@@ -1,0 +1,768 @@
+body {
+    background-color: #FEE5D4;
+}
+#nav-bar-tags>a {
+    margin-right: 25px; /* Adjust this value to set the space between anchor tags */
+    margin-top: 10px;
+    font-family: "Lexend", sans-serif;
+}
+
+#navbarNavAltMarkup {
+    position: sticky;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.current-page-button {
+    background-color: #B05200;
+    color: #FFEEE2;
+    padding: 18px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+.Home,
+.Orders,
+.Items {
+    display: inline-block;
+    color: #B05200;
+    padding: 18px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 25px; /* Adjust this value to set the space between anchor tags */
+    font-weight: 700;
+}
+
+.Home:hover,
+.Orders:hover,
+.Items:hover {
+    background-color: #B05200;
+    color: #FEE5D4;
+}
+
+footer {
+    height: 110px;
+    width: 100%;
+    color: #FEE5D4;
+    background-color: #B05200;
+    text-align: center;
+
+}
+footer>p {
+    margin-bottom: 8px;
+}
+
+#main-section {
+    width: 98vw;
+    height: 70vh;
+    background-color: #FFF4ED;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px; /* Add padding to prevent content from sticking to edges */
+}
+
+#container {
+    position: relative;
+    padding-bottom: 47px; /* Height of the footer */
+}
+
+#content-card-left {
+    width: 815px;
+    height: 300px;
+    border: 3px solid #B05200;
+    border-radius: 30px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+#Tbl {
+    position: relative;
+    top: 400px;
+}
+table.table-bordered > thead > tr > th{
+    border:2px solid #B05200;
+    background-color: #FEE5D4;
+    color: #B05200;
+    text-align: center;
+    font-weight: 950;
+}
+table.table-bordered > tbody {
+    border:2px solid #B05200;
+    text-align: center;
+}
+
+table.table.table-bordered > tbody > tr > td {
+    color: #B05200;
+}
+
+#content-card-left > input,
+#main-section > input {
+    width: 140px;
+    height: 45px;
+    background-color: #FEE5D4;
+    border: 2px solid #B05200;
+    border-radius: 25px;
+}
+
+#content-card-left>label {
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 550;
+    color: #B05200;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+#content-card-left>#lblCustomerID {
+    position: absolute;
+    left: 45px;
+    top: 50px;
+}
+
+#content-card-left>#txtCustomerID {
+    width: 170px;
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+#content-card-left>#lblName {
+    position: absolute;
+    left: 283px;
+    top: 50px;
+}
+
+#content-card-left>#txtName {
+    width: 215px;
+    position: absolute;
+    left: 263px;
+    top: 80px;
+}
+
+#content-card-left>#lblAddress {
+    position: absolute;
+    left: 565px;
+    top: 50px;
+}
+
+#content-card-left>#txtAddress {
+    width: 215px;
+    position: absolute;
+    left: 545px;
+    top: 80px;
+}
+
+#content-card-left>#lblPhoneNumber {
+    position: absolute;
+    left: 45px;
+    top: 190px;
+}
+
+#content-card-left>#txtPhoneNumber {
+    width: 215px;
+    position: absolute;
+    left: 30px;
+    top: 220px;
+}
+
+#main-section>#lblSearchOrders {
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 550;
+    color: #B05200;
+    position: absolute;
+    left: 45px;
+    top: 366px;
+}
+
+#main-section>#txtSearch-03 {
+    width: 305px;
+    height: 39px;
+    position: absolute;
+    background-image:url('/assets/icons/icons8-search-100.png');
+    background-repeat:no-repeat;
+    background-size: 33px 33px;
+    background-position:259px;
+    left: 30px;
+    top: 394px;
+}
+
+#content-card-left > #txtCustomerID:focus,
+#content-card-left > #txtName:focus,
+#content-card-left > #txtAddress:focus,
+#content-card-left > #txtPhoneNumber:focus,
+#main-section>#txtSearch-03:focus {
+    background-color: #FEE5D4;
+    border: 3px solid #B05200;
+    box-shadow: none;
+}
+
+#content-card-left>button.btn.btn-primary {
+    width: 212px;
+    position: absolute;
+    border-radius: 20px;
+    border-color: #B05200;
+    background-color: #B05200;
+    color: #FEE5D4;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 282px;
+    top: 223px;
+}
+
+#content-card-left>button.btn.btn-primary:hover {
+    border: 3px solid rgba(255, 255, 255, 0.53);
+}
+
+#main-section>button.btn.btn-outline-primary {
+    width: 112px;
+    height: 40px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+    left: 375px;
+    top: 393px;
+}
+
+#main-section>#btnUpdate {
+    left: 70vw;
+    top: 393px;
+}
+
+#main-section>#btnDelete {
+    left: 80vw;
+    top: 393px;
+}
+
+#main-section>#btnClearAll {
+    left: 90vw;
+    top: 393px;
+}
+
+#main-section>#btnUpdate,
+#main-section>#btnDelete,
+#main-section>#btnClearAll {
+    width: 112px;
+    height: 40px;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid #B05200;
+    color: #B05200;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+}
+
+#main-section>button.btn.btn-outline-primary:hover,
+#main-section>#btnUpdate:hover,
+#main-section>#btnDelete:hover,
+#main-section>#btnClearAll:hover {
+    background-color: #B05200;
+    color: #FEE5D4;
+    font-weight: 550;
+    font-family: "Lexend", sans-serif;
+}
+
+#totalCustomers {
+    width: 250px;
+    height: 160px;
+    background-color: #FEE5D4;
+    border: 3px solid #B05200;
+    border-radius: 30px;
+    position: absolute;
+    top: 10vh;
+    left: 70vw;
+}
+
+#totalCustomers > label {
+    font-family: "Lexend", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 750;
+    color: #B05200;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+#totalCustomers > img {
+    position: absolute;
+    top: 38px;
+    left: 90px;
+}
+
+@media all and (max-width: 1440px) {
+    #main-section>#btnUpdate {
+        left: 67vw;
+    }
+
+    #main-section>#btnDelete {
+        left: 77vw;
+    }
+
+    #main-section>#btnClearAll {
+        left: 87vw;
+    }
+}
+
+@media all and (max-width: 1333px) {
+
+    #totalCustomers {
+        left: 73vw;
+    }
+
+    #main-section>#btnUpdate {
+        left: 67vw;
+    }
+
+    #main-section>#btnDelete {
+        left: 77vw;
+    }
+
+    #main-section>#btnClearAll {
+        left: 87vw;
+    }
+}
+
+@media all and (max-width: 1024px) {
+
+    #totalCustomers {
+        left: 75vw;
+        width: 20vw;
+    }
+
+    #totalCustomers > label {
+        font-size: 18px;
+        top: 10px;
+        left: 26px;
+    }
+
+    #totalCustomers > img {
+        position: absolute;
+        top: 38px;
+        left: 72px;
+    }
+
+    #content-card-left {
+        width: 675px;
+        left: 40px;
+        top: 20px;
+    }
+
+    #content-card-left>#lblCustomerID {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+    }
+
+    #content-card-left>#txtCustomerID {
+        width: 158px;
+        left: 18px;
+        top: 80px;
+    }
+
+    #content-card-left>#lblName {
+        position: absolute;
+        left: 223px;
+        top: 50px;
+    }
+
+    #content-card-left>#txtName {
+        width: 211px;
+        position: absolute;
+        left: 205px;
+        top: 80px;
+    }
+
+    #content-card-left>#lblAddress {
+        position: absolute;
+        left: 463px;
+        top: 50px;
+    }
+
+    #content-card-left>#txtAddress {
+        width: 205px;
+        position: absolute;
+        left: 447px;
+        top: 80px;
+    }
+
+    #main-section>button.btn.btn-outline-primary {
+        width: 86px;
+        height: 40px;
+        left: 352px;
+        top: 393px;
+    }
+
+    #main-section>#btnUpdate {
+        left: 60vw;
+    }
+
+    #main-section>#btnDelete {
+        left: 72vw;
+    }
+
+    #main-section>#btnClearAll {
+        left: 84vw;
+    }
+}
+
+
+@media all and (max-width: 990px) {
+    #totalCustomers {
+        left: 77vw;
+        width: 19vw;
+    }
+
+    #totalCustomers > label {
+        font-size: 18px;
+        top: 10px;
+        left: 17px;
+    }
+
+    #totalCustomers > img {
+        position: absolute;
+        top: 38px;
+        left: 60px;
+    }
+}
+
+@media all and (max-width: 764px) {
+
+    #container {
+        height: 100vh;
+    }
+
+    #main-section {
+        width: 96vw;
+        height: 96vh;
+    }
+
+    #Tbl {
+        top: 650px;
+    }
+
+    #main-section>#lblSearchOrders {
+        font-size: 16px;
+        left: 45px;
+        top: 613px;
+    }
+
+    #main-section>#txtSearch-03 {
+        width: 200px;
+        background-position: 157px;
+        left: 31px;
+        top: 642px;
+    }
+
+    #main-section>button.btn.btn-outline-primary {
+        width: 82px;
+        height: 40px;
+        left: 251px;
+        top: 643px;
+    }
+
+    #main-section>#btnUpdate {
+        width: 90px;
+        top: 642px;
+        left: 55vw;
+    }
+
+    #main-section>#btnDelete {
+        width: 90px;
+        top: 642px;
+        left: 68.2vw;
+    }
+
+    #main-section>#btnClearAll {
+        width: 97px;
+        top: 642px;
+        left: 81vw;
+    }
+
+    #content-card-left {
+        width: 445px;
+        left: 40px;
+        top: 50px;
+        height: 470px;
+    }
+
+    #content-card-left>#txtPhoneNumber {
+        width: 384px;
+        position: absolute;
+        left: 30px;
+        top: 310px;
+    }
+
+    #content-card-left>button.btn.btn-primary {
+        width: 212px;
+        left: 14vw;
+        top: 383px;
+    }
+
+    #content-card-left>#lblPhoneNumber {
+        position: absolute;
+        left: 45px;
+        top: 280px;
+    }
+
+    #content-card-left>#txtAddress {
+        width: 384px;
+        position: absolute;
+        left: 30px;
+        top: 200px;
+    }
+
+    #content-card-left>#lblAddress {
+        position: absolute;
+        left: 47px;
+        top: 170px;
+    }
+
+    #content-card-left>#txtCustomerID {
+        width: 158px;
+        left: 30px;
+        top: 80px;
+    }
+
+    #content-card-left>#lblCustomerID {
+        left: 44px;
+        top: 50px;
+    }
+
+    #content-card-left>#lblName {
+        left: 243px;
+        top: 50px;
+    }
+
+    #content-card-left>#txtName {
+        left: 222px;
+        width: 190px;
+    }
+
+    #totalCustomers {
+        left: 70vw;
+        width: 22vw;
+    }
+
+    #totalCustomers > label {
+        font-size: 16px;
+        top: 10px;
+        left: 13px;
+    }
+
+    #totalCustomers > img {
+        top: 38px;
+        left: 52px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    #container {
+        height: 120vh;
+    }
+
+    #main-section {
+        width: 96vw;
+        height: 116vh;
+    }
+
+    #Tbl {
+        top: 840px;
+    }
+
+    #main-section>#lblSearchOrders {
+        font-size: 15px;
+        left: 36px;
+        top: 805px;
+    }
+
+    #main-section>#txtSearch-03 {
+        width: 200px;
+        background-position: 157px;
+        left: 23px;
+        top: 832px;
+    }
+
+    #main-section>button.btn.btn-outline-primary {
+        width: 82px;
+        height: 40px;
+        left: 251px;
+        top: 831px;
+    }
+
+    #main-section>#btnUpdate {
+        width: 90px;
+        top: 692px;
+        left: 15vw;
+    }
+
+    #main-section>#btnDelete {
+        width: 90px;
+        top: 692px;
+        left: 38.2vw;
+    }
+
+    #main-section>#btnClearAll {
+        width: 97px;
+        top: 692px;
+        left: 61vw;
+    }
+
+    #content-card-left {
+        width: 445px;
+        left: 40px;
+        top: 210px;
+        height: 450px;
+    }
+
+    #totalCustomers {
+        top: 20px;
+        left: 20vw;
+        width: 52vw;
+    }
+
+    #totalCustomers > label {
+        font-size: 16px;
+        top: 10px;
+        left: 83px;
+    }
+
+    #totalCustomers > img {
+        top: 38px;
+        left: 121px;
+    }
+}
+
+@media all and (max-width: 425px) {
+
+    #totalCustomers > label {
+        font-size: 16px;
+        top: 10px;
+        left: 37px;
+    }
+
+    #totalCustomers > img {
+        top: 38px;
+        left: 77px;
+    }
+
+    #content-card-left {
+        width: 355px;
+        left: 29px;
+        top: 210px;
+        height: 520px;
+    }
+
+    #container {
+        height: 130vh;
+    }
+
+    #main-section {
+        width: 96vw;
+        height: 126vh;
+    }
+
+    #Tbl {
+        top: 920px;
+    }
+
+    #main-section>#txtSearch-03 {
+        width: 200px;
+        background-position: 157px;
+        left: 23px;
+        top: 912px;
+    }
+
+    #main-section>#lblSearchOrders {
+        font-size: 15px;
+        left: 36px;
+        top: 885px;
+    }
+
+    #main-section>button.btn.btn-outline-primary {
+        width: 82px;
+        height: 40px;
+        left: 251px;
+        top: 909px;
+    }
+
+    #main-section>#btnUpdate {
+        width: 90px;
+        top: 782px;
+        left: 15vw;
+    }
+
+    #main-section>#btnDelete {
+        width: 90px;
+        top: 782px;
+        left: 38.2vw;
+    }
+
+    #main-section>#btnClearAll {
+        width: 97px;
+        top: 782px;
+        left: 61vw;
+    }
+
+    #content-card-left>button.btn.btn-primary {
+        width: 212px;
+        left: 16vw;
+        top: 443px;
+    }
+
+    #content-card-left>#txtPhoneNumber {
+        width: 294px;
+        position: absolute;
+        left: 30px;
+        top: 370px;
+    }
+
+    #content-card-left>#lblPhoneNumber {
+        position: absolute;
+        left: 45px;
+        top: 340px;
+    }
+
+    #content-card-left>#txtAddress {
+        width: 294px;
+        position: absolute;
+        left: 30px;
+        top: 270px;
+    }
+
+    #content-card-left>#lblAddress {
+        position: absolute;
+        left: 47px;
+        top: 240px;
+    }
+
+    #content-card-left>#txtName {
+        left: 31px;
+        width: 294px;
+        top: 170px;
+    }
+
+    #content-card-left>#lblName {
+        left: 53px;
+        top: 140px;
+    }
+
+    #content-card-left>#txtCustomerID {
+        width: 178px;
+        left: 81px;
+        top: 70px;
+    }
+
+    #content-card-left>#lblCustomerID {
+        left: 104px;
+        top: 40px;
+    }
+}

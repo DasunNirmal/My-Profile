@@ -1,0 +1,112 @@
+body {
+    background-color: #ced6e0;
+}
+#gif-section {
+    width: 80%;
+    height: 172px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.gifs {
+    width: 200px;
+    height: 200px;
+    background: url("/assignments/assignment_08/assets/gifs/Lateness.gif") no-repeat center;
+    background-size: cover;
+}
+
+#letters-section {
+    width: 90%;
+    height: 202px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #B33771;
+}
+
+.letters {
+    width: 50px;
+    height: 30px;
+    margin-right: 213px;
+    position: relative;
+    left: 209px;
+}
+
+.line>hr {
+    height: 1px;
+    width: 90%;
+    border: 0;
+    background: #2C3A47;
+}
+
+.line {
+    height: 2px;
+    width: 90%;
+    border: 0;
+    position: absolute;
+    top: 180px;
+    right: 280px;
+    bottom: 0;
+    margin: auto;
+}
+
+#building {
+    width: 350px;
+    height: 270px;
+    background: url("/assignments/assignment_08/assets/gifs/Building.gif") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60px;
+    margin: auto;
+}
+
+#buttons {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 310px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #B33771;
+    font-weight: bold;
+    font-size: 18px;
+    color: #cedff3;
+    border-radius: 20px;
+    border: 3px solid rgba(251, 197, 49, 0.75);
+}
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    color: #B33771;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: "Abyssinica SIL",serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
