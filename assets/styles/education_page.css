@@ -1401,6 +1401,7 @@ footer>.socials>.instagram {
         height: 1350px;
         width: 98%;
         top: 100px;
+        z-index: 2;
     }
 
     .line-left-01>hr, .line-right-02>hr {
@@ -1454,11 +1455,13 @@ footer>.socials>.instagram {
         transition-duration: 1s;
         cursor: pointer;
         font-weight: bold;
+
     }
 
     footer {
         height: 360px;
         top: 0;
+        z-index: 0;
     }
 
     #footer-Ellipse {
