@@ -8,6 +8,7 @@ function backgroundBluer() {
     document.querySelector(".line-left-01").classList.add("blur-background");
     document.querySelector(".line-right-02").classList.add("blur-background");
     document.querySelector("#courses-and-certificates").classList.add("blur-background");
+    document.querySelector("footer").classList.add("blur-background");
 }
 
 function displayPopUpCard03() {
@@ -36,6 +37,7 @@ function closePopUp() {
     document.querySelector(".line-left-01").classList.remove("blur-background");
     document.querySelector(".line-right-02").classList.remove("blur-background");
     document.querySelector("#courses-and-certificates").classList.remove("blur-background");
+    document.querySelector("footer").classList.remove("blur-background");
 }
 
 function CardThreeCaseOne() {
