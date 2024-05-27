@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: -60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -19,17 +19,20 @@
 }
 
 .display-card-03 {
-    top: 20%;
+    position:fixed;
+    top: calc(50% - 25px);
     visibility: visible;
 }
 
 .display-card-04 {
-    top: 30%;
+    position:fixed;
+    top: calc(50% - 25px);
     visibility: visible;
 }
 
 .display-card-08 {
-    top: 50%;
+    position:fixed;
+    top: calc(50% - 25px);
     visibility: visible;
 }
 
