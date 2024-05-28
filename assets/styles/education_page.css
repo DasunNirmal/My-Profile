@@ -713,6 +713,23 @@ footer>.socials>.instagram {
     #assignments-cards>div:hover .assignment-card-content {
         left: 0;
     }
+
+    .close:hover {
+        border: 2px solid #192A56;
+        border-radius: 10px 0 10px 0;
+        font-weight: 750;
+        background-color: #f0932b;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    }
+
+    .as-03-cases:hover {
+        font-weight: 800;
+        color: #001b68;
+        border: 2px solid #192A56;
+        background-color: #f0932b;
+        border-radius: 0 15px 0 15px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    }
 }
 
 @media (hover: none) {
@@ -1396,6 +1413,23 @@ footer>.socials>.instagram {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .close:hover {
+        border: 2px solid #192A56;
+        border-radius: 10px 0 10px 0;
+        font-weight: 750;
+        background-color: #f0932b;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    }
+
+    .as-03-cases:hover {
+        font-weight: 800;
+        color: #001b68;
+        border: 2px solid #192A56;
+        background-color: #f0932b;
+        border-radius: 0 15px 0 15px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    }
+
     #assignments {
         position: relative;
         height: 1350px;
@@ -1755,6 +1789,23 @@ footer>.socials>.instagram {
         top: 100px;
     }
 
+    .close:hover {
+        border: 2px solid #192A56;
+        border-radius: 10px 0 10px 0;
+        font-weight: 750;
+        background-color: #f0932b;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    }
+
+    .as-03-cases:hover {
+        font-weight: 800;
+        color: #001b68;
+        border: 2px solid #192A56;
+        background-color: #f0932b;
+        border-radius: 0 15px 0 15px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    }
+
     .line-left-01>hr, .line-right-02>hr {
         height: 3px;
         width: 22dvw;
@@ -2096,6 +2147,23 @@ footer>.socials>.instagram {
         height: 1210px;
         width: 98%;
         top: 100px;
+    }
+
+    .close:hover {
+        border: 2px solid #192A56;
+        border-radius: 10px 0 10px 0;
+        font-weight: 750;
+        background-color: #f0932b;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    }
+
+    .as-03-cases:hover {
+        font-weight: 800;
+        color: #001b68;
+        border: 2px solid #192A56;
+        background-color: #f0932b;
+        border-radius: 0 15px 0 15px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
     }
 
     .line-left-01>hr, .line-right-02>hr {
