@@ -153,3 +153,21 @@ $('#btnUpdate-items').on('click',() => {
     clearAll();
     totalItems();
 });
+
+function searchItems(query) {
+    const searchTerm = query.toLowerCase();
+
+    for (let i = 0; i < items.length; i++) {
+        if (searchTerm === items[i].id.toLowerCase() || searchTerm === items[i].name.toLowerCase()) {
+            $('#txtItemID').val(items[i].id);
+            $('#txtItemName').val(items[i].name);
+            $('#txtPrice').val(items[i].price);
+            $('#txtQuantity').val(items[i].qty);
+        }
+    }
+}
+
+$('#searchItems').on('click', function() {
+    const searchQuery = $('#txtSearch-items').val();
+    searchItems(searchQuery);
+});
