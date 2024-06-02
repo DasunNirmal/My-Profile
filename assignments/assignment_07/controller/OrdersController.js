@@ -3,8 +3,10 @@ import {orders} from "../db/db.js";
 import {customers} from "../db/db.js";
 import {items} from "../db/db.js";
 import {loadOrderTableHome} from "./IndexController.js";
+import {loadItemTable} from "./ItemsController.js";
 
 var recordIndexOrders;
+var priceTagInterval;
 
 $('#nav-orders-section').on('click', () => {
 
@@ -110,53 +112,40 @@ function ClearTwo() {
 
 function searchCustomers(query) {
     const searchTerm = query.toLowerCase(); /*Convert the search query to lowercase for case-insensitive search*/
-    const searchResults = customers.filter(customer => {
-        /*Check if the customer ID or phone number contains the search term*/
-        return customer.id.toLowerCase().includes(searchTerm) || customer.phoneNumber.toLowerCase().includes(searchTerm);
-    });
 
-    SetSearchCustomerResults(searchResults);
+    for (let i = 0; i < customers.length; i++) {
+        if (searchTerm === customers[i].id.toLowerCase() || searchTerm === customers[i].phoneNumber.toLowerCase()) {
+            $('#txtCustomerId-orders').val(customers[i].id);
+            $('#txtCustomerName-orders').val(customers[i].name);
+            $('#txtPhoneNumber-orders').val(customers[i].phoneNumber);
+            $('#txtSearch-02').val("");
+            break;
+        }
+    }
 }
 
-function SetSearchCustomerResults(results) {
-
-    /*set each result*/
-    results.forEach(customer => {
-        $('#txtCustomerId-orders').val(customer.id);
-        $('#txtCustomerName-orders').val(customer.name);
-        $('#txtPhoneNumber-orders').val(customer.phoneNumber);
-    });
-}
 
 $('#search-customers-orders').on('click', function() {
-    const searchQuery = $(this).val();
+    const searchQuery = $('#txtSearch-02').val();
     searchCustomers(searchQuery);
 });
 
 /*Search Items*/
 function searchItems(query) {
     const searchTerm = query.toLowerCase(); /*Convert the search query to lowercase for case-insensitive search*/
-    const searchResults = items.filter(items => {
-        /*Check if the customer ID or phone number contains the search term*/
-        return items.id.toLowerCase().includes(searchTerm) || items.name.toLowerCase().includes(searchTerm);
-    });
 
-    SetSearchItemResults(searchResults);
-}
-
-function SetSearchItemResults(results) {
-
-    /*set each result*/
-    results.forEach(items => {
-        $('#txtItemId-orders').val(items.id);
-        $('#txtItemName-orders').val(items.name);
-        $('#txtUnitPrice-orders').val(items.price);
-        $('#txtQtyOnHand-orders').val(items.qty);
-    });
+    for (let i = 0; i < items.length; i++) {
+        if (searchTerm === items[i].id.toLowerCase() || searchTerm === items[i].name.toLowerCase()) {
+            $('#txtItemId-orders').val(items[i].id);
+            $('#txtItemName-orders').val(items[i].name);
+            $('#txtUnitPrice-orders').val(items[i].price);
+            $('#txtQtyOnHand-orders').val(items[i].qty);
+        }
+    }
 }
 
 $('#search-items-orders').on('click', function() {
-    const searchQuery = $(this).val();
+    const searchQuery = $('#txtSearch-01').val();
     searchItems(searchQuery);
 });
 
@@ -164,7 +153,7 @@ $('#search-items-orders').on('click', function() {
 /**Add, Update, Delete, Clear All**/
 
 function loadOrderTable() {
-    $('#orders-table-tb').empty();
+    $("#orders-table-tb").empty();
 
     orders.map((item, index) => {
         var orderRecord = `<tr>
@@ -182,22 +171,14 @@ function loadOrderTable() {
     });
 }
 
-function loadItemTable() {
-    $('#items-table-tb').empty();
-
-    items.map((item,index) => {
-        var itemRecord = `<tr>
-                        <td class="i-id">${item.id}</td>
-                        <td class="i-name">${item.name}</td>
-                        <td class="i-price">${item.price}</td>
-                        <td class="i-qty">${item.qty}</td>
-                    </tr>`
-        $('#items-table-tb').append(itemRecord);
-    });
+function totalTagUpdate() {
+    priceTagInterval = setInterval(function(){
+        $("#price-tag").text("Rs : "+"0"+"/=");
+    }, 7000);
 }
 
 $('#orders-table-tb').on('click','tr',function () {
-   recordIndexOrders = $(this).index();
+    recordIndexOrders = $(this).index();
 
     var oId = $(this).find(".o-id").text();
     var iId = $(this).find(".o-itemID").text();
@@ -212,15 +193,32 @@ $('#orders-table-tb').on('click','tr',function () {
     $('#txtItemId-orders').val(iId);
     $('#txtItemName-orders').val(itemName);
     $('#txtUnitPrice-orders').val(unitPrice);
-    $('#txtQtyOnHand-orders').val(qtyOnHand);
     $('#txtOrderQuantity').val(orderQty);
 
     $('#txtOrderId').val(oId);
     $('#txtCustomerId-orders').val(cId);
-    $('#txtCustomerName-orders').val("------  ------");
-    $('#txtPhoneNumber-orders').val("------  ------");
+    $('#price-tag').text("Rs : "+total+"/=");
+
+    var customer = customers.find(c => c.id === cId);
+    var item = items.find(i => i.id === iId);
+
+    if (customer) {
+        $('#txtCustomerName-orders').val(customer.name);
+        $('#txtPhoneNumber-orders').val(customer.phoneNumber);
+    } else {
+        $('#txtCustomerName-orders').val("");
+        $('#txtPhoneNumber-orders').val("");
+    }
+
+    if (item) {
+        $('#txtQtyOnHand-orders').val(item.qty);
+    } else {
+        $('#txtQtyOnHand-orders').val("");
+    }
+
     $('#txtOrderDate').val(orderDate);
 
+    clearInterval(priceTagInterval);
 });
 
 function updatePriceTag() {
@@ -256,6 +254,7 @@ $('#place-order').on('click', function () {
         items[existingItemIndex].qty -= orderQty;
     }
 
+
     /*Check if the item and customer already exists in orders*/
     var existingOrderIndex = orders.findIndex(order => order.customerID === customerID && order.itemID === itemID);
 
@@ -272,12 +271,14 @@ $('#place-order').on('click', function () {
     /*Update the price tag and tables*/
     $('#price-tag').text("Rs : "+totalPrice+"/=");
 
+    totalTagUpdate();
     loadOrderTable();
     loadItemTable();
     loadOrderTableHome();
     updatePriceTag(); /*call this method to update price-tag if that same customer place another order*/
     ClearAll();
 });
+
 
 $('#btnDelete').on('click', function () {
     orders.splice(recordIndexOrders,1);
@@ -302,6 +303,8 @@ $('#btnUpdate').on('click',function () {
     var totalPrice = unitPrice * orderQty;
 
     var oOb = orders[recordIndexOrders];
+    var oldOrderQty = parseInt(oOb.orderQty);
+
     oOb.itemID = itemID;
     oOb.ItemName = itemName;
     oOb.unitPrice = unitPrice;
@@ -314,17 +317,28 @@ $('#btnUpdate').on('click',function () {
     oOb.orderDate = orderDate;
     oOb.totalPrice = totalPrice;
 
+    var existingItemIndex = items.findIndex(item => item.id === itemID);
+
+    if (existingItemIndex !== -1) {
+        var existingQty = parseInt(items[existingItemIndex].qty);
+        var qtyDifference = orderQty - oldOrderQty;
+
+        items[existingItemIndex].qty = existingQty - qtyDifference;
+    }
+
+    totalTagUpdate();
     loadOrderTable();
+    loadItemTable();
     updatePriceTag();
     ClearAll();
 });
 
 $('#btnClearAll').on('click',function () {
-   ClearAll();
+    ClearAll();
 });
 
 $('#btnClear-1').on('click',function () {
-   ClearOne();
+    ClearOne();
 });
 
 $('#btnClear-2').on('click',function () {
