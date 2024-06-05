@@ -69,6 +69,36 @@ $('#nav-items-section').on('click',() => {
     });
 });
 
+var ValidItemID = $('#items-content-card-left>#txtItemID');
+var ValidItemName = $('#items-content-card-left>#txtItemName');
+var ValidPrice = $('#items-content-card-left>#txtPrice');
+var ValidQty = $('#items-content-card-left>#txtQuantity');
+var isValidItemName = new RegExp("\\b[A-Z][a-z]*( [A-Z][a-z]*)*\\b");
+var isValidPriceAndQty = new RegExp("^[0-9]+\\.?[0-9]*$");
+
+$(ValidItemID).on("input", function () {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidItemName).on("input", function () {
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidPrice).on("input", function () {
+    $(ValidPrice).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidQty).on("input", function () {
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+});
 
 /**Add, Update, Delete, Clear All**/
 
@@ -77,6 +107,66 @@ function clearAll() {
     $('#txtItemName').val("");
     $('#txtPrice').val("");
     $('#txtQuantity').val("");
+}
+
+function emptyPlaceHolder() {
+    $(ValidItemID).attr("placeholder", "");
+    $(ValidItemName).attr("placeholder", "");
+    $(ValidPrice).attr("placeholder", "");
+    $(ValidQty).attr("placeholder", "");
+}
+
+function defaultBorderColor() {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidPrice).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+}
+
+function validItem() {
+    var itemID = $('#txtItemID').val();
+    var itemName = $('#txtItemName').val();
+    var itemPrice = $('#txtPrice').val();
+    var itemQty = $('#txtQuantity').val();
+
+
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+
+        $(ValidItemID).css({
+            border: "3px solid red"
+        });
+        $(ValidItemName).css({
+            border: "3px solid red"
+        });
+        $(ValidPrice).css({
+            border: "3px solid red"
+        });
+        $(ValidQty).css({
+            border: "3px solid red"
+        });
+
+        $(ValidItemID).attr("placeholder", "ID Empty");
+        $(ValidItemName).attr("placeholder", "Wrong Input Try Again");
+        $(ValidPrice).attr("placeholder", "Wrong Input");
+        $(ValidQty).attr("placeholder", "Wrong Input Try Again");
+
+        $(ValidItemID).addClass('red');
+        $(ValidItemName).addClass('red');
+        $(ValidPrice).addClass('red');
+        $(ValidQty).addClass('red');
+        return true;
+    } else {
+        defaultBorderColor();
+        emptyPlaceHolder();
+    }
 }
 
 function totalItems() {
@@ -122,16 +212,35 @@ $('#addItems').on('click',() => {
     var itemPrice = $('#txtPrice').val();
     var itemQty = $('#txtQuantity').val();
 
-    let itemModel = new ItemModel(itemID,itemName,itemPrice,itemQty);
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return false;
+    }
 
+    let itemModel = new ItemModel(itemID,itemName,itemPrice,itemQty);
     items.push(itemModel);
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();
 });
 
 $('#btnDelete-items').on('click',() => {
+
+    var itemID = $('#txtItemID').val();
+    var itemName = $('#txtItemName').val();
+    var itemPrice = $('#txtPrice').val();
+    var itemQty = $('#txtQuantity').val();
+
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return;
+    }
+
     items.splice(recordIndexItems,1);
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();
@@ -143,12 +252,19 @@ $('#btnUpdate-items').on('click',() => {
     var itemPrice = $('#txtPrice').val();
     var itemQty = $('#txtQuantity').val();
 
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return;
+    }
+
     var iOb = items[recordIndexItems];
     iOb.id = itemID;
     iOb.name = itemName;
     iOb.price = itemPrice;
     iOb.qty = itemQty;
 
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();

@@ -4,7 +4,6 @@ import {customers} from "../db/db.js";
 import {items} from "../db/db.js";
 import {loadOrderTableHome} from "./IndexController.js";
 import {loadItemTable} from "./ItemsController.js";
-
 var recordIndexOrders;
 var priceTagInterval;
 
@@ -74,7 +73,71 @@ $('#nav-orders-section').on('click', () => {
     });
 });
 
-/*Search Customers*/
+var ValidItemID = $('#orders-content-card-left>#txtItemId-orders');
+var ValidItemName = $('#orders-content-card-left>#txtItemName-orders');
+var ValidUnitPrice = $('#orders-content-card-left>#txtUnitPrice-orders');
+var ValidQtyONHand = $('#orders-content-card-left>#txtQtyOnHand-orders');
+var ValidQty = $('#orders-content-card-left>#txtOrderQuantity');
+var ValidOrderID = $('#orders-content-card-right>#txtOrderId');
+var ValidCustomerID = $('#orders-content-card-right>#txtCustomerId-orders');
+var ValidCustomerName = $('#orders-content-card-right>#txtCustomerName-orders');
+var ValidPhoneNumber = $('#orders-content-card-right > #txtPhoneNumber-orders');
+var ValidOrderDate = $('#orders-content-card-right > #txtOrderDate');
+var isValidName = new RegExp("\\b[A-Z][a-z]*( [A-Z][a-z]*)*\\b");
+var isValidPriceAndQty = new RegExp("^[0-9]+\\.?[0-9]*$");
+var isValidPhoneNumber = new RegExp("^(?:0|94|\\+94|0094)?(?:(11|21|23|24|25|26|27|31|32|33|34|35|36|37|38|41|45|47|51|52|54|55|57|63|65|66|67|81|91)(0|2|3|4|5|7|9)|7(0|1|2|4|5|6|7|8)\\d)\\d{6}$");
+
+$(ValidItemID).on("input", function () {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidItemName).on("input", function () {
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidUnitPrice).on("input", function () {
+    $(ValidUnitPrice).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidQtyONHand).on("input", function () {
+    $(ValidQtyONHand).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidQty).on("input", function () {
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidOrderID).on("input", function () {
+    $(ValidOrderID).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidCustomerID).on("input", function () {
+    $(ValidCustomerID).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidCustomerName).on("input", function () {
+    $(ValidCustomerName).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidPhoneNumber).on("input", function () {
+    $(ValidPhoneNumber).css({
+        border: "2px solid #B05200"
+    });
+});
+$(ValidOrderDate).on("input", function () {
+    $(ValidOrderDate).css({
+        border: "2px solid #B05200"
+    });
+});
+
 
 function ClearAll() {
     $('#txtItemId-orders').val("");
@@ -124,7 +187,6 @@ function searchCustomers(query) {
     }
 }
 
-
 $('#search-customers-orders').on('click', function() {
     const searchQuery = $('#txtSearch-02').val();
     searchCustomers(searchQuery);
@@ -152,6 +214,124 @@ $('#search-items-orders').on('click', function() {
 
 /**Add, Update, Delete, Clear All**/
 
+function emptyPlaceHolder() {
+    $(ValidItemID).attr("placeholder", "");
+    $(ValidItemName).attr("placeholder", "");
+    $(ValidUnitPrice).attr("placeholder", "");
+    $(ValidQtyONHand).attr("placeholder", "");
+    $(ValidQty).attr("placeholder", "");
+    $(ValidOrderID).attr("placeholder", "");
+    $(ValidCustomerID).attr("placeholder", "");
+    $(ValidCustomerName).attr("placeholder", "");
+    $(ValidPhoneNumber).attr("placeholder", "");
+    $(ValidOrderDate).attr("placeholder", "");
+}
+
+function defaultBorderColor() {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidUnitPrice).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidQtyONHand).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidOrderID).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidCustomerID).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidCustomerName).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidPhoneNumber).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidOrderDate).css({
+        border: "2px solid #B05200"
+    });
+}
+
+function validOrder() {
+    var itemID = $('#txtItemId-orders').val();
+    var itemName = $('#txtItemName-orders').val();
+    var unitPrice = $('#txtUnitPrice-orders').val();
+    var qtyOnHand = $('#txtQtyOnHand-orders').val();
+    var orderQty = $('#txtOrderQuantity').val();
+
+    var orderID = $('#txtOrderId').val();
+    var customerID = $('#txtCustomerId-orders').val();
+    var customerName = $('#txtCustomerName-orders').val();
+    var phoneNumber = $('#txtPhoneNumber-orders').val();
+    var orderDate = $('#txtOrderDate').val();
+
+    if (itemID === "" || orderID === "" || customerID === "" || orderDate === "" || !isValidName.test(itemName)
+        || !isValidPriceAndQty.test(unitPrice) || !isValidPriceAndQty.test(qtyOnHand)
+        || !isValidPriceAndQty.test(orderQty) || !isValidName.test(customerName) || !isValidPhoneNumber.test(phoneNumber)) {
+
+        $(ValidItemID).css({
+            border: "3px solid red"
+        });
+        $(ValidItemName).css({
+            border: "3px solid red"
+        });
+        $(ValidUnitPrice).css({
+            border: "3px solid red"
+        });
+        $(ValidQtyONHand).css({
+            border: "3px solid red"
+        });
+        $(ValidQty).css({
+            border: "3px solid red"
+        });
+        $(ValidOrderID).css({
+            border: "3px solid red"
+        });
+        $(ValidCustomerID).css({
+            border: "3px solid red"
+        });
+        $(ValidCustomerName).css({
+            border: "3px solid red"
+        });
+        $(ValidPhoneNumber).css({
+            border: "3px solid red"
+        });
+        $(ValidOrderDate).css({
+            border: "3px solid red"
+        });
+
+        $(ValidItemID).attr("placeholder", "ID Empty");
+        $(ValidItemName).attr("placeholder", "Wrong Input Try Again");
+        $(ValidUnitPrice).attr("placeholder", "Wrong Input");
+        $(ValidQtyONHand).attr("placeholder", "Wrong Input");
+        $(ValidQty).attr("placeholder", "Wrong Input");
+        $(ValidOrderID).attr("placeholder", "Wrong Input");
+        $(ValidCustomerID).attr("placeholder", "Wrong Input");
+        $(ValidCustomerName).attr("placeholder", "Wrong Input Try Again");
+        $(ValidPhoneNumber).attr("placeholder", "Wrong Input");
+        $(ValidOrderDate).attr("placeholder", "Wrong Input");
+
+        $(ValidItemID).addClass('red');
+        $(ValidItemName).addClass('red');
+        $(ValidUnitPrice).addClass('red');
+        $(ValidQtyONHand).addClass('red');
+        $(ValidQty).addClass('red');
+        $(ValidOrderID).addClass('red');
+        $(ValidCustomerID).addClass('red');
+        $(ValidCustomerName).addClass('red');
+        $(ValidPhoneNumber).addClass('red');
+        $(ValidOrderDate).addClass('red');
+    }
+}
+
 function loadOrderTable() {
     $("#orders-table-tb").empty();
 
@@ -173,12 +353,12 @@ function loadOrderTable() {
 
 function totalTagUpdate() {
     priceTagInterval = setInterval(function(){
-        $("#price-tag").text("Rs : "+"0"+"/=");
+       $("#price-tag").text("Rs : "+"0"+"/=");
     }, 7000);
 }
 
 $('#orders-table-tb').on('click','tr',function () {
-    recordIndexOrders = $(this).index();
+   recordIndexOrders = $(this).index();
 
     var oId = $(this).find(".o-id").text();
     var iId = $(this).find(".o-itemID").text();
@@ -244,6 +424,12 @@ $('#place-order').on('click', function () {
 
     var totalPrice = unitPrice * orderQty;
 
+    if (itemID === "" || orderID === "" || customerID === "" || orderDate === "" || !isValidName.test(itemName)
+        || !isValidPriceAndQty.test(unitPrice) || !isValidPriceAndQty.test(qtyOnHand)
+        || !isValidPriceAndQty.test(orderQty) || !isValidName.test(customerName) || !isValidPhoneNumber.test(phoneNumber)) {
+        validOrder();
+        return false;
+    }
     /*Check if the item already exists*/
     var existingItemIndex = items.findIndex(item => item.id === itemID);
 
@@ -271,6 +457,8 @@ $('#place-order').on('click', function () {
     /*Update the price tag and tables*/
     $('#price-tag').text("Rs : "+totalPrice+"/=");
 
+    emptyPlaceHolder();
+    defaultBorderColor();
     totalTagUpdate();
     loadOrderTable();
     loadItemTable();
@@ -279,8 +467,26 @@ $('#place-order').on('click', function () {
     ClearAll();
 });
 
-
 $('#btnDelete').on('click', function () {
+    var itemID = $('#txtItemId-orders').val();
+    var itemName = $('#txtItemName-orders').val();
+    var unitPrice = $('#txtUnitPrice-orders').val();
+    var qtyOnHand = $('#txtQtyOnHand-orders').val();
+    var orderQty = $('#txtOrderQuantity').val();
+
+    var orderID = $('#txtOrderId').val();
+    var customerID = $('#txtCustomerId-orders').val();
+    var customerName = $('#txtCustomerName-orders').val();
+    var phoneNumber = $('#txtPhoneNumber-orders').val();
+    var orderDate = $('#txtOrderDate').val();
+
+
+    if (itemID === "" || orderID === "" || customerID === "" || orderDate === "" || !isValidName.test(itemName)
+        || !isValidPriceAndQty.test(unitPrice) || !isValidPriceAndQty.test(qtyOnHand)
+        || !isValidPriceAndQty.test(orderQty) || !isValidName.test(customerName) || !isValidPhoneNumber.test(phoneNumber)) {
+        validOrder();
+        return false;
+    }
     orders.splice(recordIndexOrders,1);
     loadOrderTable();
     updatePriceTag();
@@ -302,6 +508,12 @@ $('#btnUpdate').on('click',function () {
 
     var totalPrice = unitPrice * orderQty;
 
+    if (itemID === "" || orderID === "" || customerID === "" || orderDate === "" || !isValidName.test(itemName)
+        || !isValidPriceAndQty.test(unitPrice) || !isValidPriceAndQty.test(qtyOnHand)
+        || !isValidPriceAndQty.test(orderQty) || !isValidName.test(customerName) || !isValidPhoneNumber.test(phoneNumber)) {
+        validOrder();
+        return false;
+    }
     var oOb = orders[recordIndexOrders];
     var oldOrderQty = parseInt(oOb.orderQty);
 
@@ -333,12 +545,40 @@ $('#btnUpdate').on('click',function () {
     ClearAll();
 });
 
+function searchOrders(query) {
+    const searchTerm = query.toLowerCase();
+
+    for (let i = 0; i < orders.length; i++) {
+        if (searchTerm === orders[i].orderID.toLowerCase()) {
+            $('#txtItemId-orders').val(orders[i].itemID);
+            $('#txtItemName-orders').val(orders[i].ItemName);
+            $('#txtUnitPrice-orders').val(orders[i].unitPrice);
+            $('#txtQtyOnHand-orders').val(orders[i].qtyOnHand);
+            $('#txtOrderQuantity').val(orders[i].orderQty);
+            $('#txtOrderId').val(orders[i].orderID);
+            $('#txtCustomerId-orders').val(orders[i].customerID);
+            $('#txtCustomerName-orders').val(orders[i].customerName);
+            $('#txtPhoneNumber-orders').val(orders[i].phoneNumber);
+            $('#txtOrderDate').val(orders[i].orderDate);
+            $('#price-tag').text("Rs : "+orders[i].totalPrice+"/=");
+            break;
+        }
+    }
+    clearInterval(priceTagInterval);
+}
+
+$('#searchOrders').on('click', function() {
+    const searchQuery = $('#txtSearch-03').val();
+    searchOrders(searchQuery);
+});
+
 $('#btnClearAll').on('click',function () {
-    ClearAll();
+   ClearAll();
+    $('#price-tag').text("Rs : "+"0"+"/=");
 });
 
 $('#btnClear-1').on('click',function () {
-    ClearOne();
+   ClearOne();
 });
 
 $('#btnClear-2').on('click',function () {

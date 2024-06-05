@@ -1,0 +1,4 @@
+.red::placeholder {
+    color: red; !important;
+    font-family: "Lexend", sans-serif;
+}

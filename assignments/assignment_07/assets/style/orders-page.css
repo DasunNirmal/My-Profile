@@ -138,7 +138,7 @@ table.table.table-bordered > tbody > tr > td {
     width: 356px;
     height: 45px;
     position: absolute;
-    background-image:url('/assets/icons/icons8-search-100.png');
+    background-image:url('/assignments/assignment_07/assets/icons/icons8-search-100.png');
     background-repeat:no-repeat;
     background-size: 36px 36px;
     background-position:306px;
@@ -150,7 +150,7 @@ table.table.table-bordered > tbody > tr > td {
     width: 305px;
     height: 39px;
     position: absolute;
-    background-image:url('/assets/icons/icons8-search-100.png');
+    background-image:url('/assignments/assignment_07/assets/icons/icons8-search-100.png');
     background-repeat:no-repeat;
     background-size: 33px 33px;
     background-position:259px;
@@ -427,7 +427,7 @@ table.table.table-bordered > tbody > tr > td {
 
 #orders-content-card-right>#txtOrderDate {
     width: 165px;
-    background-image:url('/assets/icons/icons8-date-picker-100.png');
+    background-image:url('/assignments/assignment_07/assets/icons/icons8-date-picker-100.png');
     background-repeat:no-repeat;
     background-size: 34px 34px;
     background-position:120px;
